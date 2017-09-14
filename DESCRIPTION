@@ -7,15 +7,16 @@ Authors@R: person("Adam", "Sparks",
 Description: Provides USQ style typography, colours and graph themes for ggplot2
   plots in R.
 Depends: R (>= 3.4.1),
-  ggplot2
+    ggplot2
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: extrafont,
-  extrafontdb,
-  grDevices
+    extrafontdb,
+    grDevices
 RoxygenNote: 6.0.1
 Suggests: knitr,
     rmarkdown,
     covr
+Remotes: tidyverse/ggplot2
 VignetteBuilder: knitr

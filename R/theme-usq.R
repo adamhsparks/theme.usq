@@ -1,7 +1,6 @@
-#'
+
 #' A theme based on USQ visual identity and typography guidelines.
 #'
-#' @inheritParams ggplot2::theme_bw
 #' @example inst/examples/ex-theme_usq.R
 #'
 #' @export
