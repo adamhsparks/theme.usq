@@ -1,8 +1,8 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme.usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme.usq)
+[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme_usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme_usq)
 
-usq.theme
-=========
+theme\_usq
+==========
 
 The goal of usq.theme is to provide USQ staff and students with an easy to use *ggplot2* theme that conforms to the USQ visual guidelines for typography and colour.
 

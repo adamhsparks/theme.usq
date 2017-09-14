@@ -14,9 +14,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme.usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme.usq)
+[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme_usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme_usq)
 
-# usq.theme
+# theme_usq
 
 The goal of usq.theme is to provide USQ staff and students with an easy to use
 _ggplot2_ theme that conforms to the USQ visual guidelines for typography and
