@@ -1,0 +1,25 @@
+---
+title: "theme_usq"
+author: "Adam H Sparks"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{theme_usq}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+library("ggplot2")
+library("theme.usq")
+
+p <- ggplot(mtcars) +
+  geom_point(aes(
+    x = wt,
+    y = mpg,
+    colour = factor(gear)
+  )) +
+  facet_wrap( ~ am)
+
+p + theme_usq()
+```

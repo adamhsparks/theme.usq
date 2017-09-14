@@ -1,0 +1,20 @@
+Package: theme.usq
+Title: USQ themes for R
+Version: 0.0.0.9000
+Authors@R: person("Adam", "Sparks",
+  email = "adamhsparks@gmail.com",
+  role = c("aut", "cre"))
+Description: Provides USQ style typography, colours and graph themes for ggplot2
+  plots in R.
+Depends: R (>= 3.4.1),
+  ggplot2
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: extrafont,
+  extrafontdb,
+  grDevices
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
