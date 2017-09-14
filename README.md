@@ -4,7 +4,7 @@
 theme\_usq
 ==========
 
-The goal of usq.theme is to provide USQ staff and students with an easy to use *ggplot2* theme that conforms to the USQ visual guidelines for typography and colour.
+The goal of *theme\_usq* is to provide USQ staff and students with an easy to use *ggplot2* theme that conforms to the USQ visual guidelines for typography and colour.
 
 Example
 -------
