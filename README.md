@@ -1,5 +1,5 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme_usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme_usq)
+[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme_usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme_usq) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/adamhsparks/theme_usq?branch=master&svg=true)](https://ci.appveyor.com/project/adamhsparks/theme_usq) [![Coverage Status](https://img.shields.io/codecov/c/github/adamhsparks/theme_usq/master.svg)](https://codecov.io/github/adamhsparks/theme_usq?branch=master)
 
 theme\_usq
 ==========
