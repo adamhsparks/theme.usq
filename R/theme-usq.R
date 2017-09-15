@@ -1,8 +1,22 @@
 
 #' A theme based on USQ visual identity and typography guidelines.
 #'
-#' @example inst/examples/ex-theme_usq.R
+#' @examples
+#' \dontrun{
+#' library("ggplot2")
 #'
+#' p <- ggplot(mtcars) +
+#' geom_point(aes(
+#'     x = wt,
+#'     y = mpg,
+#'     colour = factor(gear)
+#'   )) +
+#'   facet_wrap( ~ am)
+#'
+#' p + theme_usq()
+#' }
+#'
+#' @inheritParams ggplot2::theme_bw
 #' @export
 #' @rdname usq_theme
 #' @importFrom ggplot2 %+replace%
