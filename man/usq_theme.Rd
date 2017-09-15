@@ -21,17 +21,26 @@ A theme based on USQ visual identity and typography guidelines.
 }
 \examples{
 \dontrun{
-library("ggplot2")
-
-p <- ggplot(mtcars) +
-geom_point(aes(
+Discrete values
+p1 <- ggplot(mtcars) +
+  geom_point(aes(
     x = wt,
     y = mpg,
     colour = factor(gear)
-  )) +
-  facet_wrap( ~ am)
+   )) +
+  scale_colour_manual(values = usq_palette) +
+  facet_wrap(~ am) +
+  theme_usq()
+p1
 
-p + theme_usq()
+# Continous values
+df <- reshape2::melt(outer(1:4, 1:4), varnames = c("X1", "X2"))
+
+p2 <- ggplot(df, aes(X1, X2)) + geom_tile(aes(fill = value)) +
+  usq_fill_gradient()
+p3 <- p2 + geom_point(aes(size = value)) +
+  theme_usq()
+p3
 }
 
 }

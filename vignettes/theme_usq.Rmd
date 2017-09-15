@@ -9,17 +9,42 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
+## Example 1: Graphing Discrete Data
+
+Using the _usq.theme's_ `theme_usq` for _ggplot2_, plot car weights by
+mpg and facet by `Transmission` (0 = automatic, 1 = manual) using the
+`usq_palette` in the `scale_colour_manual` discrete scale function to use
+USQ colours for the graph.
+
 ```{r}
 library("ggplot2")
 library("theme.usq")
 
-p <- ggplot(mtcars) +
+# Discrete values
+p1 <- ggplot(mtcars) +
   geom_point(aes(
     x = wt,
     y = mpg,
     colour = factor(gear)
   )) +
-  facet_wrap( ~ am)
+  scale_colour_manual(values = usq_palette) +
+  facet_wrap(~ am) +
+  theme_usq()
+p1
+```
 
-p + theme_usq()
+## Example 2: Graphing Continuous Data
+
+Using the _usq.theme's_ `theme_usq` for _ggplot2_, plot values using the
+`usq_fill_gradient` to use USQ colours for continuous values in the graph.
+
+```{r}
+# continuous values
+df <- reshape2::melt(outer(1:4, 1:4), varnames = c("X1", "X2"))
+
+p2 <- ggplot(df, aes(X1, X2)) +
+  geom_tile(aes(fill = value)) +
+  usq_fill_gradient() +
+  theme_usq()
+p2
 ```
