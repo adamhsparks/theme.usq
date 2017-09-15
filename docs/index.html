@@ -76,6 +76,7 @@
     
     
 <div class="contents">
+
 <div id="theme_usq" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#theme_usq" class="anchor"></a>theme_usq</h1></div>
@@ -84,11 +85,14 @@
 <h2 class="hasAnchor">
 <a href="#quickstart" class="anchor"></a>Quickstart</h2>
 <p>The <em>theme.usq</em> package is only available from GitHub. The easiest way to install it is by using the <a href="https://github.com/hadley/devtools"><em>devtools</em></a> package.</p>
+<p>Currently the development version of <a href="https://github.com/tidyverse/ggplot2"><em>ggplot2</em></a> is required and also needs to be installed from GitHub.</p>
+<p>The installation may take some time as some system fonts need to be catalogued to use the Microsoft Verdana font that USQ suggests. Once the installation is done, it should not be necessary to recatalogue the fonts so loading <em>theme.usq</em> will not take any longer than expected.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">if</span>(<span class="op">!</span><span class="kw">require</span>(devtools)){
     <span class="kw">install.packages</span>(<span class="st">"devtools"</span>)
     <span class="kw">library</span>(devtools)
 }
 
+devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"tidyverse/ggplot2"</span>)
 devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"adamhsparks/theme_usq"</span>)</code></pre></div>
 </div>
 <div id="example-1-graphing-discrete-data" class="section level2">
@@ -148,6 +152,10 @@ p2</code></pre></div>
 <h2>Developers</h2>
 <ul class="list-unstyled">
 <li>Adam Sparks <br><small class="roles"> Author, maintainer </small> </li>
+</ul>
+<h2>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://travis-ci.org/adamhsparks/theme_usq"><img src="https://travis-ci.org/adamhsparks/theme_usq.svg?branch=master" alt="Travis-CI Build Status"></a></li>
 </ul>
 </div>
 
