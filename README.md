@@ -1,13 +1,13 @@
 theme\_usq
 ================
 
-theme\_usq
-==========
+Introduction
+============
 
-The goal of *theme.usq* is to provide USQ staff and students a quick and easy way to apply USQ colours and typography to graphs created in R using *ggplot2* while providing clear graphs for reports and presentations. All of the colours provided are defined in USQ's Visual Identity Colour Palette, but do not all appear in the same order to maintain usability for the purposes of graphing.
+The goal of *theme.usq* is to provide [University of Southern Queensland](https://usq.edu.au) (USQ) staff and students a quick and easy way to apply USQ colours and typography to graphs created in R using *ggplot2* while providing clear graphs for reports and presentations. All of the colours provided are defined in USQ's Visual Identity Colour Palette, but do not all appear in the same order to maintain usability for the purposes of graphing.
 
 Quickstart
-----------
+==========
 
 The *theme.usq* package is only available from GitHub. The easiest way to install it is by using the [*devtools*](https://github.com/hadley/devtools) package.
 
@@ -24,6 +24,9 @@ if(!require(devtools)){
 devtools::install_github("tidyverse/ggplot2")
 devtools::install_github("adamhsparks/theme_usq")
 ```
+
+Examples
+========
 
 Example 1: Scatterplots of discrete data
 ----------------------------------------
