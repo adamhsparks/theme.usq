@@ -5,8 +5,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>USQ themes for R • theme.usq</title>
-<!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<title>USQ themes for R • theme_usq</title>
+<!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/spacelab/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="jquery.sticky-kit.min.js"></script><script src="pkgdown.js"></script><!-- mathjax --><script src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
@@ -79,13 +79,13 @@
 <div id="theme_usq" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#theme_usq" class="anchor"></a>theme_usq</h1></div>
-<p>The goal of <em>theme_usq</em> is to provide USQ staff and students with an easy to use <em>ggplot2</em> theme that conforms to the USQ visual guidelines for typography and colour.</p>
+<p>The goal of <em>theme.usq</em> is to provide USQ staff and students a quick and easy way to apply USQ colours and typography to graphs created in R using <em>ggplot2</em> while providing clear graphs for reports and presentations. All of the colours provided are defined in USQ’s Visual Identity Colour Palette, but do not all appear in the same order to maintain usability for the purposes of graphing.</p>
 <div id="quickstart" class="section level2">
 <h2 class="hasAnchor">
 <a href="#quickstart" class="anchor"></a>Quickstart</h2>
 <p>The <em>theme.usq</em> package is only available from GitHub. The easiest way to install it is by using the <a href="https://github.com/hadley/devtools"><em>devtools</em></a> package.</p>
 <p>Currently the development version of <a href="https://github.com/tidyverse/ggplot2"><em>ggplot2</em></a> is required and also needs to be installed from GitHub.</p>
-<p>The installation may take some time as some system fonts need to be catalogued to use the Microsoft Verdana font that USQ suggests. Once the installation is done, it should not be necessary to recatalogue the fonts so loading <em>theme.usq</em> will not take any longer than expected.</p>
+<p>The installation may take some time as some system fonts need to be catalogued to use the Microsoft Verdana font that USQ suggests. Once the installation is done, it should not be necessary to re-catalogue the fonts so loading <em>theme.usq</em> will not take any longer than expected.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">if</span>(<span class="op">!</span><span class="kw">require</span>(devtools)){
     <span class="kw">install.packages</span>(<span class="st">"devtools"</span>)
     <span class="kw">library</span>(devtools)
@@ -94,10 +94,10 @@
 devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"tidyverse/ggplot2"</span>)
 devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"adamhsparks/theme_usq"</span>)</code></pre></div>
 </div>
-<div id="example-1-graphing-discrete-data" class="section level2">
+<div id="example-1-scatterplots-of-discrete-data" class="section level2">
 <h2 class="hasAnchor">
-<a href="#example-1-graphing-discrete-data" class="anchor"></a>Example 1: Graphing Discrete Data</h2>
-<p>Using the <em>theme.usq’s</em> <code>theme_usq</code> for <em>ggplot2</em>, plot car weights by mpg and facet by <code>Transmission</code> (0 = automatic, 1 = manual) using the <code>usq_palette</code> in the <code>scale_colour_manual</code> discrete scale function to use USQ colours for the graph.</p>
+<a href="#example-1-scatterplots-of-discrete-data" class="anchor"></a>Example 1: Scatterplots of discrete data</h2>
+<p>Using the <em>usq.theme’s</em> <code>theme_usq</code> for <em>ggplot2</em>, plot car weights by mpg and facet by <code>Transmission</code> (0 = automatic, 1 = manual) using the <code>usq_palette</code> in the <code>scale_colour_manual</code> discrete scale function to use USQ colours for the graph.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(<span class="st">"ggplot2"</span>)
 <span class="kw">library</span>(<span class="st">"theme.usq"</span>)
 
@@ -109,24 +109,73 @@ p1 &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumenta
     <span class="dt">colour =</span> <span class="kw">factor</span>(gear)
   )) <span class="op">+</span>
 <span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/scale_manual">scale_colour_manual</a></span>(<span class="dt">values =</span> usq_palette) <span class="op">+</span>
-<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/facet_wrap">facet_wrap</a></span>(<span class="op">~</span><span class="st"> </span>am) <span class="op">+</span>
-<span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
+<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/facet_wrap">facet_wrap</a></span>(<span class="op">~</span><span class="st"> </span>am)
+
 p1</code></pre></div>
 <p><img src="README-unnamed-chunk-3-1.png" width="672"></p>
+<p>Now add the <code><a href="reference/theme_usq.html">theme_usq()</a></code> to the graph.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p1 <span class="op">+</span><span class="st"> </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()</code></pre></div>
+<p><img src="README-unnamed-chunk-4-1.png" width="672"></p>
 </div>
-<div id="example-2-graphing-continuous-data" class="section level2">
+<div id="example-2-heatmaps-or-other-continuous-data" class="section level2">
 <h2 class="hasAnchor">
-<a href="#example-2-graphing-continuous-data" class="anchor"></a>Example 2: Graphing Continuous Data</h2>
+<a href="#example-2-heatmaps-or-other-continuous-data" class="anchor"></a>Example 2: Heatmaps or other continuous data</h2>
 <p>Using the <em>usq.theme’s</em> <code>theme_usq</code> for <em>ggplot2</em>, plot values using the <code>usq_fill_gradient</code> to use USQ colours for continuous values in the graph.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># continuous values</span>
-df &lt;-<span class="st"> </span>reshape2<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/reshape2/topics/melt">melt</a></span>(<span class="kw">outer</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">4</span>), <span class="dt">varnames =</span> <span class="kw">c</span>(<span class="st">"X1"</span>, <span class="st">"X2"</span>))
-
-p2 &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(df, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(X1, X2)) <span class="op">+</span>
-<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_tile">geom_tile</a></span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">fill =</span> value)) <span class="op">+</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p2 &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(faithfuld, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(waiting, eruptions)) <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_tile">geom_raster</a></span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">fill =</span> density), <span class="dt">interpolate =</span> <span class="ot">TRUE</span>) <span class="op">+</span>
 <span class="st">  </span><span class="kw"><a href="reference/usq_palette.html">usq_fill_gradient</a></span>() <span class="op">+</span>
 <span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
+  
 p2</code></pre></div>
-<p><img src="README-unnamed-chunk-4-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-5-1.png" width="672"></p>
+</div>
+<div id="example-3-heatmaps-using-other-colour-palettes" class="section level2">
+<h2 class="hasAnchor">
+<a href="#example-3-heatmaps-using-other-colour-palettes" class="anchor"></a>Example 3: Heatmaps using other colour palettes</h2>
+<p><code><a href="reference/theme_usq.html">theme_usq()</a></code> can be used with any colour palette that you wish to use, while still applying the graph styling and typography to the graph.</p>
+<p>Use the default <em>ggplot2</em> colour scheme to fill the density plot while using the <code><a href="reference/theme_usq.html">theme_usq()</a></code> to theme the graph.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p3 &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(faithfuld, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(waiting, eruptions)) <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_tile">geom_raster</a></span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">fill =</span> density), <span class="dt">interpolate =</span> <span class="ot">TRUE</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
+  
+p3</code></pre></div>
+<p><img src="README-unnamed-chunk-6-1.png" width="672"></p>
+</div>
+<div id="example-4-histograms" class="section level2">
+<h2 class="hasAnchor">
+<a href="#example-4-histograms" class="anchor"></a>Example 4: Histograms</h2>
+<p>Use a USQ colour to fill a histogram by using the second value in the <code>usq_palette</code> (USQ Charcoal) as the fill value, a good colour for presentations that are going to be projected on a screen.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p4 &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(diamonds, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(carat)) <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_histogram">geom_histogram</a></span>(<span class="dt">fill =</span> usq_palette[<span class="dv">1</span>]) <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
+
+p4
+<span class="co">#&gt; `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</span></code></pre></div>
+<p><img src="README-unnamed-chunk-7-1.png" width="672"></p>
+</div>
+<div id="example-5-boxplots" class="section level2">
+<h2 class="hasAnchor">
+<a href="#example-5-boxplots" class="anchor"></a>Example 5: Boxplots</h2>
+<p>Use the USQ colours to fill the boxplots, while using the first value in the <code>usq_palette</code> (USQ Charcoal) as the colour value.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p5 &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(mpg, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(class, hwy)) <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_boxplot">geom_boxplot</a></span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">fill =</span> drv), <span class="dt">colour =</span> usq_palette[<span class="dv">1</span>]) <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/scale_manual">scale_fill_manual</a></span>(<span class="dt">values =</span> usq_palette) <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
+  
+p5</code></pre></div>
+<p><img src="README-unnamed-chunk-8-1.png" width="672"></p>
+</div>
+<div id="example-6-timeseries" class="section level2">
+<h2 class="hasAnchor">
+<a href="#example-6-timeseries" class="anchor"></a>Example 6: Timeseries</h2>
+<p>Plot timeseries lines using discrete colours for each variable of interest.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p6 &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(economics_long, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(date, value01, <span class="dt">colour =</span> variable)) <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_path">geom_line</a></span>() <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/scale_manual">scale_colour_manual</a></span>(<span class="dt">values =</span> usq_palette) <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
+  
+p6</code></pre></div>
+<p><img src="README-unnamed-chunk-9-1.png" width="672"></p>
 </div>
 <div id="code-of-conduct" class="section level2">
 <h2 class="hasAnchor">

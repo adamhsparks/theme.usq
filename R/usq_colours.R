@@ -32,16 +32,17 @@ usq_fill_gradient <- function() {
 usq_palette <-
   c(
     "#1e1e1e",
-    "#fdba12",
+    "#ffd100",
     "#aca095",
     "#63a945",
     "#faa61a",
     "#0090ba",
     "#e63e30",
     "#b63393",
+    "#fdba12",
     "#6a288a",
     "#003d77",
     "#f58220",
-    "46c1be",
+    "#46c1be",
     "#76848f"
   )
