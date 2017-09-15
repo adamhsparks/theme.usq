@@ -18,7 +18,6 @@ Imports: extrafont,
 RoxygenNote: 6.0.1
 Suggests: knitr,
     rmarkdown,
-    covr,
-    testthat
+    reshape2
 Remotes: tidyverse/ggplot2
 VignetteBuilder: knitr

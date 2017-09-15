@@ -3,7 +3,6 @@ title: "theme_usq"
 output: github_document
 ---
 
-`
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
