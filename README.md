@@ -1,8 +1,6 @@
 theme\_usq
 ================
 
-[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme_usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme_usq)
-
 theme\_usq
 ==========
 

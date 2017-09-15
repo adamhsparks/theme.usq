@@ -11,8 +11,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme_usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme_usq)
-
 # theme\_usq
 
 The goal of _theme\_usq_ is to provide USQ staff and students with an easy to use

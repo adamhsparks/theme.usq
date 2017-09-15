@@ -8,7 +8,7 @@ Description: Provides USQ style typography, colours and graph themes for ggplot2
   plots in R.
 URL: https://github.com/adamhsparks/theme_usq
 BugReports: https://github.com/adamhsparks/theme_usq/issues
-Depends: R (>= 3.4.1),
+Depends: R (>= 3.4.0),
     ggplot2
 License: MIT + file LICENSE
 Encoding: UTF-8

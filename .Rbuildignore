@@ -4,4 +4,3 @@
 ^README-.*\.png$
 ^CONDUCT\.md$
 ^docs$
-^\.travis\.yml$
