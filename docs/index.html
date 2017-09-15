@@ -82,10 +82,21 @@
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#theme_usq" class="anchor"></a>theme_usq</h1></div>
 <p>The goal of <em>theme_usq</em> is to provide USQ staff and students with an easy to use <em>ggplot2</em> theme that conforms to the USQ visual guidelines for typography and colour.</p>
+<div id="quickstart" class="section level2">
+<h2 class="hasAnchor">
+<a href="#quickstart" class="anchor"></a>Quickstart</h2>
+<p>The <em>theme.usq</em> package is only available from GitHub. The easiest way to install it is by using the <a href="https://github.com/hadley/devtools"><em>devtools</em></a> package.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">if</span>(<span class="op">!</span><span class="kw">require</span>(devtools)){
+    <span class="kw">install.packages</span>(<span class="st">"devtools"</span>)
+    <span class="kw">library</span>(devtools)
+}
+
+devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"adamhsparks/theme_usq"</span>)</code></pre></div>
+</div>
 <div id="example-1-graphing-discrete-data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example-1-graphing-discrete-data" class="anchor"></a>Example 1: Graphing Discrete Data</h2>
-<p>Using the <em>usq.theme’s</em> <code>theme_usq</code> for <em>ggplot2</em>, plot car weights by mpg and facet by <code>Transmission</code> (0 = automatic, 1 = manual) using the <code>usq_palette</code> in the <code>scale_colour_manual</code> discrete scale function to use USQ colours for the graph.</p>
+<p>Using the <em>theme.usq’s</em> <code>theme_usq</code> for <em>ggplot2</em>, plot car weights by mpg and facet by <code>Transmission</code> (0 = automatic, 1 = manual) using the <code>usq_palette</code> in the <code>scale_colour_manual</code> discrete scale function to use USQ colours for the graph.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(<span class="st">"ggplot2"</span>)
 <span class="kw">library</span>(<span class="st">"theme.usq"</span>)
 
@@ -98,9 +109,9 @@ p1 &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumenta
   )) <span class="op">+</span>
 <span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/scale_manual">scale_colour_manual</a></span>(<span class="dt">values =</span> usq_palette) <span class="op">+</span>
 <span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/facet_wrap">facet_wrap</a></span>(<span class="op">~</span><span class="st"> </span>am) <span class="op">+</span>
-<span class="st">  </span><span class="kw"><a href="reference/usq_theme.html">theme_usq</a></span>()
+<span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
 p1</code></pre></div>
-<p><img src="README-unnamed-chunk-2-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-3-1.png" width="672"></p>
 </div>
 <div id="example-2-graphing-continuous-data" class="section level2">
 <h2 class="hasAnchor">
@@ -112,9 +123,9 @@ df &lt;-<span class="st"> </span>reshape2<span class="op">::</span><span class="
 p2 &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(df, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(X1, X2)) <span class="op">+</span>
 <span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_tile">geom_tile</a></span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">fill =</span> value)) <span class="op">+</span>
 <span class="st">  </span><span class="kw"><a href="reference/usq_palette.html">usq_fill_gradient</a></span>() <span class="op">+</span>
-<span class="st">  </span><span class="kw"><a href="reference/usq_theme.html">theme_usq</a></span>()
+<span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
 p2</code></pre></div>
-<p><img src="README-unnamed-chunk-3-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-4-1.png" width="672"></p>
 </div>
 <div id="code-of-conduct" class="section level2">
 <h2 class="hasAnchor">

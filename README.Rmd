@@ -22,10 +22,23 @@ The goal of _theme\_usq_ is to provide USQ staff and students with an easy to us
 _ggplot2_ theme that conforms to the USQ visual guidelines for typography and
 colour.
 
+## Quickstart
+
+The _theme.usq_ package is only available from GitHub. The easiest way to
+install it is by using the [_devtools_](https://github.com/hadley/devtools) package.
+
+```{r, eval=FALSE}
+if(!require(devtools)){
+    install.packages("devtools")
+    library(devtools)
+}
+
+devtools::install_github("adamhsparks/theme_usq")
+```
 
 ## Example 1: Graphing Discrete Data
 
-Using the _usq.theme's_ `theme_usq` for _ggplot2_, plot car weights by
+Using the _theme.usq's_ `theme_usq` for _ggplot2_, plot car weights by
 mpg and facet by `Transmission` (0 = automatic, 1 = manual) using the
 `usq_palette` in the `scale_colour_manual` discrete scale function to use
 USQ colours for the graph.

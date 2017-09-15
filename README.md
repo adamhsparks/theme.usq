@@ -10,10 +10,24 @@ theme\_usq
 
 The goal of *theme\_usq* is to provide USQ staff and students with an easy to use *ggplot2* theme that conforms to the USQ visual guidelines for typography and colour.
 
+Quickstart
+----------
+
+The *theme.usq* package is only available from GitHub. The easiest way to install it is by using the [*devtools*](https://github.com/hadley/devtools) package.
+
+``` r
+if(!require(devtools)){
+    install.packages("devtools")
+    library(devtools)
+}
+
+devtools::install_github("adamhsparks/theme_usq")
+```
+
 Example 1: Graphing Discrete Data
 ---------------------------------
 
-Using the *usq.theme's* `theme_usq` for *ggplot2*, plot car weights by mpg and facet by `Transmission` (0 = automatic, 1 = manual) using the `usq_palette` in the `scale_colour_manual` discrete scale function to use USQ colours for the graph.
+Using the *theme.usq's* `theme_usq` for *ggplot2*, plot car weights by mpg and facet by `Transmission` (0 = automatic, 1 = manual) using the `usq_palette` in the `scale_colour_manual` discrete scale function to use USQ colours for the graph.
 
 ``` r
 library("ggplot2")
@@ -32,7 +46,7 @@ p1 <- ggplot(mtcars) +
 p1
 ```
 
-![](README-unnamed-chunk-2-1.png)
+![](README-unnamed-chunk-3-1.png)
 
 Example 2: Graphing Continuous Data
 -----------------------------------
@@ -50,7 +64,7 @@ p2 <- ggplot(df, aes(X1, X2)) +
 p2
 ```
 
-![](README-unnamed-chunk-3-1.png)
+![](README-unnamed-chunk-4-1.png)
 
 Code of Conduct
 ---------------

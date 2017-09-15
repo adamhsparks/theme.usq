@@ -27,7 +27,7 @@
 #'
 #' @inheritParams ggplot2::theme_bw
 #' @export
-#' @rdname usq_theme
+#' @rdname theme_usq
 #' @importFrom ggplot2 %+replace%
 theme_usq <- function(base_size = 11,
                       base_family = "Verdana",
