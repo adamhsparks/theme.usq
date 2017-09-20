@@ -1,6 +1,6 @@
 Package: theme.usq
 Title: USQ Themed Plots in R
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: person("Adam", "Sparks",
   email = "adamhsparks@gmail.com",
   role = c("aut", "cre"))
