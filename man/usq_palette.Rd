@@ -7,10 +7,14 @@
 \alias{usq_palette}
 \alias{usq_fill_gradient}
 \alias{usq_palette}
+\alias{usq_fill_gradient}
+\alias{usq_palette}
 \title{Palettes and functions for the theme.usq package}
 \format{A \code{ggplot2} gradient colour function.}
 \usage{
 usq_colour_gradient()
+
+usq_fill_gradient()
 
 usq_fill_gradient()
 

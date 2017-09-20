@@ -17,6 +17,14 @@ usq_colour_gradient <- function() {
 }
 
 #' @name usq_palette
+#' @export
+usq_fill_gradient <- function() {
+  ggplot2::scale_fill_gradientn(colours = c("#e63e30",
+                                            "#fdba12",
+                                            "#ffd100"))
+}
+
+#' @name usq_palette
 #' @format A \code{ggplot2} gradient fill function.
 #' @export
 usq_fill_gradient <- function() {
