@@ -6,34 +6,40 @@
 #'
 #' See \code{\link{theme_usq}} for examples.
 #'
-#' @name usq_palette
 #' @export
 #' @format A \code{ggplot2} gradient colour function.
 #' @export
-usq_colour_gradient <- function() {
+#' @rdname usq_colour_gradient
+usq_colour_gradient_warm <- function() {
   ggplot2::scale_colour_gradientn(colours = c("#e63e30",
-                                              "#fdba12",
-                                              "#ffd100"))
+                                              "#ffd100",
+                                              "#efe9e5"))
 }
 
-#' @name usq_palette
 #' @export
-usq_fill_gradient <- function() {
+#' @rdname usq_colour_gradient
+usq_fill_gradient_warm <- function() {
   ggplot2::scale_fill_gradientn(colours = c("#e63e30",
-                                            "#fdba12",
-                                            "#ffd100"))
+                                            "#ffd100",
+                                            "#efe9e5"))
 }
 
-#' @name usq_palette
-#' @format A \code{ggplot2} gradient fill function.
 #' @export
-usq_fill_gradient <- function() {
-  ggplot2::scale_fill_gradientn(colours = c("#e63e30",
-                                            "#fdba12",
-                                            "#ffd100"))
+#' @rdname usq_colour_gradient
+usq_fill_gradient_cool <- function() {
+  ggplot2::scale_fill_gradientn(colours = c("#003d77",
+                                            "#0090ba",
+                                            "#efe9e5"))
 }
 
-#' @name usq_palette
+#' @export
+#' @rdname usq_colour_gradient
+usq_colour_gradient_cool <- function() {
+  ggplot2::scale_colour_gradientn(colours = c("#003d77",
+                                              "#0090ba",
+                                              "#efe9e5"))
+}
+
 #' @format A \code{vector} of USQ colours from the visual identity
 #' colour palette.
 #' @export

@@ -65,18 +65,33 @@ p1 + theme_usq()
 Example 2: Heatmaps or other continuous data
 --------------------------------------------
 
-Using the *usq.theme's* `theme_usq` for *ggplot2*, plot values using the `usq_fill_gradient` to use USQ colours for continuous values in the graph.
+Using the *usq.theme's* `theme_usq` for *ggplot2*, plot values using the `usq_fill_gradient` to use USQ colours for continuous values in the graph. Two types of gradients are included, warm and cool for both `scale_fill_gradient()` and `scale_colour_gradient()` as necessary.
+
+### Warm gradients
 
 ``` r
-p2 <- ggplot(faithfuld, aes(waiting, eruptions)) +
+p2a <- ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density), interpolate = TRUE) +
-  usq_fill_gradient() +
+  usq_fill_gradient_warm() +
   theme_usq()
   
-p2
+p2a
 ```
 
 ![](README-unnamed-chunk-5-1.png)
+
+### Cool gradients
+
+``` r
+p2b <- ggplot(faithfuld, aes(waiting, eruptions)) +
+  geom_raster(aes(fill = density), interpolate = TRUE) +
+  usq_fill_gradient_cool() +
+  theme_usq()
+  
+p2b
+```
+
+![](README-unnamed-chunk-6-1.png)
 
 Example 3: Heatmaps using other colour palettes
 -----------------------------------------------
@@ -93,7 +108,7 @@ p3 <- ggplot(faithfuld, aes(waiting, eruptions)) +
 p3
 ```
 
-![](README-unnamed-chunk-6-1.png)
+![](README-unnamed-chunk-7-1.png)
 
 Example 4: Histograms
 ---------------------
@@ -109,7 +124,7 @@ p4
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](README-unnamed-chunk-7-1.png)
+![](README-unnamed-chunk-8-1.png)
 
 Example 5: Boxplots
 -------------------
@@ -125,7 +140,7 @@ p5 <- ggplot(mpg, aes(class, hwy)) +
 p5
 ```
 
-![](README-unnamed-chunk-8-1.png)
+![](README-unnamed-chunk-9-1.png)
 
 Example 6: Timeseries
 ---------------------
@@ -141,7 +156,7 @@ p6 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
 p6
 ```
 
-![](README-unnamed-chunk-9-1.png)
+![](README-unnamed-chunk-10-1.png)
 
 Code of Conduct
 ---------------
