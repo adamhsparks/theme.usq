@@ -65,7 +65,7 @@ p1 + theme_usq()
 Example 2: Heatmaps or other continuous data
 --------------------------------------------
 
-Using the *usq.theme's* `theme_usq` for *ggplot2*, plot values using the `usq_fill_gradient` to use USQ colours for continuous values in the graph. Two types of gradients are included, warm and cool for both `scale_fill_gradient()` and `scale_colour_gradient()` as necessary.
+Using the *usq.theme's* `theme_usq()` for *ggplot2*, plot values using the `usq_fill_gradient` to use USQ colours for continuous values in the graph. Two types of gradients are included, warm and cool for both `scale_fill_gradient()` and `scale_colour_gradient()` as necessary.
 
 ### Warm gradients
 
