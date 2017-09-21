@@ -13,7 +13,7 @@ Quickstart
 
 The *theme.usq* package is only available from GitHub. The easiest way to install it is by using the [*devtools*](https://github.com/hadley/devtools) package.
 
-Currently the development version of [*ggplot2*](https://github.com/tidyverse/ggplot2) is required and also needs to be installed from GitHub.
+Currently the development version of [*ggplot2*](https://github.com/tidyverse/ggplot2) is required and also needs to be installed from GitHub. Once a new version is released on CRAN, I will update the dependencies of *theme.usq* to rely on the CRAN version of *ggplot2*.
 
 The installation may take some time as some system fonts need to be catalogued to use the Microsoft Verdana font that USQ suggests. Once the installation is done, it should not be necessary to re-catalogue the fonts so loading *theme.usq* will not take any longer than expected.
 

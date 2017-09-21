@@ -1,3 +1,9 @@
+# theme_usq 0.0.3
+
+- Update minimum version of R to >= 3.1
+
+- Add minimum version of ggplot2  (>= 2.2.1.9000) 
+
 # theme.usq 0.0.2
 
 - Add `scale_fill_gradient()` to compliment `scale_colour_gradient()`

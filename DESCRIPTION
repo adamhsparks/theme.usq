@@ -1,6 +1,6 @@
 Package: theme.usq
 Title: USQ Themed Plots in R
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: person("Adam", "Sparks",
   email = "adamhsparks@gmail.com",
   role = c("aut", "cre"))
@@ -18,7 +18,8 @@ Imports:
     extrafont,
     grDevices
 RoxygenNote: 6.0.1
-Suggests: knitr,
+Suggests:
+    knitr,
     rmarkdown
 Remotes: tidyverse/ggplot2
 VignetteBuilder: knitr
