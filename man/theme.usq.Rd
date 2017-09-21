@@ -4,18 +4,17 @@
 \name{theme.usq}
 \alias{theme.usq}
 \alias{theme.usq-package}
-\title{Provides USQ style typography, colours and graph themes for ggplot2
-plots in R.}
+\title{Provides USQ Style Typography, Colours and Themes for ggplot2}
 \description{
-Provides USQ style typography, colours and graph themes for ggplot2
-plots in R.
+Provides USQ Style Typography, Colours and Themes for ggplot2
 }
 \seealso{
 \strong{Useful links:}
 \itemize{
 \item{Development \url{https://github.com/adamhsparks/theme_usq}}
 \item{Report bugs at \url{https://github.com/adamhsparks/theme_usq/issues}}
-\item{USQ guidelines (must be logged in) \url{https://www.usq.edu.au/a-brand-hidden/guidelines}}
+\item{USQ guidelines (must be logged in)
+ \url{https://www.usq.edu.au/a-brand-hidden/guidelines}}
 }
 }
 \author{

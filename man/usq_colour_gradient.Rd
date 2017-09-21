@@ -5,7 +5,7 @@
 \alias{usq_fill_gradient_warm}
 \alias{usq_fill_gradient_cool}
 \alias{usq_colour_gradient_cool}
-\title{Palettes and functions for the theme.usq package}
+\title{Gradients for Use in ggplot2 Graphing That Conform to USQ's Colour Identity}
 \format{A \code{ggplot2} gradient colour function.}
 \usage{
 usq_colour_gradient_warm()

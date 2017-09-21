@@ -1,5 +1,5 @@
 
-#' Palettes and functions for the theme.usq package
+#' Gradients for Use in ggplot2 Graphing That Conform to USQ's Colour Identity
 #'
 #' Provides colours for graphing using USQ's visual identity
 #' colour palette.
@@ -40,8 +40,10 @@ usq_colour_gradient_cool <- function() {
                                               "#efe9e5"))
 }
 
+#' A Palette for Use in Graphing That Conforms to USQ's Colour Identity
 #' @format A \code{vector} of USQ colours from the visual identity
 #' colour palette.
+#' @rdname usq_palette
 #' @export
 usq_palette <-
   c(

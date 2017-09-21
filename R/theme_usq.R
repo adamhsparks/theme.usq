@@ -1,5 +1,5 @@
 
-#' A theme based on USQ visual identity and typography guidelines.
+#' A ggplot2 Theme Based on USQ Visual Identity and Typography Guidelines
 #'
 #' @examples
 #' \dontrun{

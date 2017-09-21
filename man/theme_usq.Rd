@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_usq.R
 \name{theme_usq}
 \alias{theme_usq}
-\title{A theme based on USQ visual identity and typography guidelines.}
+\title{A ggplot2 Theme Based on USQ Visual Identity and Typography Guidelines}
 \usage{
 theme_usq(base_size = 11, base_family = "Verdana",
   base_line_size = base_size/22, base_rect_size = base_size/22)
@@ -17,7 +17,7 @@ theme_usq(base_size = 11, base_family = "Verdana",
 \item{base_rect_size}{base size for rect elements}
 }
 \description{
-A theme based on USQ visual identity and typography guidelines.
+A ggplot2 Theme Based on USQ Visual Identity and Typography Guidelines
 }
 \examples{
 \dontrun{

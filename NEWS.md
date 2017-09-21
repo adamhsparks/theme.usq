@@ -1,5 +1,7 @@
 # theme_usq 0.0.3
 
+- Tidy up documentation
+
 - Update minimum version of R to >= 3.1
 
 - Add minimum version of ggplot2  (>= 2.2.1.9000) 
