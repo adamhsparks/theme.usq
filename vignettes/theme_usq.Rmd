@@ -52,7 +52,7 @@ p1
 
 Now add the `theme_usq()` to the graph.
 
-```{r}
+```{r example1}
 p1 + theme_usq()
 ```
 
@@ -65,7 +65,7 @@ and `scale_colour_gradient()` as necessary.
 
 ### Warm gradients
 
-```{r}
+```{r example2a}
 p2a <- ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density), interpolate = TRUE) +
   usq_fill_gradient_warm() +
@@ -76,7 +76,7 @@ p2a
 
 ### Cool gradients
 
-```{r}
+```{r example2b}
 p2b <- ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density), interpolate = TRUE) +
   usq_fill_gradient_cool() +
@@ -93,7 +93,7 @@ still applying the graph styling and typography to the graph.
 Use the default _ggplot2_ colour scheme to fill the density plot while using
 the `theme_usq()` to theme the graph.
 
-```{r}
+```{r example3}
 p3 <- ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density), interpolate = TRUE) +
   theme_usq()
@@ -107,7 +107,7 @@ Use a USQ colour to fill a histogram by using the second value in the
 `usq_palette` (USQ Charcoal) as the fill value, a good colour for presentations
 that are going to be projected on a screen.
 
-```{r}
+```{r example4}
 p4 <- ggplot(diamonds, aes(carat)) +
   geom_histogram(fill = usq_palette[1]) +
   theme_usq()
@@ -120,7 +120,7 @@ p4
 Use the USQ colours to fill the boxplots, while using the first value in the
 `usq_palette` (USQ Charcoal) as the colour value.
 
-```{r}
+```{r example5}
 p5 <- ggplot(mpg, aes(class, hwy)) +
   geom_boxplot(aes(fill = drv), colour = usq_palette[1]) +
   scale_fill_manual(values = usq_palette) +
@@ -133,12 +133,33 @@ p5
 
 Plot timeseries lines using discrete colours for each variable of interest.
 
-```{r}
+```{r example6}
 p6 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
   geom_line() +
   scale_colour_manual(values = usq_palette) +
   theme_usq()
   
 p6
+```
+
+# Using `theme_usq()` in presentations
+
+The default settings for `theme_usq()` are fine for printed materials such as
+reports, but if you wish to use it in a presentation; you can use the _ggplot2_
+option `base_size = ` to increase the size of the fonts, points and lines in the
+graphs for use in presentations.
+
+As an example, using `base_size = 24` helps ensure that the graphs are legible
+on a standard sized powerpoint slide.
+
+## Example 7: Using `base_size` in `theme_usq()`
+
+```{r example7}
+p7 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
+  geom_line() +
+  scale_colour_manual(values = usq_palette) +
+  theme_usq(base_size = 24)
+  
+p7
 ```
 

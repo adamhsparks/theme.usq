@@ -75,7 +75,7 @@
       <h1>theme_usq</h1>
                         <h4 class="author">Adam H Sparks</h4>
             
-            <h4 class="date">2017-09-21</h4>
+            <h4 class="date">2017-09-24</h4>
           </div>
 
     
@@ -110,7 +110,7 @@ p1</code></pre></div>
 <p><img src="theme_usq_files/figure-html/unnamed-chunk-1-1.png" width="672"></p>
 <p>Now add the <code><a href="../reference/theme_usq.html">theme_usq()</a></code> to the graph.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p1 <span class="op">+</span><span class="st"> </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</code></pre></div>
-<p><img src="theme_usq_files/figure-html/unnamed-chunk-2-1.png" width="672"></p>
+<p><img src="theme_usq_files/figure-html/example1-1.png" width="672"></p>
 </div>
 <div id="example-2-heatmaps-or-other-continuous-data" class="section level2">
 <h2 class="hasAnchor">
@@ -125,7 +125,7 @@ p1</code></pre></div>
 <span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()
   
 p2a</code></pre></div>
-<p><img src="theme_usq_files/figure-html/unnamed-chunk-3-1.png" width="672"></p>
+<p><img src="theme_usq_files/figure-html/example2a-1.png" width="672"></p>
 </div>
 <div id="cool-gradients" class="section level3">
 <h3 class="hasAnchor">
@@ -136,7 +136,7 @@ p2a</code></pre></div>
 <span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()
   
 p2b</code></pre></div>
-<p><img src="theme_usq_files/figure-html/unnamed-chunk-4-1.png" width="672"></p>
+<p><img src="theme_usq_files/figure-html/example2b-1.png" width="672"></p>
 </div>
 </div>
 <div id="example-3-heatmaps-using-other-colour-palettes" class="section level2">
@@ -149,7 +149,7 @@ p2b</code></pre></div>
 <span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()
   
 p3</code></pre></div>
-<p><img src="theme_usq_files/figure-html/unnamed-chunk-5-1.png" width="672"></p>
+<p><img src="theme_usq_files/figure-html/example3-1.png" width="672"></p>
 </div>
 <div id="example-4-histograms" class="section level2">
 <h2 class="hasAnchor">
@@ -161,7 +161,7 @@ p3</code></pre></div>
 
 p4</code></pre></div>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="theme_usq_files/figure-html/unnamed-chunk-6-1.png" width="672"></p>
+<p><img src="theme_usq_files/figure-html/example4-1.png" width="672"></p>
 </div>
 <div id="example-5-boxplots" class="section level2">
 <h2 class="hasAnchor">
@@ -173,7 +173,7 @@ p4</code></pre></div>
 <span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()
   
 p5</code></pre></div>
-<p><img src="theme_usq_files/figure-html/unnamed-chunk-7-1.png" width="672"></p>
+<p><img src="theme_usq_files/figure-html/example5-1.png" width="672"></p>
 </div>
 <div id="example-6-timeseries" class="section level2">
 <h2 class="hasAnchor">
@@ -185,7 +185,25 @@ p5</code></pre></div>
 <span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()
   
 p6</code></pre></div>
-<p><img src="theme_usq_files/figure-html/unnamed-chunk-8-1.png" width="672"></p>
+<p><img src="theme_usq_files/figure-html/example6-1.png" width="672"></p>
+</div>
+</div>
+<div id="using-theme_usq-in-presentations" class="section level1">
+<h1 class="hasAnchor">
+<a href="#using-theme_usq-in-presentations" class="anchor"></a>Using <code><a href="../reference/theme_usq.html">theme_usq()</a></code> in presentations</h1>
+<p>The default settings for <code><a href="../reference/theme_usq.html">theme_usq()</a></code> are fine for printed materials such as reports, but if you wish to use it in a presentation; you can use the <em>ggplot2</em> option <code>base_size =</code> to increase the size of the fonts, points and lines in the graphs for use in presentations.</p>
+<p>As an example, using <code>base_size = 24</code> helps ensure that the graphs are legible on a standard sized powerpoint slide.</p>
+<div id="example-7-using-base_size-in-theme_usq" class="section level2">
+<h2 class="hasAnchor">
+<a href="#example-7-using-base_size-in-theme_usq" class="anchor"></a>Example 7: Using <code>base_size</code> in <code><a href="../reference/theme_usq.html">theme_usq()</a></code>
+</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p7 &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(economics_long, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(date, value01, <span class="dt">colour =</span> variable)) <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_path">geom_line</a></span>() <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/scale_manual">scale_colour_manual</a></span>(<span class="dt">values =</span> usq_palette) <span class="op">+</span>
+<span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>(<span class="dt">base_size =</span> <span class="dv">24</span>)
+  
+p7</code></pre></div>
+<p><img src="theme_usq_files/figure-html/example7-1.png" width="672"></p>
 </div>
 </div>
 </div>
@@ -205,6 +223,11 @@ p6</code></pre></div>
       <li><a href="#example-4-histograms">Example 4: Histograms</a></li>
       <li><a href="#example-5-boxplots">Example 5: Boxplots</a></li>
       <li><a href="#example-6-timeseries">Example 6: Timeseries</a></li>
+      </ul>
+</li>
+      <li>
+<a href="#using-theme_usq-in-presentations">Using <code><a href="--/reference/theme_usq-html">theme_usq()</a></code> in presentations</a><ul class="nav nav-pills nav-stacked">
+<li><a href="#example-7-using-base_size-in-theme_usq">Example 7: Using <code>base_size</code> in <code><a href="--/reference/theme_usq-html">theme_usq()</a></code></a></li>
       </ul>
 </li>
       </ul>
