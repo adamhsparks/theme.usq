@@ -6,7 +6,6 @@
 #'
 #' See \code{\link{theme_usq}} for examples.
 #'
-#' @export
 #' @format A \code{ggplot2} gradient colour function.
 #' @export
 #' @rdname usq_colour_gradient
@@ -26,18 +25,18 @@ usq_fill_gradient_warm <- function() {
 
 #' @export
 #' @rdname usq_colour_gradient
-usq_fill_gradient_cool <- function() {
-  ggplot2::scale_fill_gradientn(colours = c("#003d77",
-                                            "#0090ba",
-                                            "#efe9e5"))
-}
-
-#' @export
-#' @rdname usq_colour_gradient
 usq_colour_gradient_cool <- function() {
   ggplot2::scale_colour_gradientn(colours = c("#003d77",
                                               "#0090ba",
                                               "#efe9e5"))
+}
+
+#' @export
+#' @rdname usq_colour_gradient
+usq_fill_gradient_cool <- function() {
+  ggplot2::scale_fill_gradientn(colours = c("#003d77",
+                                            "#0090ba",
+                                            "#efe9e5"))
 }
 
 #' A Palette for Use in Graphing That Conforms to USQ's Colour Identity

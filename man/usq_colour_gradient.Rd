@@ -3,8 +3,8 @@
 \name{usq_colour_gradient_warm}
 \alias{usq_colour_gradient_warm}
 \alias{usq_fill_gradient_warm}
-\alias{usq_fill_gradient_cool}
 \alias{usq_colour_gradient_cool}
+\alias{usq_fill_gradient_cool}
 \title{Gradients for Use in ggplot2 Graphing That Conform to USQ's Colour Identity}
 \format{A \code{ggplot2} gradient colour function.}
 \usage{
@@ -12,9 +12,9 @@ usq_colour_gradient_warm()
 
 usq_fill_gradient_warm()
 
-usq_fill_gradient_cool()
-
 usq_colour_gradient_cool()
+
+usq_fill_gradient_cool()
 }
 \description{
 Provides colours for graphing using USQ's visual identity
