@@ -142,17 +142,17 @@ p6 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
 p6
 ```
 
-# Using `theme_usq()` in presentations
+# Using theme_usq() in presentations
 
 The default settings for `theme_usq()` are fine for printed materials such as
-reports, but if you wish to use it in a presentation; you can use the _ggplot2_
+reports, but if you wish to use it in a presentation you can use the _ggplot2_
 option `base_size = ` to increase the size of the fonts, points and lines in the
-graphs for use in presentations.
+graphs.
 
 As an example, using `base_size = 24` helps ensure that the graphs are legible
 on a standard sized powerpoint slide.
 
-## Example 7: Using `base_size` in `theme_usq()`
+## Example 7: Using base_size in theme_usq()
 
 ```{r example7}
 p7 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
