@@ -4,20 +4,22 @@
 \alias{theme_usq}
 \title{A ggplot2 Theme Based on USQ Visual Identity and Typography Guidelines}
 \usage{
-theme_usq(base_size = 11, base_family = "Verdana",
-  base_line_size = base_size/22, base_rect_size = base_size/22)
+theme_usq(base_size = 11, base_family = "Verdana")
 }
 \arguments{
 \item{base_size}{base font size}
 
 \item{base_family}{base font family}
-
-\item{base_line_size}{base size for line elements}
-
-\item{base_rect_size}{base size for rect elements}
 }
 \description{
-A ggplot2 Theme Based on USQ Visual Identity and Typography Guidelines
+This theme applies a standard USQ style to \code{\link{ggplot2}} graphs,
+which includes no y-axis lines, major x-axis grid lines and the Microsoft's
+typeface, Verdana, for all text labeling and the lgend key at the bottom.
+}
+\details{
+The base size is set to 11 by default.  For presentations using the option,
+\code{base_size} will make the fonts larger and more suitable for
+presentation slides, \emph{e.g.}, \code{theme_usq(base_size = 24)}.
 }
 \examples{
 \dontrun{
@@ -41,6 +43,11 @@ p2 <- ggplot(df, aes(X1, X2)) + geom_tile(aes(fill = value)) +
 p3 <- p2 + geom_point(aes(size = value)) +
   theme_usq()
 p3
+
+# Larger base size for presentation slides
+p4 <- p3 + geom_point(aes(size = value)) +
+  theme_usq(base_size = 24)
+p4
 }
 
 }

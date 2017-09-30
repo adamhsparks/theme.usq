@@ -21,7 +21,11 @@ of the colours provided are defined in USQ's Visual Identity Colour Palette, but
 do not all appear in the same order to maintain usability for the purposes of
 graphing.
 
-This package has been tested on MacOS, Ubuntu Linux and USQ computers using Windows 7. For Linux users, if you have not installed the MS Core Fonts, you will need to do that for this package to function properly and generate the graphs with the proper typography. Windows and MacOS users should be ready to go with just the installation of this package.
+This package has been tested on MacOS, Ubuntu Linux and USQ computers using
+Windows 7. For Linux users, if you have not installed the MS Core Fonts, you
+will need to do that for this package to function properly and generate the
+graphs with the proper typography. Windows and MacOS users should be ready to go
+with just the installation of this package.
 
 # Quickstart
 
@@ -29,23 +33,21 @@ The _theme.usq_ package is only available from GitHub. The easiest way to
 install it is by using the [_devtools_](https://github.com/hadley/devtools)
 package.
 
-Currently the development version of
-[_ggplot2_](https://github.com/tidyverse/ggplot2) is required and also needs
-to be installed from GitHub. Once a new version is released on CRAN, I will
-update the dependencies of _theme.usq_ to rely on the CRAN version of _ggplot2_.
-
 The installation may take some time as some system fonts need to be catalogued
 to use the Microsoft Verdana font that USQ suggests. Once the installation is
-done, it should not be necessary to re-catalogue the fonts so loading _theme.usq_
-will not take any longer than expected.
+done, it should not be necessary to re-catalogue the fonts so loading
+_theme.usq_ will not take any longer than expected.
 
 ```{r, eval=FALSE}
+if(!require(ggplot2)){
+  devtools::install.packages("ggplot2")
+}
+
 if(!require(devtools)){
     install.packages("devtools")
     library(devtools)
 }
 
-devtools::install_github("tidyverse/ggplot2")
 devtools::install_github("adamhsparks/theme_usq")
 ```
 

@@ -13,17 +13,18 @@ Quickstart
 
 The *theme.usq* package is only available from GitHub. The easiest way to install it is by using the [*devtools*](https://github.com/hadley/devtools) package.
 
-Currently the development version of [*ggplot2*](https://github.com/tidyverse/ggplot2) is required and also needs to be installed from GitHub. Once a new version is released on CRAN, I will update the dependencies of *theme.usq* to rely on the CRAN version of *ggplot2*.
-
 The installation may take some time as some system fonts need to be catalogued to use the Microsoft Verdana font that USQ suggests. Once the installation is done, it should not be necessary to re-catalogue the fonts so loading *theme.usq* will not take any longer than expected.
 
 ``` r
+if(!require(ggplot2)){
+  devtools::install.packages("ggplot2")
+}
+
 if(!require(devtools)){
     install.packages("devtools")
     library(devtools)
 }
 
-devtools::install_github("tidyverse/ggplot2")
 devtools::install_github("adamhsparks/theme_usq")
 ```
 
@@ -154,6 +155,8 @@ p6 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
   theme_usq()
   
 p6
+#> Warning in as.POSIXlt.POSIXct(x): unknown timezone 'default/Australia/
+#> Brisbane'
 ```
 
 ![](README-unnamed-chunk-10-1.png)
