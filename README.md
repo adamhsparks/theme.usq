@@ -17,7 +17,7 @@ The installation may take some time as some system fonts need to be catalogued t
 
 ``` r
 if(!require(ggplot2)){
-  devtools::install.packages("ggplot2")
+    install.packages("ggplot2")
 }
 
 if(!require(devtools)){

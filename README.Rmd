@@ -40,7 +40,7 @@ _theme.usq_ will not take any longer than expected.
 
 ```{r, eval=FALSE}
 if(!require(ggplot2)){
-  devtools::install.packages("ggplot2")
+    install.packages("ggplot2")
 }
 
 if(!require(devtools)){
