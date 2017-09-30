@@ -1,3 +1,10 @@
+# theme_usq 0.0.4
+
+- Now works with most recent version of `ggplot2` on CRAN, 2.2.1 as of
+  30/09/2017
+
+- Enhanced documentation
+
 # theme_usq 0.0.3
 
 - Tidy up documentation

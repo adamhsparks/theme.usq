@@ -1,11 +1,11 @@
 Package: theme.usq
-Title: USQ Themed Plots in R
-Version: 0.0.3
+Title: USQ Themed Plots in R Using ggplot2
+Version: 0.0.4
 Authors@R: person("Adam", "Sparks",
   email = "adamhsparks@gmail.com",
   role = c("aut", "cre"))
-Description: Provides University of Southern Queensland (USQ) style typography
-  and colours for theming ggplot2 graphs in R.
+Description: Provides University of Southern Queensland (USQ) graph style,
+    typography and colours for theming ggplot2 graphs in R.
 URL: https://github.com/adamhsparks/theme_usq
 BugReports: https://github.com/adamhsparks/theme_usq/issues
 Depends:
