@@ -1,5 +1,9 @@
 
 
+
+
+
+
 .onLoad <-
   function(libname, pkgname) {
     # check for existence of Verdana.afm file before importing to avoid message
@@ -19,5 +23,17 @@
 
     if (.Platform$OS.type == "windows") {
       extrafont::loadfonts("win", quiet = TRUE)
+    }
+
+    # Load Verdana on macOS/OSX platforms for base graphics
+    if (.Platform$OS.type != "windows") {
+      grDevices::quartzFonts(
+        verdana = c(
+          "Verdana",
+          "Verdana Bold",
+          "Verdana Italic",
+          "Verdana Bold Italic"
+        )
+      )
     }
   }
