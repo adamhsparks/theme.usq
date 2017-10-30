@@ -1,3 +1,5 @@
+# theme.usq 0.0.4.9000
+
 # theme_usq 0.0.4
 
 - Now works with most recent version of `ggplot2` on CRAN, 2.2.1 as of
