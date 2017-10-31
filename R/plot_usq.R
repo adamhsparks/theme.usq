@@ -43,7 +43,13 @@
 #'  }
 #'
 #' @examples
-#' plot_usq(1:3)
+#' library(datasets)
+#'
+#' plot_usq(airquality$Ozone,
+#'          col = 3,
+#'          main = "Air Quality",
+#'          sub = "Ozone",
+#'          type = "p")
 #'
 #' @export
 #'
