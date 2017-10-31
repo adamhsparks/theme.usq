@@ -33,23 +33,23 @@ plot_usq <- function(x,
     bty = "n"
   )
 
-  xy <- xy.coords(x, y)
+  xy <- grDevices::xy.coords(x, y)
   if (is.null(xlim))
     xlim <- range(xy$x[is.finite(xy$x)])
   if (is.null(ylim))
     ylim <- range(xy$y[is.finite(xy$y)])
-  opar <- par(no.readonly = TRUE)
+  opar <- graphics::par(no.readonly = TRUE)
   on.exit(par(opar))
-  plot.new()
-  plot.window(xlim, ylim, ...)
-  grid(nx = NA, ny = NULL, col = "#efe9e5", lty = "solid")
-  points(xy$x, xy$y, col = "#aca095", ...)
-  axis(1)
-  axis(2)
-  box()
+  graphics::plot.new()
+  graphics::plot.window(xlim, ylim, ...)
+  graphics::grid(nx = NA, ny = NULL, col = "#efe9e5", lty = "solid")
+  graphics::points(xy$x, xy$y, col = "#aca095", ...)
+  graphics::axis(1)
+  graphics::axis(2)
+  graphics::box()
 
   if (ann)
-    title(
+    graphics::title(
       main = main,
       sub = sub,
       xlab = xy$xlab,
