@@ -24,7 +24,8 @@
 #'    \item{5} {- Secondary Orange}
 #'    \item{6} {- Support Blue}
 #'  }
-#'
+#' @seealso \code{\link{boxplot}}  for full documentation of the basic boxplot
+#' capabilities
 #' @examples
 #' rb <- boxplot_usq(decrease ~ treatment, data = OrchardSprays)
 #' title("Comparing boxplot()s and non-robust mean +/- SD")

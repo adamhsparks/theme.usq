@@ -42,3 +42,7 @@ rb <- boxplot_usq(decrease ~ treatment, data = OrchardSprays)
 title("Comparing boxplot()s and non-robust mean +/- SD")
 
 }
+\seealso{
+\code{\link{boxplot}}  for full documentation of the basic boxplot
+capabilities
+}

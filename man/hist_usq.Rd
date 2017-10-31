@@ -40,6 +40,9 @@ value for \code{col} include:
    \item{5} {- Secondary Orange}
    \item{6} {- Support Blue}
  }
+
+ @seealso \code{\link{hist}} for full documentation of the basic histogram
+ capabilities
 }
 \examples{
 library(datasets)

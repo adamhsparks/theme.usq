@@ -28,6 +28,9 @@
 #'    \item{6} {- Support Blue}
 #'  }
 #'
+#'  @seealso \code{\link{hist}} for full documentation of the basic histogram
+#'  capabilities
+#'
 #' @references
 #' Scott, D.W. (1979) On optimal and data-based histograms. \emph{Biometrika},
 #' 66, 605–610.

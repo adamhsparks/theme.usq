@@ -42,7 +42,8 @@
 #'    \item{5} {- Secondary Orange}
 #'    \item{6} {- Support Blue}
 #'  }
-#'
+#' @seealso
+#' \code{\link{plot}} for full documentation of the basic plotting capabilities.
 #' @examples
 #' library(datasets)
 #'

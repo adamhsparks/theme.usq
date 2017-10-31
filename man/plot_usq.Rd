@@ -70,3 +70,6 @@ plot_usq(airquality$Ozone,
          xlab = "Ozone")
 
 }
+\seealso{
+\code{\link{plot}} for full documentation of the basic plotting capabilities.
+}
