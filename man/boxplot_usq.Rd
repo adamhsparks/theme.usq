@@ -17,9 +17,9 @@ blank.}
 
 \item{ylab}{Y-axis label. Optional.}
 
-\item{col}{Colour to use as fill for the boxes as a digit. Defaults to 1, USQ
-Charcoal. There are six colours that can be used, see \strong{Details} for
-more.}
+\item{col}{Colour to use as fill and outline for boxes and outlier points as
+a digit. Defaults to 1, USQ Charcoal. There are six colours that can be used,
+see \strong{Details} for more.}
 }
 \description{
 Basic boxplots that follow USQ colour and typography

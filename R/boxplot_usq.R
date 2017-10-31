@@ -9,9 +9,9 @@
 #' blank.
 #' @param xlab X-axis label. Optional.
 #' @param ylab Y-axis label. Optional.
-#' @param col Colour to use as fill for the boxes as a digit. Defaults to 1, USQ
-#' Charcoal. There are six colours that can be used, see \strong{Details} for
-#' more.
+#' @param col Colour to use as fill and outline for boxes and outlier points as
+#' a digit. Defaults to 1, USQ Charcoal. There are six colours that can be used,
+#' see \strong{Details} for more.
 #'
 #' @details
 #' Colours for use in plots from the USQ Visual Identity Palette as a valid
