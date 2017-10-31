@@ -54,7 +54,6 @@ hist_usq <- function(x,
                      breaks = "pretty",
                      col = 1,
                      ...) {
-
   breaks <- tolower(breaks)
 
   if (col > 6 | col == 0) {
@@ -104,9 +103,6 @@ hist_usq <- function(x,
     x,
     col = col,
     border = "white",
-    main = main,
-    xlab = xlab,
-    ylab = ylab,
     breaks = breaks,
     panel.first = graphics::grid(
       nx = NA,
@@ -121,5 +117,5 @@ hist_usq <- function(x,
   graphics::box()
 
   graphics::title(main = main,
-                    sub = sub)
+                  sub = sub)
 }
