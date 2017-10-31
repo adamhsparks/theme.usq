@@ -30,14 +30,14 @@ plot_usq <- function(x,
                      sub = "",
                      xlim = NULL,
                      ylim = NULL,
-                     ann = par("ann"),
                      col = 1,
                      ...) {
-
   if (col > 6 | col == 0) {
     col <- 1
-    message("You've selected a colour outside the range of this function.\n",
-            "Defaulting to USQ Charcoal\n")
+    message(
+      "You've selected a colour outside the range of this function.\n",
+      "Defaulting to USQ Charcoal\n"
+    )
   }
 
   colour <- usq_palette[1:6]
@@ -67,18 +67,21 @@ plot_usq <- function(x,
   on.exit(par(opar))
   graphics::plot.new()
   graphics::plot.window(xlim, ylim, ...)
-  graphics::grid(nx = NA, ny = NULL, col = "#efe9e5", lty = "solid")
+  graphics::grid(
+    nx = NA,
+    ny = NULL,
+    col = "#efe9e5",
+    lty = "solid"
+  )
   graphics::points(xy$x, xy$y, col = col, ...)
-  graphics::axis(1)
-  graphics::axis(2)
+  graphics::axis(side = 1)
+  graphics::axis(side = 2)
   graphics::box()
 
-  if (ann)
-    graphics::title(
-      main = main,
-      sub = sub,
-      xlab = xy$xlab,
-      ylab = xy$ylab,
-      ...
-    )
+  graphics::title(
+    main = main,
+    sub = sub,
+    xlab = xy$xlab,
+    ylab = xy$ylab
+  )
 }

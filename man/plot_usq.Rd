@@ -5,7 +5,7 @@
 \title{Basic X-Y Plotting Using USQ Colours and Typography}
 \usage{
 plot_usq(x, y = NULL, main = "", sub = "", xlim = NULL, ylim = NULL,
-  ann = par("ann"), col = 1, ...)
+  col = 1, ...)
 }
 \arguments{
 \item{col}{Colour to use for points as a digit. Defaults to 1, USQ Charcoal.
