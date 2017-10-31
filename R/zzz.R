@@ -1,9 +1,4 @@
 
-
-
-
-
-
 .onLoad <-
   function(libname, pkgname) {
     # check for existence of Verdana.afm file before importing to avoid message
