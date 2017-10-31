@@ -155,8 +155,6 @@ p6 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
   theme_usq()
   
 p6
-#> Warning in as.POSIXlt.POSIXct(x): unknown timezone 'default/Australia/
-#> Brisbane'
 ```
 
 ![](README-unnamed-chunk-10-1.png)

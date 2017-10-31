@@ -20,14 +20,15 @@ plot_usq(x, y = NULL, main = "", sub = "", xlab = "", ylab = "",
 label.}
 
 \item{ylab}{Y-axis label. Optional, if blank will default to data supplied
-label.}
+label if one is available.}
 
 \item{xlim}{Numeric value for x-axis limits. Optional.}
 
 \item{ylim}{Numeric value for y-axis limits. Optional.}
 
-\item{col}{Colour to use for points as a digit. Defaults to 1, USQ Charcoal.
-There are six colours that can be used.}
+\item{col}{Colour to use as fill for the bars as a digit. Defaults to 1, USQ
+Charcoal. There are six colours that can be used, see \strong{Details} for
+more.}
 
 \item{...}{Arguments to be passed to methods, such as graphical parameters
 (see \code{\link{par}}). The most commonly used argument would be
@@ -66,7 +67,6 @@ library(datasets)
 plot_usq(airquality$Ozone,
          col = 3,
          main = "Air Quality",
-         sub = "Ozone",
-         type = "p")
+         xlab = "Ozone")
 
 }

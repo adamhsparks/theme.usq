@@ -13,7 +13,8 @@
 #' Scott's Rule, whereas exact uses a bin-width of 1 so each value is
 #' represented individually with a bar.
 #' @param col Colour to use as fill for the bars as a digit. Defaults to 1, USQ
-#' Charcoal. There are six colours that can be used, see Details for more.
+#' Charcoal. There are six colours that can be used, see \strong{Details} for
+#' more.
 #'
 #' @details
 #' Colours for use in plots from the USQ Visual Identity Palette as a valid
@@ -28,11 +29,12 @@
 #'  }
 #'
 #' @references
-#'  Scott, D.W. (1979) On optimal and data-based histograms. \emph{Biometrika},
-#'  66, 605–610.
+#' Scott, D.W. (1979) On optimal and data-based histograms. \emph{Biometrika},
+#' 66, 605–610.
 #'
-#'  Hyndman, R. J., The Problem with Sturges’ Rule for Constructing Histograms,
-#'  1995, Monash University, <https://www.robjhyndman.com/papers/sturges.pdf>.
+#' Hyndman, R. J., The Problem with Sturges’ Rule for Constructing Histograms,
+#' 1995, Monash University,
+#' \url{https://www.robjhyndman.com/papers/sturges.pdf}.
 #'
 #' @examples
 #' library(datasets)
@@ -40,7 +42,7 @@
 #' hist_usq(airquality$Ozone,
 #'          col = 3,
 #'          main = "Air Quality",
-#'          sub = "Ozone",
+#'          xlab = "Ozone",
 #'          breaks = "pretty")
 #'
 #' @export
@@ -109,12 +111,10 @@ hist_usq <- function(x,
       col = "#efe9e5",
       lty = "solid"
     ),
+    main = main,
+    sub = sub,
+    xlab = xlab,
+    ylab = ylab,
     ...
   )
-  graphics::axis(side = 1)
-  graphics::axis(side = 2)
-  graphics::box()
-
-  graphics::title(main = main,
-                  sub = sub)
 }
