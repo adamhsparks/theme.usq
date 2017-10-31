@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Basic Histograms Using USQ Colours and Typography — hist_usq • theme_usq</title>
+<title>Basic Boxplots Using USQ Colours and Typography — boxplot_usq • theme_usq</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -86,16 +86,16 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Basic Histograms Using USQ Colours and Typography</h1>
+    <h1>Basic Boxplots Using USQ Colours and Typography</h1>
     </div>
 
     
-    <p>Basic histograms that follow USQ colour and typography
+    <p>Basic boxplots that follow USQ colour and typography
 guidelines that uses (hopefully) sensible defaults.</p>
     
 
-    <pre class="usage"><span class='fu'>hist_usq</span>(<span class='no'>x</span>, <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>sub</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>"Count"</span>,
-  <span class='kw'>breaks</span> <span class='kw'>=</span> <span class='st'>"pretty"</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>boxplot_usq</span>(<span class='no'>x</span>, <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>sub</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
@@ -111,21 +111,15 @@ blank.</p></td>
     </tr>
     <tr>
       <th>xlab</th>
-      <td><p>X-axis label. Optional, if not supplied will be taken from data.</p></td>
+      <td><p>X-axis label. Optional.</p></td>
     </tr>
     <tr>
       <th>ylab</th>
-      <td><p>Y-axis label. Optional, if not supplied will default to "Count".</p></td>
-    </tr>
-    <tr>
-      <th>breaks</th>
-      <td><p>Either <code>pretty</code>, default, or <code>exact</code>. Pretty uses
-Scott's Rule, whereas exact uses a bin-width of 1 so each value is
-represented individually with a bar.</p></td>
+      <td><p>Y-axis label. Optional.</p></td>
     </tr>
     <tr>
       <th>col</th>
-      <td><p>Colour to use as fill for the bars as a digit. Defaults to 1, USQ
+      <td><p>Colour to use as fill for the boxes as a digit. Defaults to 1, USQ
 Charcoal. There are six colours that can be used, see <strong>Details</strong> for
 more.</p></td>
     </tr>
@@ -143,23 +137,9 @@ value for <code>col</code> include:</p><ul>
 <li><p>6 - Support Blue</p></li>
 </ul>
     
-    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
-
-    <p>Scott, D.W. (1979) On optimal and data-based histograms. <em>Biometrika</em>,
-66, 605–610.</p>
-<p>Hyndman, R. J., The Problem with Sturges’ Rule for Constructing Histograms,
-1995, Monash University,
-<a href='https://www.robjhyndman.com/papers/sturges.pdf'>https://www.robjhyndman.com/papers/sturges.pdf</a>.</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>library</span>(<span class='no'>datasets</span>)
-
-<span class='fu'>hist_usq</span>(<span class='no'>airquality</span>$<span class='no'>Ozone</span>,
-         <span class='kw'>col</span> <span class='kw'>=</span> <span class='fl'>3</span>,
-         <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Air Quality"</span>,
-         <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"Ozone"</span>,
-         <span class='kw'>breaks</span> <span class='kw'>=</span> <span class='st'>"pretty"</span>)</div><div class='img'><img src='hist_usq-3.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+    <pre class="examples"><div class='input'><span class='no'>rb</span> <span class='kw'>&lt;-</span> <span class='fu'>boxplot_usq</span>(<span class='no'>decrease</span> ~ <span class='no'>treatment</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>OrchardSprays</span>)</div><div class='input'><span class='fu'>title</span>(<span class='st'>"Comparing boxplot()s and non-robust mean +/- SD"</span>)</div><div class='img'><img src='boxplot_usq-1.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -168,8 +148,6 @@ value for <code>col</code> include:</p><ul>
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#details">Details</a></li>
-
-      <li><a href="#references">References</a></li>
       
       <li><a href="#examples">Examples</a></li>
     </ul>

@@ -26,7 +26,7 @@
 #'  }
 #'
 #' @examples
-#' rb <- boxplot(decrease ~ treatment, data = OrchardSprays)
+#' rb <- boxplot_usq(decrease ~ treatment, data = OrchardSprays)
 #' title("Comparing boxplot()s and non-robust mean +/- SD")
 #'
 #' @export
@@ -38,11 +38,6 @@ boxplot_usq <- function(x,
                         ylab = "",
                         col = 1,
                         ...) {
-
-  # notches don't work in this, so if user sets, return to FALSE
-  if (isTRUE(notch)) {
-   notch <- FALSE
-  }
 
   if (col > 6 | col == 0) {
     col <- 1
