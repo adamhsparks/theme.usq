@@ -5,11 +5,27 @@
 \title{Basic X-Y Plotting Using USQ Colours and Typography}
 \usage{
 plot_usq(x, y = NULL, main = "", sub = "", xlim = NULL, ylim = NULL,
-  ann = par("ann"), ...)
+  ann = par("ann"), col = 1, ...)
+}
+\arguments{
+\item{col}{Colour to use for points as a digit. Defaults to 1, USQ Charcoal.
+There are six colours that can be used.}
 }
 \description{
 Basic X-Y plotting that follows USQ colour and typography
-guidelines.
+guidelines that uses (hopefully) sensible defaults.
+}
+\details{
+Colours for use in plots from the USQ Visual Identity Palette as a valid
+value for \code{col} include:
+ \itemize{
+   \item{1} {- USQ Charcoal}
+   \item{2} {- USQ Yellow}
+   \item{3} {- Dark Warm Gray}
+   \item{4} {- Support Green}
+   \item{5} {- Secondary Orange}
+   \item{6} {- Support Blue}
+ }
 }
 \examples{
 plot_usq(1:3)
