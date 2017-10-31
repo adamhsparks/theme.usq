@@ -26,7 +26,7 @@ Charcoal. There are six colours that can be used, see \strong{Details} for
 more.}
 }
 \description{
-Basic histograms that follows USQ colour and typography
+Basic histograms that follow USQ colour and typography
 guidelines that uses (hopefully) sensible defaults.
 }
 \details{

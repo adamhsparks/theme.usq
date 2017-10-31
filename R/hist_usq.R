@@ -1,7 +1,7 @@
 
 #' @title Basic Histograms Using USQ Colours and Typography
 #'
-#' @description Basic histograms that follows USQ colour and typography
+#' @description Basic histograms that follow USQ colour and typography
 #' guidelines that uses (hopefully) sensible defaults.
 #'
 #' @param main Main title. Optional, if not supplied it will be blank.
