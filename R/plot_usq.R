@@ -4,9 +4,32 @@
 #' @description Basic X-Y plotting that follows USQ colour and typography
 #' guidelines that uses (hopefully) sensible defaults.
 #'
+#' @param x Values to be plotted on x-axis.
+#' @param y Values to be used on y-axis. Optional.
+#' @param main Main title text
+#' @param sub Subtitle text below x-axis label
+#' @param xlab X-axis label. Optional, if blank will default to data supplied
+#' label.
+#' @param ylab Y-axis label. Optional, if blank will default to data supplied
+#' label.
+#' @param xlim Numeric value for x-axis limits. Optional.
+#' @param ylim Numeric value for y-axis limits. Optional.
 #' @param col Colour to use for points as a digit. Defaults to 1, USQ Charcoal.
 #' There are six colours that can be used.
-#'
+#' @param ... Arguments to be passed to methods, such as graphical parameters
+#' (see \code{\link{par}}). The most commonly used argument would be
+#' \code{type} what type of plot should be drawn. Possible types are:
+#'  \itemize{
+#'  \item{"p"} {for \strong{p}oints},
+#'  \item{"l"} for \strong{l}ines,
+#'  \item{"b"} for \strong{b}oth,
+#'  \item{"c"} for the lines part alone of "\strong{b}",
+#'  \item{"o"} for both ‘\strong{o}verplotted’,
+#'  \item{"h"} for ‘\strong{h}istogram’ like (or ‘\strong{h}igh-density’)
+#'  vertical lines,
+#'  \item{"s"} for stair \strong{s}teps,
+#'  \item{"n"} for \strong{n}o plotting.
+#'  }
 #' @details
 #' Colours for use in plots from the USQ Visual Identity Palette as a valid
 #' value for \code{col} include:
@@ -28,6 +51,8 @@ plot_usq <- function(x,
                      y = NULL,
                      main = "",
                      sub = "",
+                     xlab = "",
+                     ylab = "",
                      xlim = NULL,
                      ylim = NULL,
                      col = 1,
@@ -66,7 +91,7 @@ plot_usq <- function(x,
   opar <- graphics::par(no.readonly = TRUE)
   on.exit(par(opar))
   graphics::plot.new()
-  graphics::plot.window(xlim, ylim, ...)
+  graphics::plot(xlab = xlab, ylab = ylab, xlim, ylim, ...)
   graphics::grid(
     nx = NA,
     ny = NULL,

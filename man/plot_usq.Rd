@@ -4,12 +4,45 @@
 \alias{plot_usq}
 \title{Basic X-Y Plotting Using USQ Colours and Typography}
 \usage{
-plot_usq(x, y = NULL, main = "", sub = "", xlim = NULL, ylim = NULL,
-  col = 1, ...)
+plot_usq(x, y = NULL, main = "", sub = "", xlab = "", ylab = "",
+  xlim = NULL, ylim = NULL, col = 1, ...)
 }
 \arguments{
+\item{x}{Values to be plotted on x-axis.}
+
+\item{y}{Values to be used on y-axis. Optional.}
+
+\item{main}{Main title text}
+
+\item{sub}{Subtitle text below x-axis label}
+
+\item{xlab}{X-axis label. Optional, if blank will default to data supplied
+label.}
+
+\item{ylab}{Y-axis label. Optional, if blank will default to data supplied
+label.}
+
+\item{xlim}{Numeric value for x-axis limits. Optional.}
+
+\item{ylim}{Numeric value for y-axis limits. Optional.}
+
 \item{col}{Colour to use for points as a digit. Defaults to 1, USQ Charcoal.
 There are six colours that can be used.}
+
+\item{...}{Arguments to be passed to methods, such as graphical parameters
+(see \code{\link{par}}). The most commonly used argument would be
+\code{type} what type of plot should be drawn. Possible types are:
+ \itemize{
+ \item{"p"} {for \strong{p}oints},
+ \item{"l"} for \strong{l}ines,
+ \item{"b"} for \strong{b}oth,
+ \item{"c"} for the lines part alone of "\strong{b}",
+ \item{"o"} for both ‘\strong{o}verplotted’,
+ \item{"h"} for ‘\strong{h}istogram’ like (or ‘\strong{h}igh-density’)
+ vertical lines,
+ \item{"s"} for stair \strong{s}teps,
+ \item{"n"} for \strong{n}o plotting.
+ }}
 }
 \description{
 Basic X-Y plotting that follows USQ colour and typography
