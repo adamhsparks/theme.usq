@@ -39,14 +39,6 @@ value for \code{col} include:
    \item{5} {- Secondary Orange}
    \item{6} {- Support Blue}
  }
-
- @references
-
- Scott, D.W. (1979) On optimal and data-based histograms. \emph{Biometrika},
- 66, 605–610.
-
- Hyndman, R. J., The Problem with Sturges’ Rule for Constructing Histograms,
- 1995, Monash University, <https://www.robjhyndman.com/papers/sturges.pdf>.
 }
 \examples{
 library(datasets)
@@ -57,4 +49,11 @@ hist_usq(airquality$Ozone,
          sub = "Ozone",
          breaks = "pretty")
 
+}
+\references{
+Scott, D.W. (1979) On optimal and data-based histograms. \emph{Biometrika},
+ 66, 605–610.
+
+ Hyndman, R. J., The Problem with Sturges’ Rule for Constructing Histograms,
+ 1995, Monash University, <https://www.robjhyndman.com/papers/sturges.pdf>.
 }

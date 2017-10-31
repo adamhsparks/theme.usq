@@ -27,8 +27,7 @@
 #'    \item{6} {- Support Blue}
 #'  }
 #'
-#'  @references
-#'
+#' @references
 #'  Scott, D.W. (1979) On optimal and data-based histograms. \emph{Biometrika},
 #'  66, 605–610.
 #'
