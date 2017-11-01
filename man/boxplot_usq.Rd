@@ -8,6 +8,11 @@ boxplot_usq(x, main = "", sub = "", xlab = "", ylab = "", col = 1,
   ...)
 }
 \arguments{
+\item{x}{for specifying data from which the boxplots are to be produced.
+Either a numeric vector, or a single list containing such vectors. Additional
+unnamed arguments specify further data as separate vectors (each
+corresponding to a component boxplot). \code{NA}s are allowed in the data.}
+
 \item{main}{Main title. Optional, if not supplied it will be blank.}
 
 \item{sub}{Sub title below x-axis label. Optional, if not supplied it will be

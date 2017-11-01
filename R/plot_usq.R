@@ -77,7 +77,7 @@ plot_usq <- function(x,
   col <- colour[col]
 
   # set new pars
-  par(
+  graphics::par(
     family = "verdana",
     pch = 16,
     fg = "#ffffff",
@@ -98,7 +98,7 @@ plot_usq <- function(x,
   if (is.null(ylim))
     ylim <- range(xy$y[is.finite(xy$y)])
   opar <- graphics::par(no.readonly = TRUE)
-  on.exit(par(opar))
+  on.exit(graphics::par(opar))
   graphics::plot.new()
   graphics::plot(xlab = xlab, ylab = ylab, xlim, ylim, ...)
   graphics::grid(

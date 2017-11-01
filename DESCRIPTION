@@ -19,10 +19,14 @@ LazyData: true
 Imports:
     extrafont,
     graphics,
-    grDevices
+    grDevices,
+    scales,
+    stats
 RoxygenNote: 6.0.1
 Suggests:
     datasets,
     knitr,
-    rmarkdown
+    reshape2,
+    rmarkdown,
+    tibble
 VignetteBuilder: knitr

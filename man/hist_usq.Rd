@@ -8,6 +8,8 @@ hist_usq(x, main = "", sub = "", xlab = "", ylab = "Count",
   breaks = "pretty", col = 1, ...)
 }
 \arguments{
+\item{x}{a vector of values for which the histogram is desired.}
+
 \item{main}{Main title. Optional, if not supplied it will be blank.}
 
 \item{sub}{Sub title below x-axis label. Optional, if not supplied it will be

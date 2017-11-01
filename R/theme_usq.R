@@ -10,7 +10,7 @@
 #' presentation slides, \emph{e.g.}, \code{theme_usq(base_size = 24)}.
 #'
 #' @examples
-#' Discrete values
+#' # Discrete values
 #' p1 <- ggplot(mtcars) +
 #'   geom_point(aes(
 #'     x = wt,

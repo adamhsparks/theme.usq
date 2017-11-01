@@ -118,35 +118,27 @@ presentation slides, <em>e.g.</em>, <code>theme_usq(base_size = 24)</code>.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'>Discrete values
-p1 <- ggplot(mtcars) +
-  geom_point(aes(
-    x = wt,
-    y = mpg,
-    colour = factor(gear)
+    <pre class="examples"><div class='input'><span class='co'># Discrete values</span>
+<span class='no'>p1</span> <span class='kw'>&lt;-</span> <span class='fu'>ggplot</span>(<span class='no'>mtcars</span>) +
+  <span class='fu'>geom_point</span>(<span class='fu'>aes</span>(
+    <span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>wt</span>,
+    <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>mpg</span>,
+    <span class='kw'>colour</span> <span class='kw'>=</span> <span class='fu'>factor</span>(<span class='no'>gear</span>)
    )) +
-  scale_colour_manual(values = usq_palette) +
-  facet_wrap(~ am) +
-  theme_usq()
-p1
+  <span class='fu'>scale_colour_manual</span>(<span class='kw'>values</span> <span class='kw'>=</span> <span class='no'>usq_palette</span>) +
+  <span class='fu'>facet_wrap</span>(~ <span class='no'>am</span>) +
+  <span class='fu'>theme_usq</span>()
+<span class='no'>p1</span></div><div class='img'><img src='theme_usq-1.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='co'># Continous values</span>
+<span class='no'>df</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>reshape2</span><span class='kw ns'>::</span><span class='fu'><a href='http://www.rdocumentation.org/packages/reshape2/topics/melt'>melt</a></span>(<span class='fu'>outer</span>(<span class='fl'>1</span>:<span class='fl'>4</span>, <span class='fl'>1</span>:<span class='fl'>4</span>), <span class='kw'>varnames</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"X1"</span>, <span class='st'>"X2"</span>))
 
-# Continous values
-df <- reshape2::melt(outer(1:4, 1:4), varnames = c("X1", "X2"))
-
-p2 <- ggplot(df, aes(X1, X2)) + geom_tile(aes(fill = value)) +
-  usq_fill_gradient()
-p3 <- p2 + geom_point(aes(size = value)) +
-  theme_usq()
-p3
-
-# Larger base size for presentation slides
-p4 <- p3 + geom_point(aes(size = value)) +
-  theme_usq(base_size = 24)
-p4
-
-</div><div class='output co'>#&gt; <span class='error'>Error: &lt;text&gt;:1:10: unexpected symbol</span>
-#&gt; <span class='error'>1: Discrete values</span>
-#&gt; <span class='error'>             ^</span></div></pre>
+<span class='no'>p2</span> <span class='kw'>&lt;-</span> <span class='fu'>ggplot</span>(<span class='no'>df</span>, <span class='fu'>aes</span>(<span class='no'>X1</span>, <span class='no'>X2</span>)) + <span class='fu'>geom_tile</span>(<span class='fu'>aes</span>(<span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>value</span>)) +
+  <span class='fu'>usq_fill_gradient</span>()</div><div class='output co'>#&gt; <span class='error'>Error in usq_fill_gradient(): could not find function "usq_fill_gradient"</span></div><div class='input'><span class='no'>p3</span> <span class='kw'>&lt;-</span> <span class='no'>p2</span> + <span class='fu'>geom_point</span>(<span class='fu'>aes</span>(<span class='kw'>size</span> <span class='kw'>=</span> <span class='no'>value</span>)) +
+  <span class='fu'>theme_usq</span>()</div><div class='output co'>#&gt; <span class='error'>Error in eval(expr, envir, enclos): object 'p2' not found</span></div><div class='input'><span class='no'>p3</span></div><div class='output co'>#&gt; <span class='error'>Error in eval(expr, envir, enclos): object 'p3' not found</span></div><div class='input'>
+<span class='co'># Larger base size for presentation slides</span>
+<span class='no'>p4</span> <span class='kw'>&lt;-</span> <span class='no'>p3</span> + <span class='fu'>geom_point</span>(<span class='fu'>aes</span>(<span class='kw'>size</span> <span class='kw'>=</span> <span class='no'>value</span>)) +
+  <span class='fu'>theme_usq</span>(<span class='kw'>base_size</span> <span class='kw'>=</span> <span class='fl'>24</span>)</div><div class='output co'>#&gt; <span class='error'>Error in eval(expr, envir, enclos): object 'p3' not found</span></div><div class='input'><span class='no'>p4</span></div><div class='output co'>#&gt; <span class='error'>Error in eval(expr, envir, enclos): object 'p4' not found</span></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

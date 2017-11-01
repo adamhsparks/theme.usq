@@ -4,6 +4,7 @@
 #' @description Basic histograms that follow USQ colour and typography
 #' guidelines that uses (hopefully) sensible defaults.
 #'
+#' @param x a vector of values for which the histogram is desired.
 #' @param main Main title. Optional, if not supplied it will be blank.
 #' @param sub Sub title below x-axis label. Optional, if not supplied it will be
 #' blank.
@@ -69,7 +70,7 @@ hist_usq <- function(x,
     breaks <- "scott"
   } else if (breaks == "exact") {
     # cleanup NAs in `x`
-    x <- na.omit(x)
+    x <- stats::na.omit(x)
     breaks <- seq(min(x), max(x),
                   by = ((max(x) - min(x)) /
                           (length(x) - 1)))
@@ -82,7 +83,7 @@ hist_usq <- function(x,
   col <- colour[col]
 
   # set new pars
-  par(
+  graphics::par(
     family = "verdana",
     pch = 16,
     fg = "#ffffff",
@@ -99,7 +100,7 @@ hist_usq <- function(x,
   )
 
   opar <- graphics::par(no.readonly = TRUE)
-  on.exit(par(opar))
+  on.exit(graphics::par(opar))
   graphics::hist.default(
     x,
     col = col,

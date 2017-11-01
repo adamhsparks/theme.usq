@@ -51,7 +51,7 @@ barplot_usq <- function(height,
   col <- colour[col]
 
   # set new pars
-  par(
+  graphics::par(
     family = "verdana",
     pch = 16,
     fg = "#ffffff",
@@ -67,7 +67,7 @@ barplot_usq <- function(height,
   )
 
   opar <- graphics::par(no.readonly = TRUE)
-  on.exit(par(opar))
+  on.exit(graphics::par(opar))
   graphics::barplot(
     height = height,
     col = col,
