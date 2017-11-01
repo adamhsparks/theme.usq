@@ -1,5 +1,5 @@
 
-#' Provides USQ Style Typography, Colours and Themes for ggplot2
+#' Provides USQ Style Typography, Colours and Themes for Plots from R
 #'
 #' @name theme.usq-package
 #' @author Adam H Sparks
