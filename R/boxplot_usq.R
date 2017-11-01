@@ -12,6 +12,8 @@
 #' @param col Colour to use as fill and outline for boxes and outlier points as
 #' a digit. Defaults to 1, USQ Charcoal. There are six colours that can be used,
 #' see \strong{Details} for more.
+#' @param ... Arguments to be passed to methods, such as graphical parameters
+#' (see \code{\link[graphics]{par}}).
 #'
 #' @details
 #' Colours for use in plots from the USQ Visual Identity Palette as a valid
@@ -24,7 +26,8 @@
 #'    \item{5} {- Secondary Orange}
 #'    \item{6} {- Support Blue}
 #'  }
-#' @seealso \code{\link{boxplot}}  for full documentation of the basic boxplot
+#' @seealso \code{\link[graphics]{boxplot}}  for full documentation of the basic
+#' boxplot
 #' capabilities
 #' @examples
 #' rb <- boxplot_usq(decrease ~ treatment, data = OrchardSprays)

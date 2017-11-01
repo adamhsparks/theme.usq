@@ -15,6 +15,8 @@
 #' @param col Colour to use as fill for the bars as a digit. Defaults to 1, USQ
 #' Charcoal. There are six colours that can be used, see \strong{Details} for
 #' more.
+#' @param ... Arguments to be passed to methods, such as graphical parameters
+#' (see \code{\link[graphics]{par}}).
 #'
 #' @details
 #' Colours for use in plots from the USQ Visual Identity Palette as a valid
@@ -28,8 +30,8 @@
 #'    \item{6} {- Support Blue}
 #'  }
 #'
-#'  @seealso \code{\link{hist}} for full documentation of the basic histogram
-#'  capabilities
+#'  @seealso \code{\link[graphics]{hist}} for full documentation of the basic
+#' histogram capabilities
 #'
 #' @references
 #' Scott, D.W. (1979) On optimal and data-based histograms. \emph{Biometrika},

@@ -18,7 +18,7 @@
 #' Charcoal. There are six colours that can be used, see \strong{Details} for
 #' more.
 #' @param ... Arguments to be passed to methods, such as graphical parameters
-#' (see \code{\link{par}}). The most commonly used argument would be
+#' (see \code{\link[graphics]{par}}). The most commonly used argument would be
 #' \code{type} what type of plot should be drawn. Possible types are:
 #'  \itemize{
 #'  \item{"p"} {for \strong{p}oints},
@@ -43,7 +43,8 @@
 #'    \item{6} {- Support Blue}
 #'  }
 #' @seealso
-#' \code{\link{plot}} for full documentation of the basic plotting capabilities.
+#' \code{\link[graphics]{plot}} for full documentation of the basic plotting
+#' capabilities.
 #' @examples
 #' library(datasets)
 #'

@@ -20,6 +20,9 @@ blank.}
 \item{col}{Colour to use as fill and outline for boxes and outlier points as
 a digit. Defaults to 1, USQ Charcoal. There are six colours that can be used,
 see \strong{Details} for more.}
+
+\item{...}{Arguments to be passed to methods, such as graphical parameters
+(see \code{\link[graphics]{par}}).}
 }
 \description{
 Basic boxplots that follow USQ colour and typography
@@ -43,6 +46,7 @@ title("Comparing boxplot()s and non-robust mean +/- SD")
 
 }
 \seealso{
-\code{\link{boxplot}}  for full documentation of the basic boxplot
+\code{\link[graphics]{boxplot}}  for full documentation of the basic
+boxplot
 capabilities
 }
