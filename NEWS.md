@@ -1,27 +1,38 @@
-# theme.usq 0.0.4.9000
+# theme.usq 0.1.0
 
-# theme_usq 0.0.4
+* Add base plot options in addition to _ggplot2_
+  
+  * `plot_usq()`
+  
+  * `hist_usq()`
+  
+  * `boxplot_usq()`
+  
+  * `barplot_usq()`
+  
 
-- Now works with most recent version of `ggplot2` on CRAN, 2.2.1 as of
-  30/09/2017
+# theme.usq 0.0.4
 
-- Enhanced documentation
+* Now works with most recent version of `ggplot2` on CRAN, 2.2.1 as of
+30/09/2017
 
-# theme_usq 0.0.3
+* Enhanced documentation
 
-- Tidy up documentation
+# theme.usq 0.0.3
 
-- Update minimum version of R to >= 3.1
+* Tidy up documentation
 
-- Add minimum version of ggplot2  (>= 2.2.1.9000) 
+* Update minimum version of R to >= 3.1
+
+* Add minimum version of ggplot2  (>= 2.2.1.9000) 
 
 # theme.usq 0.0.2
 
-- Add `scale_fill_gradient()` to compliment `scale_colour_gradient()`
+* Add `scale_fill_gradient()` to compliment `scale_colour_gradient()`
 
-- Add new cool gradient colour option
+* Add new cool gradient colour option
 
-- Make warm gradient colours more distinct
+* Make warm gradient colours more distinct
 
 # theme.usq 0.0.1
 
@@ -30,6 +41,3 @@
 # theme.usq 0.0.0.9000
 
 * Added a `NEWS.md` file to track changes to the package.
-
-
-
