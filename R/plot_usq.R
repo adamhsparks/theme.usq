@@ -88,7 +88,8 @@ plot_usq <- function(x,
     col.main = "#1e1e1e",
     col.sub = "#1e1e1e",
     tcl = -0.25,
-    bty = "n"
+    bty = "n",
+    cex = 0.9
   )
 
   xy <- grDevices::xy.coords(x, y)

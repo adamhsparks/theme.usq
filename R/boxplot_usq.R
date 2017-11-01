@@ -67,7 +67,8 @@ boxplot_usq <- function(x,
     col.sub = "#1e1e1e",
     tcl = -0.25,
     bty = "n",
-    mgp = c(2, 0.5, 0)
+    mgp = c(2, 0.5, 0),
+    cex = 0.9
   )
 
   opar <- graphics::par(no.readonly = TRUE)

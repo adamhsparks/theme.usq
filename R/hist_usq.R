@@ -42,13 +42,8 @@
 #' \url{https://www.robjhyndman.com/papers/sturges.pdf}.
 #'
 #' @examples
-#' library(datasets)
 #'
-#' hist_usq(airquality$Ozone,
-#'          col = 3,
-#'          main = "Air Quality",
-#'          xlab = "Ozone",
-#'          breaks = "pretty")
+#' hist_usq(islands)
 #'
 #' @export
 #'
@@ -99,12 +94,12 @@ hist_usq <- function(x,
     col.sub = "#1e1e1e",
     tcl = -0.25,
     bty = "n",
-    mgp = c(2, 0.5, 0)
+    mgp = c(2, 0.5, 0),
+    cex = 0.9
   )
 
   opar <- graphics::par(no.readonly = TRUE)
   on.exit(par(opar))
-  graphics::plot.new()
   graphics::hist.default(
     x,
     col = col,
