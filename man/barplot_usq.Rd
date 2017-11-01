@@ -24,7 +24,7 @@ more.}
 (see \code{\link[graphics]{par}}).}
 }
 \description{
-Basic barplotograms that follow USQ colour and typography
+Basic barplots that follow USQ colour and typography
 guidelines that uses (hopefully) sensible defaults.
 }
 \details{

@@ -1,7 +1,7 @@
 
 #' @title Basic barplots Using USQ Colours and Typography
 #'
-#' @description Basic barplotograms that follow USQ colour and typography
+#' @description Basic barplots that follow USQ colour and typography
 #' guidelines that uses (hopefully) sensible defaults.
 #'
 #' @param height Either a vector or matrix of values describing the bars which

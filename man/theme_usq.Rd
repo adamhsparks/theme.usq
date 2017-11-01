@@ -14,7 +14,7 @@ theme_usq(base_size = 11, base_family = "Verdana")
 \description{
 This theme applies a standard USQ style to \code{\link{ggplot2}} graphs,
 which includes no y-axis lines, major x-axis grid lines and the Microsoft's
-typeface, Verdana, for all text labeling and the lgend key at the bottom.
+typeface, Verdana, for all text labeling and the legend key at the bottom.
 }
 \details{
 The base size is set to 11 by default.  For presentations using the option,
@@ -22,7 +22,6 @@ The base size is set to 11 by default.  For presentations using the option,
 presentation slides, \emph{e.g.}, \code{theme_usq(base_size = 24)}.
 }
 \examples{
-\dontrun{
 Discrete values
 p1 <- ggplot(mtcars) +
   geom_point(aes(
@@ -48,6 +47,5 @@ p3
 p4 <- p3 + geom_point(aes(size = value)) +
   theme_usq(base_size = 24)
 p4
-}
 
 }

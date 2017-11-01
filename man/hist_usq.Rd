@@ -43,9 +43,6 @@ value for \code{col} include:
    \item{5} {- Secondary Orange}
    \item{6} {- Support Blue}
  }
-
- @seealso \code{\link[graphics]{hist}} for full documentation of the basic
-histogram capabilities
 }
 \examples{
 
@@ -59,4 +56,8 @@ Scott, D.W. (1979) On optimal and data-based histograms. \emph{Biometrika},
 Hyndman, R. J., The Problem with Sturges’ Rule for Constructing Histograms,
 1995, Monash University,
 \url{https://www.robjhyndman.com/papers/sturges.pdf}.
+}
+\seealso{
+\code{\link[graphics]{hist}} for full documentation of the basic
+histogram capabilities
 }

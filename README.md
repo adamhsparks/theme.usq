@@ -6,7 +6,7 @@ Introduction
 
 The goal of *theme.usq* is to provide [University of Southern Queensland](https://usq.edu.au) (USQ) staff and students a quick and easy way to apply USQ colours and typography to graphs created in R using the base *graphics* package or *ggplot2* while providing clear graphs for reports and presentations. All of the colours provided are defined in USQ's Visual Identity Colour Palette, but do not all appear in the same order to maintain usability for the purposes of graphing.
 
-This package has been tested on MacOS, Ubuntu Linux and USQ computers using Windows 7. For Linux users, if you have not installed the MS Core Fonts, you will need to do that for this package to function properly and generate the graphs with the proper typography. Windows and MacOS users should be ready to go with just the installation of this package.
+This package has been tested on macOS, Ubuntu Linux and USQ computers using Windows 7. For Linux users, if you have not installed the MS Core Fonts, you will need to do that for this package to function properly and generate the graphs with the proper typography. Windows and macOS users should be ready to go with just the installation of this package.
 
 Quickstart
 ==========
@@ -179,7 +179,7 @@ p5
 
 ![](README-unnamed-chunk-12-1.png)
 
-Use the USQ colours to fill the boxplots while using `drv` (*e.g.*, 4-wheel drive, front-wheel drive or rear-wheel drive) for the boxplot colour.
+Use the USQ colours to fill the box-plots while using `drv` (*e.g.*, 4-wheel drive, front-wheel drive or rear-wheel drive) for the box-plot colour.
 
 ``` r
 p5.1 <- ggplot(mpg, aes(class, hwy)) +

@@ -30,7 +30,7 @@
 #'    \item{6} {- Support Blue}
 #'  }
 #'
-#'  @seealso \code{\link[graphics]{hist}} for full documentation of the basic
+#' @seealso \code{\link[graphics]{hist}} for full documentation of the basic
 #' histogram capabilities
 #'
 #' @references
