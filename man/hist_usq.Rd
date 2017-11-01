@@ -48,13 +48,8 @@ value for \code{col} include:
 histogram capabilities
 }
 \examples{
-library(datasets)
 
-hist_usq(airquality$Ozone,
-         col = 3,
-         main = "Air Quality",
-         xlab = "Ozone",
-         breaks = "pretty")
+hist_usq(islands)
 
 }
 \references{
