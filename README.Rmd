@@ -3,12 +3,14 @@ title: "theme_usq"
 output: github_document
 ---
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, message=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "README-"
 )
+  library("ggplot2")
+  library("theme.usq")
 ```
 
 # Introduction
@@ -16,10 +18,9 @@ knitr::opts_chunk$set(
 The goal of _theme.usq_ is to provide
 [University of Southern Queensland](https://usq.edu.au) (USQ) staff and students
 a quick and easy way to apply USQ colours and typography to graphs created in R
-using _ggplot2_ while providing clear graphs for reports and presentations. All
-of the colours provided are defined in USQ's Visual Identity Colour Palette, but
-do not all appear in the same order to maintain usability for the purposes of
-graphing.
+using the base _graphics_ package or _ggplot2_ while providing clear graphs for
+reports and presentations. All of the colours provided are defined in USQ's Visual Identity Colour Palette, but do not all appear in the same order to
+maintain usability for the purposes of graphing.
 
 This package has been tested on MacOS, Ubuntu Linux and USQ computers using
 Windows 7. For Linux users, if you have not installed the MS Core Fonts, you
@@ -49,22 +50,30 @@ if(!require(devtools)){
 }
 
 devtools::install_github("adamhsparks/theme_usq")
+
+library("ggplot2")
+library("theme.usq")
 ```
 
 # Examples
 
 ## Example 1: Scatterplots of discrete data
 
-Using the _usq.theme's_ `theme_usq` for _ggplot2_, plot car weights by
-mpg and facet by `Transmission` (0 = automatic, 1 = manual) using the
-`usq_palette` in the `scale_colour_manual` discrete scale function to use
-USQ colours for the graph.
+### Using `plot_usq()`
+
+Plot plot car weights by miles per gallon.
 
 ```{r}
-library("ggplot2")
-library("theme.usq")
+plot_usq(x = mtcars$wt, y = mtcars$mpg)
+```
 
-# Discrete values
+### Using _ggplot2_ and `theme_usq()`
+
+Plot car weights by miles per gallon and facet by `Transmission` (0 = automatic,
+1 = manual) using the `usq_palette` in the `scale_colour_manual` discrete scale
+function to use USQ colours for the graph.
+
+```{r}
 p1 <- ggplot(mtcars) +
   geom_point(aes(
     x = wt,
@@ -84,6 +93,8 @@ p1 + theme_usq()
 ```
 
 ## Example 2: Heatmaps or other continuous data
+
+### Using _ggplot2_ and `theme_usq()`
 
 Using the _usq.theme's_ `theme_usq()` for _ggplot2_, plot values using the
 `usq_fill_gradient` to use USQ colours for continuous values in the graph. Two
@@ -114,6 +125,8 @@ p2b
 
 ## Example 3: Heatmaps using other colour palettes
 
+### Using _ggplot2_ and `theme_usq()`
+
 `theme_usq()` can be used with any colour palette that you wish to use, while
 still applying the graph styling and typography to the graph.
 
@@ -130,9 +143,13 @@ p3
 
 ## Example 4: Histograms
 
-Use a USQ colour to fill a histogram by using the second value in the
-`usq_palette` (USQ Charcoal) as the fill value, a good colour for presentations
-that are going to be projected on a screen.
+### Using `hist_usq()`
+
+```{r}
+hist_usq(diamonds$carat)
+```
+
+### Using _ggplot2_ and `theme_usq()`
 
 ```{r}
 p4 <- ggplot(diamonds, aes(carat)) +
@@ -144,29 +161,83 @@ p4
 
 ## Example 5: Boxplots
 
-Use the USQ colours to fill the boxplots, while using the first value in the
-`usq_palette` (USQ Charcoal) as the colour value.
+### Using `boxplot_usq()`
+
+Plot the highway miles per gallon (mpg) of 38 popular car models in the US by
+class of car.
+
+### Using `boxplot_usq()`
+
+```{r}
+boxplot_usq(mpg$hwy ~ mpg$class)
+```
+
+### Using _ggplot2_ and `theme_usq()`
 
 ```{r}
 p5 <- ggplot(mpg, aes(class, hwy)) +
-  geom_boxplot(aes(fill = drv), colour = usq_palette[1]) +
-  scale_fill_manual(values = usq_palette) +
+  geom_boxplot(fill = usq_palette[1],
+               colour = usq_palette[1],
+               alpha = 0.5) +
   theme_usq()
   
 p5
 ```
 
-## Example 6: Timeseries
-
-Plot timeseries lines using discrete colours for each variable of interest.
+Use the USQ colours to fill the boxplots while using `drv` (_e.g._, 4-wheel drive, front-wheel drive or rear-wheel drive) for the boxplot colour.
 
 ```{r}
+p5.1 <- ggplot(mpg, aes(class, hwy)) +
+  geom_boxplot(aes(fill = drv), colour = usq_palette[1]) +
+  scale_fill_manual(values = usq_palette) +
+  theme_usq()
+  
+p5.1
+```
+
+## Example 6: Timeseries
+
+### Using `ggplot2` and `theme_usq()` to plot timeseries lines using discrete
+colours for each variable of interest. While possible to do with base R
+graphics, _ggplot2_ simplifies the process greatly, so it is the only example
+provided and suggested for use.
+
+```{r, example 6}
 p6 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
   geom_line() +
   scale_colour_manual(values = usq_palette) +
   theme_usq()
   
 p6
+```
+
+## Example 7: Barplots
+
+### Using `barplot_usq()` 
+
+Plot the areas in thousands of square miles of landmasses which exceed 10,000
+sqm.
+
+```{r example_7.1}
+barplot_usq(islands, col = 5)
+```
+
+### Using _ggplot2_ and `theme_usq()`
+
+Plot the areas in thousands of square miles of landmasses which exceed 10,000
+sqm.
+
+```{r example_7.2}
+library(tibble)
+islands_df <- as.data.frame(islands)
+islands_df <- rownames_to_column(islands_df, "name")
+
+ggplot(islands_df, aes(x = name, y = islands)) +
+  geom_bar(stat = "identity", 
+           colour = usq_palette[5],
+           fill = usq_palette[5]) +
+  theme_usq() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
 ## Code of Conduct
