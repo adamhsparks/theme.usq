@@ -104,7 +104,7 @@ hist_usq <- function(x,
   graphics::hist.default(
     x,
     col = col,
-    border = "white",
+    border = col,
     breaks = breaks,
     panel.first = graphics::grid(
       nx = NA,
