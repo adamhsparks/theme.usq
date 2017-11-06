@@ -1,5 +1,7 @@
 # theme.usq 0.1.0.9000
 
+* Use col for `hist_usq()` border colour to match _ggplot2_ style
+
 # theme.usq 0.1.0
 
 * Add base plot options in addition to _ggplot2_
