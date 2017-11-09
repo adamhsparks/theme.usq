@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 ```
 
 [![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme.usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme.usq)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/adamhsparks/theme.usq?branch=master&svg=true)](https://ci.appveyor.com/project/adamhsparks/theme.usq)
+[![Build status](https://ci.appveyor.com/api/projects/status/kl8y1bvwakd4884r/branch/master?svg=true)](https://ci.appveyor.com/project/adamhsparks/theme-usq-8c8gf/branch/master)
 
 ## Introduction to _theme.usq_
 
