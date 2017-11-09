@@ -1,4 +1,5 @@
 
+
 .onLoad <-
   function(libname, pkgname) {
     # check for existence of Verdana.afm file before importing to avoid message
@@ -19,17 +20,20 @@
     if (.Platform$OS.type == "windows") {
       windowsFonts <- grDevices::windowsFonts
       extrafont::loadfonts(device = "win", quiet = TRUE)
+    } else if (Sys.info()["sysname"] == "Darwin") {
+      grDevices::quartzFonts(Verdana = c(
+        "Verdana",
+        "Verdana Bold",
+        "Verdana Italic",
+        "Verdana Bold Italic"
+      ))
+    } else {
+      grDevices::X11Fonts(Verdana = c(
+        "Verdana",
+        "Verdana Bold",
+        "Verdana Italic",
+        "Verdana Bold Italic"
+      ))
     }
 
-    # Load Verdana on macOS/OSX platforms for base graphics
-    if (Sys.info()["sysname"] == "Darwin") {
-      grDevices::quartzFonts(
-        Verdana = c(
-          "Verdana",
-          "Verdana Bold",
-          "Verdana Italic",
-          "Verdana Bold Italic"
-        )
-      )
-    }
   }
