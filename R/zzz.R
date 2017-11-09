@@ -49,12 +49,6 @@
       }
       extrafont::loadfonts(device = "pdf", quiet = TRUE)
       extrafont::loadfonts(device = "postscript", quiet = TRUE)
-      grDevices::X11Fonts("Verdana" = c(
-        "Verdana",
-        "Verdana Bold",
-        "Verdana Italic",
-        "Verdana Bold Italic"
-      ))
     }
 
   }
