@@ -1,5 +1,5 @@
 ---
-title: "theme_usq"
+title: "theme.usq"
 output: github_document
 ---
 
@@ -13,8 +13,8 @@ knitr::opts_chunk$set(
   library("theme.usq")
 ```
 
-[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme_usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme_usq)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/adamhsparks/theme_usq?branch=master&svg=true)](https://ci.appveyor.com/project/adamhsparks/theme_usq)
+[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme.usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme.usq)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/adamhsparks/theme.usq?branch=master&svg=true)](https://ci.appveyor.com/project/adamhsparks/theme.usq)
 
 # Introduction
 
@@ -49,7 +49,7 @@ if(!require(devtools)){
     library(devtools)
 }
 
-devtools::install_github("adamhsparks/theme_usq", dependencies = TRUE)
+devtools::install_github("adamhsparks/theme.usq", dependencies = TRUE)
 
 library("ggplot2")
 library("theme.usq")
@@ -77,7 +77,7 @@ Plot plot car weights by miles per gallon.
 plot_usq(x = mtcars$wt, y = mtcars$mpg)
 ```
 
-### Using _ggplot2_ and `theme_usq()`
+### Using _ggplot2_ and `theme.usq()`
 
 Plot car weights by miles per gallon and facet by `Transmission` (0 = automatic,
 1 = manual) using the `usq_palette` in the `scale_colour_manual` discrete scale
@@ -104,9 +104,7 @@ p1 + theme_usq()
 
 ## Example 2: Heatmaps or other continuous data
 
-### Using _ggplot2_ and `theme_usq()`
-
-Using the _usq.theme's_ `theme_usq()` for _ggplot2_, plot values using the
+Using the _theme.usq's_ `theme_usq()` for _ggplot2_, plot values using the
 `usq_fill_gradient` to use USQ colours for continuous values in the graph. Two
 types of gradients are included, warm and cool for both `scale_fill_gradient()`
 and `scale_colour_gradient()` as necessary.
@@ -250,6 +248,10 @@ ggplot(islands_df, aes(x = name, y = islands)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-## Code of Conduct
+## Meta
 
-Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+* Please report any [issues or bugs](https://github.com/adamhsparks/theme.usq/issues).
+
+* License: MIT
+
+* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
