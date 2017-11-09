@@ -59,7 +59,7 @@ boxplot_usq <- function(x,
 
   # set new pars
   graphics::par(
-    family = "verdana",
+    family = "Verdana",
     pch = 16,
     fg = "#ffffff",
     bg = "#ffffff",
