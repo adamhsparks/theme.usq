@@ -11,7 +11,7 @@
 ## Minor changes
 
 * _ggplot2_ is moved to "imports" since base graphing capabilities are now
-included, the package does not strictly rely on _ggplot2_ along now
+included, the package does not strictly rely on _ggplot2_ alone now
 
 # theme.usq 0.1.0
 
