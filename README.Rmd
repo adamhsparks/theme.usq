@@ -40,19 +40,26 @@ done, it should not be necessary to re-catalogue the fonts so loading
 _theme.usq_ will not take any longer than expected.
 
 ```{r, eval=FALSE}
-if(!require(ggplot2)){
-    install.packages("ggplot2")
-}
 
 if(!require(devtools)){
     install.packages("devtools")
     library(devtools)
 }
 
-devtools::install_github("adamhsparks/theme_usq")
+devtools::install_github("adamhsparks/theme_usq", dependencies = TRUE)
 
 library("ggplot2")
 library("theme.usq")
+```
+
+## Keeping _theme.usq_ up-to-date
+
+Since _theme.usq_ is still under development with bug fixes and new features
+being added and it is not available from CRAN; `update.packages()` will not
+update it. To keep _theme.usq_ updated, use:
+
+```{r, eval=FALSE}
+devtools::update_packages("theme.usq")
 ```
 
 # Examples

@@ -78,19 +78,22 @@
 <a href="#quickstart" class="anchor"></a>Quickstart</h1>
 <p>The <em>theme.usq</em> package is only available from GitHub. The easiest way to install it is by using the <a href="https://github.com/hadley/devtools"><em>devtools</em></a> package.</p>
 <p>The installation may take some time as some system fonts need to be catalogued to use the Microsoft Verdana font that USQ suggests. Once the installation is done, it should not be necessary to re-catalogue the fonts so loading <em>theme.usq</em> will not take any longer than expected.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">if</span>(<span class="op">!</span><span class="kw">require</span>(ggplot2)){
-    <span class="kw">install.packages</span>(<span class="st">"ggplot2"</span>)
-}
-
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
 <span class="cf">if</span>(<span class="op">!</span><span class="kw">require</span>(devtools)){
     <span class="kw">install.packages</span>(<span class="st">"devtools"</span>)
     <span class="kw">library</span>(devtools)
 }
 
-devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"adamhsparks/theme_usq"</span>)
+devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"adamhsparks/theme_usq"</span>, <span class="dt">dependencies =</span> <span class="ot">TRUE</span>)
 
 <span class="kw">library</span>(<span class="st">"ggplot2"</span>)
 <span class="kw">library</span>(<span class="st">"theme.usq"</span>)</code></pre></div>
+<div id="keeping-theme-usq-up-to-date" class="section level2">
+<h2 class="hasAnchor">
+<a href="#keeping-theme-usq-up-to-date" class="anchor"></a>Keeping <em>theme.usq</em> up-to-date</h2>
+<p>Since <em>theme.usq</em> is still under development with bug fixes and new features being added and it is not available from CRAN; <code>update.packages()</code> will not update it. To keep <em>theme.usq</em> updated, use:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/update_packages">update_packages</a></span>(<span class="st">"theme.usq"</span>)</code></pre></div>
+</div>
 </div>
 <div id="examples" class="section level1">
 <h1 class="hasAnchor">
@@ -104,7 +107,7 @@ devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocument
 </h3>
 <p>Plot plot car weights by miles per gallon.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="reference/plot_usq.html">plot_usq</a></span>(<span class="dt">x =</span> mtcars<span class="op">$</span>wt, <span class="dt">y =</span> mtcars<span class="op">$</span>mpg)</code></pre></div>
-<p><img src="README-unnamed-chunk-3-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-4-1.png" width="672"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq" class="section level3">
 <h3 class="hasAnchor">
@@ -121,10 +124,10 @@ devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocument
 <span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/facet_wrap">facet_wrap</a></span>(<span class="op">~</span><span class="st"> </span>am)
 
 p1</code></pre></div>
-<p><img src="README-unnamed-chunk-4-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-5-1.png" width="672"></p>
 <p>Now add the <code><a href="reference/theme_usq.html">theme_usq()</a></code> to the graph.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p1 <span class="op">+</span><span class="st"> </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()</code></pre></div>
-<p><img src="README-unnamed-chunk-5-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-6-1.png" width="672"></p>
 </div>
 </div>
 <div id="example-2-heatmaps-or-other-continuous-data" class="section level2">
@@ -145,7 +148,7 @@ p1</code></pre></div>
 <span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
   
 p2a</code></pre></div>
-<p><img src="README-unnamed-chunk-6-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-7-1.png" width="672"></p>
 </div>
 <div id="cool-gradients" class="section level3">
 <h3 class="hasAnchor">
@@ -156,7 +159,7 @@ p2a</code></pre></div>
 <span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
   
 p2b</code></pre></div>
-<p><img src="README-unnamed-chunk-7-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-8-1.png" width="672"></p>
 </div>
 </div>
 <div id="example-3-heatmaps-using-other-colour-palettes" class="section level2">
@@ -173,7 +176,7 @@ p2b</code></pre></div>
 <span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
   
 p3</code></pre></div>
-<p><img src="README-unnamed-chunk-8-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-9-1.png" width="672"></p>
 </div>
 </div>
 <div id="example-4-histograms" class="section level2">
@@ -184,7 +187,7 @@ p3</code></pre></div>
 <a href="#using-hist_usq" class="anchor"></a>Using <code><a href="reference/hist_usq.html">hist_usq()</a></code>
 </h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="reference/hist_usq.html">hist_usq</a></span>(diamonds<span class="op">$</span>carat)</code></pre></div>
-<p><img src="README-unnamed-chunk-9-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-10-1.png" width="672"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq-3" class="section level3">
 <h3 class="hasAnchor">
@@ -196,7 +199,7 @@ p3</code></pre></div>
 
 p4
 <span class="co">#&gt; `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</span></code></pre></div>
-<p><img src="README-unnamed-chunk-10-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-11-1.png" width="672"></p>
 </div>
 </div>
 <div id="example-5-boxplots" class="section level2">
@@ -213,7 +216,7 @@ p4
 <a href="#using-boxplot_usq-1" class="anchor"></a>Using <code><a href="reference/boxplot_usq.html">boxplot_usq()</a></code>
 </h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="reference/boxplot_usq.html">boxplot_usq</a></span>(mpg<span class="op">$</span>hwy <span class="op">~</span><span class="st"> </span>mpg<span class="op">$</span>class)</code></pre></div>
-<p><img src="README-unnamed-chunk-11-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-12-1.png" width="672"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq-4" class="section level3">
 <h3 class="hasAnchor">
@@ -226,7 +229,7 @@ p4
 <span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
   
 p5</code></pre></div>
-<p><img src="README-unnamed-chunk-12-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-13-1.png" width="672"></p>
 <p>Use the USQ colours to fill the box-plots while using <code>drv</code> (<em>e.g.</em>, 4-wheel drive, front-wheel drive or rear-wheel drive) for the box-plot colour.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p5.<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(mpg, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(class, hwy)) <span class="op">+</span>
 <span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_boxplot">geom_boxplot</a></span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">fill =</span> drv), <span class="dt">colour =</span> usq_palette[<span class="dv">1</span>]) <span class="op">+</span>
@@ -234,7 +237,7 @@ p5</code></pre></div>
 <span class="st">  </span><span class="kw"><a href="reference/theme_usq.html">theme_usq</a></span>()
   
 p5.<span class="dv">1</span></code></pre></div>
-<p><img src="README-unnamed-chunk-13-1.png" width="672"></p>
+<p><img src="README-unnamed-chunk-14-1.png" width="672"></p>
 </div>
 </div>
 <div id="example-6-timeseries" class="section level2">

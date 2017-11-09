@@ -16,19 +16,25 @@ The *theme.usq* package is only available from GitHub. The easiest way to instal
 The installation may take some time as some system fonts need to be catalogued to use the Microsoft Verdana font that USQ suggests. Once the installation is done, it should not be necessary to re-catalogue the fonts so loading *theme.usq* will not take any longer than expected.
 
 ``` r
-if(!require(ggplot2)){
-    install.packages("ggplot2")
-}
 
 if(!require(devtools)){
     install.packages("devtools")
     library(devtools)
 }
 
-devtools::install_github("adamhsparks/theme_usq")
+devtools::install_github("adamhsparks/theme_usq", dependencies = TRUE)
 
 library("ggplot2")
 library("theme.usq")
+```
+
+Keeping *theme.usq* up-to-date
+------------------------------
+
+Since *theme.usq* is still under development with bug fixes and new features being added and it is not available from CRAN; `update.packages()` will not update it. To keep *theme.usq* updated, use:
+
+``` r
+devtools::update_packages("theme.usq")
 ```
 
 Examples
@@ -45,7 +51,7 @@ Plot plot car weights by miles per gallon.
 plot_usq(x = mtcars$wt, y = mtcars$mpg)
 ```
 
-![](README-unnamed-chunk-3-1.png)
+![](README-unnamed-chunk-4-1.png)
 
 ### Using *ggplot2* and `theme_usq()`
 
@@ -64,7 +70,7 @@ p1 <- ggplot(mtcars) +
 p1
 ```
 
-![](README-unnamed-chunk-4-1.png)
+![](README-unnamed-chunk-5-1.png)
 
 Now add the `theme_usq()` to the graph.
 
@@ -72,7 +78,7 @@ Now add the `theme_usq()` to the graph.
 p1 + theme_usq()
 ```
 
-![](README-unnamed-chunk-5-1.png)
+![](README-unnamed-chunk-6-1.png)
 
 Example 2: Heatmaps or other continuous data
 --------------------------------------------
@@ -92,7 +98,7 @@ p2a <- ggplot(faithfuld, aes(waiting, eruptions)) +
 p2a
 ```
 
-![](README-unnamed-chunk-6-1.png)
+![](README-unnamed-chunk-7-1.png)
 
 ### Cool gradients
 
@@ -105,7 +111,7 @@ p2b <- ggplot(faithfuld, aes(waiting, eruptions)) +
 p2b
 ```
 
-![](README-unnamed-chunk-7-1.png)
+![](README-unnamed-chunk-8-1.png)
 
 Example 3: Heatmaps using other colour palettes
 -----------------------------------------------
@@ -124,7 +130,7 @@ p3 <- ggplot(faithfuld, aes(waiting, eruptions)) +
 p3
 ```
 
-![](README-unnamed-chunk-8-1.png)
+![](README-unnamed-chunk-9-1.png)
 
 Example 4: Histograms
 ---------------------
@@ -135,7 +141,7 @@ Example 4: Histograms
 hist_usq(diamonds$carat)
 ```
 
-![](README-unnamed-chunk-9-1.png)
+![](README-unnamed-chunk-10-1.png)
 
 ### Using *ggplot2* and `theme_usq()`
 
@@ -148,7 +154,7 @@ p4
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](README-unnamed-chunk-10-1.png)
+![](README-unnamed-chunk-11-1.png)
 
 Example 5: Boxplots
 -------------------
@@ -163,7 +169,7 @@ Plot the highway miles per gallon (mpg) of 38 popular car models in the US by cl
 boxplot_usq(mpg$hwy ~ mpg$class)
 ```
 
-![](README-unnamed-chunk-11-1.png)
+![](README-unnamed-chunk-12-1.png)
 
 ### Using *ggplot2* and `theme_usq()`
 
@@ -177,7 +183,7 @@ p5 <- ggplot(mpg, aes(class, hwy)) +
 p5
 ```
 
-![](README-unnamed-chunk-12-1.png)
+![](README-unnamed-chunk-13-1.png)
 
 Use the USQ colours to fill the box-plots while using `drv` (*e.g.*, 4-wheel drive, front-wheel drive or rear-wheel drive) for the box-plot colour.
 
@@ -190,7 +196,7 @@ p5.1 <- ggplot(mpg, aes(class, hwy)) +
 p5.1
 ```
 
-![](README-unnamed-chunk-13-1.png)
+![](README-unnamed-chunk-14-1.png)
 
 Example 6: Timeseries
 ---------------------

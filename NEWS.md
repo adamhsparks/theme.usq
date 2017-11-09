@@ -1,6 +1,17 @@
-# theme.usq 0.1.0.9000
+# theme.usq 0.1.1
+
+### Minor enhancements
 
 * Use col for `hist_usq()` border colour to match _ggplot2_ style
+
+### Bug fixes
+
+* Fix issue with base graphics font on Windows
+
+## Minor changes
+
+* _ggplot2_ is moved to "imports" since base graphing capabilities are now
+included, the package does not strictly rely on _ggplot2_ along now
 
 # theme.usq 0.1.0
 
