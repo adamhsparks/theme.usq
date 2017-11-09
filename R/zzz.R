@@ -22,7 +22,7 @@
     }
 
     # Load Verdana on macOS/OSX platforms for base graphics
-    if (.Platform$OS.type != "windows") {
+    if (Sys.info()["sysname"] == "Darwin") {
       grDevices::quartzFonts(
         Verdana = c(
           "Verdana",
