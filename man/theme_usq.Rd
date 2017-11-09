@@ -22,6 +22,9 @@ The base size is set to 11 by default.  For presentations using the option,
 presentation slides, \emph{e.g.}, \code{theme_usq(base_size = 24)}.
 }
 \examples{
+
+library(ggplot2)
+
 # Discrete values
 p1 <- ggplot(mtcars) +
   geom_point(aes(
@@ -38,7 +41,7 @@ p1
 df <- reshape2::melt(outer(1:4, 1:4), varnames = c("X1", "X2"))
 
 p2 <- ggplot(df, aes(X1, X2)) + geom_tile(aes(fill = value)) +
-  usq_fill_gradient()
+  usq_fill_gradient_warm()
 p3 <- p2 + geom_point(aes(size = value)) +
   theme_usq()
 p3
