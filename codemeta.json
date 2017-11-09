@@ -7,10 +7,10 @@
   "identifier": "theme.usq",
   "description": "Provides University of Southern Queensland (USQ) style,\n    typography and colours for plots generated using R base graphics and\n    ggplot2.",
   "name": "theme.usq: USQ Themed Plots from R",
-  "codeRepository": "https://github.com/adamhsparks/theme_usq.git",
-  "issueTracker": "https://github.com/adamhsparks/theme_usq/issues",
+  "codeRepository": "https://adamhsparks@github.com/adamhsparks/theme.usq.git",
+  "issueTracker": "https://github.com/adamhsparks/theme.usq/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -142,7 +142,8 @@
       "version": "3.1"
     }
   ],
-  "releaseNotes": "https://github.com/adamhsparks/theme_usq.git/blob/devel/NEWS.md",
-  "readme": "https://github.com/adamhsparks/theme_usq.git/blob/devel/README.md",
-  "fileSize": "10.327KB"
+  "releaseNotes": "https://adamhsparks@github.com/adamhsparks/theme.usq.git/blob/devel/NEWS.md",
+  "readme": "https://adamhsparks@github.com/adamhsparks/theme.usq.git/blob/devel/README.md",
+  "fileSize": "534.928KB",
+  "contIntegration": "https://travis-ci.org/adamhsparks/theme"
 }
