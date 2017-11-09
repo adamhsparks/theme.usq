@@ -1,13 +1,16 @@
 {
-  "@context": ["https://doi.org/doi:10.5063/schema/codemeta-2.0", "http://schema.org"],
+  "@context": [
+    "https://doi.org/doi:10.5063/schema/codemeta-2.0",
+    "http://schema.org"
+  ],
   "@type": "SoftwareSourceCode",
   "identifier": "theme.usq",
-  "description": "Provides University of Southern Queensland (USQ) graph style,\n    typography and colours for theming ggplot2 graphs in R.",
-  "name": "theme.usq: USQ Themed Plots in R Using ggplot2",
-  "codeRepository": "https://github.com/adamhsparks/theme_usq",
+  "description": "Provides University of Southern Queensland (USQ) style,\n    typography and colours for plots generated using R base graphics and\n    ggplot2.",
+  "name": "theme.usq: USQ Themed Plots from R",
+  "codeRepository": "https://github.com/adamhsparks/theme_usq.git",
   "issueTracker": "https://github.com/adamhsparks/theme_usq/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -20,16 +23,23 @@
       "@type": "Person",
       "givenName": "Adam",
       "familyName": "Sparks",
-      "email": "adamhsparks@gmail.com"
+      "email": "adamhsparks@gmail.com",
+      "@id": "https://orcid.org/0000-0002-0061-8359"
     }
   ],
   "maintainer": {
     "@type": "Person",
     "givenName": "Adam",
     "familyName": "Sparks",
-    "email": "adamhsparks@gmail.com"
+    "email": "adamhsparks@gmail.com",
+    "@id": "https://orcid.org/0000-0002-0061-8359"
   },
   "softwareSuggestions": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "datasets",
+      "name": "datasets"
+    },
     {
       "@type": "SoftwareApplication",
       "identifier": "knitr",
@@ -43,8 +53,30 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "reshape2",
+      "name": "reshape2",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "rmarkdown",
       "name": "rmarkdown",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "tibble",
+      "name": "tibble",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -67,17 +99,6 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "grDevices",
-      "name": "grDevices"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "R",
-      "name": "R",
-      "version": "3.1"
-    },
-    {
-      "@type": "SoftwareApplication",
       "identifier": "ggplot2",
       "name": "ggplot2",
       "version": "2.2.1",
@@ -87,9 +108,41 @@
         "name": "Central R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "graphics",
+      "name": "graphics"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "grDevices",
+      "name": "grDevices"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "scales",
+      "name": "scales",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "stats",
+      "name": "stats"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "R",
+      "name": "R",
+      "version": "3.1"
     }
   ],
-  "releaseNotes": "https://github.com/adamhsparks/theme_usq/blob/master/NEWS.md",
-  "readme": "https://github.com/adamhsparks/theme_usq/blob/master/README.md",
-  "fileSize": "5.737KB"
+  "releaseNotes": "https://github.com/adamhsparks/theme_usq.git/blob/devel/NEWS.md",
+  "readme": "https://github.com/adamhsparks/theme_usq.git/blob/devel/README.md",
+  "fileSize": "10.33KB"
 }
