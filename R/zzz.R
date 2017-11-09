@@ -1,9 +1,6 @@
 
 .onLoad <-
   function(libname, pkgname) {
-    pdfFonts <- grDevices::pdfFonts
-    postscriptFonts <- grDevices::postscriptFonts
-
     # check for existence of Verdana.afm file before importing to avoid message
     # import as necessary
     if (!file.exists(system.file("metrics",
@@ -13,20 +10,26 @@
                              recursive = FALSE)
     }
 
+    pdfFonts <- grDevices::pdfFonts
+    postscriptFonts <- grDevices::postscriptFonts
+
     extrafont::loadfonts(device = "pdf", quiet = TRUE)
     extrafont::loadfonts(device = "postscript", quiet = TRUE)
 
     if (.Platform$OS.type == "windows") {
+      windowsFonts <- grDevices::windowsFonts
       extrafont::loadfonts(device = "win", quiet = TRUE)
     }
 
     # Load Verdana on macOS/OSX platforms for base graphics
     if (.Platform$OS.type != "windows") {
-      grDevices::quartzFonts(Verdana = c(
-        "Verdana",
-        "Verdana Bold",
-        "Verdana Italic",
-        "Verdana Bold Italic"
-      ))
+      grDevices::quartzFonts(
+        Verdana = c(
+          "Verdana",
+          "Verdana Bold",
+          "Verdana Italic",
+          "Verdana Bold Italic"
+        )
+      )
     }
   }
