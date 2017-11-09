@@ -1,6 +1,6 @@
 urls:
-  reference: https://adamhsparks.github.io/theme_usq//reference
-  article: https://adamhsparks.github.io/theme_usq//articles
+  reference: https://adamhsparks.github.io/theme.usq//reference
+  article: https://adamhsparks.github.io/theme.usq//articles
 articles:
   theme.usq: theme.usq.html
 
