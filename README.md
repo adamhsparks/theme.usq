@@ -51,7 +51,7 @@ Plot plot car weights by miles per gallon.
 plot_usq(x = mtcars$wt, y = mtcars$mpg)
 ```
 
-![](README-unnamed-chunk-4-1.png)
+![](./man/figures/README-unnamed-chunk-4-1.png)
 
 #### Using *ggplot2* and `theme.usq()`
 
@@ -70,7 +70,7 @@ p1 <- ggplot(mtcars) +
 p1
 ```
 
-![](README-unnamed-chunk-5-1.png)
+![](./man/figures/README-unnamed-chunk-5-1.png)
 
 Now add the `theme_usq()` to the graph.
 
@@ -78,7 +78,7 @@ Now add the `theme_usq()` to the graph.
 p1 + theme_usq()
 ```
 
-![](README-unnamed-chunk-6-1.png)
+![](./man/figures/README-unnamed-chunk-6-1.png)
 
 ### Example 2: Heatmaps or other continuous data
 
@@ -95,7 +95,7 @@ p2a <- ggplot(faithfuld, aes(waiting, eruptions)) +
 p2a
 ```
 
-![](README-unnamed-chunk-7-1.png)
+![](./man/figures/README-unnamed-chunk-7-1.png)
 
 #### Cool gradients
 
@@ -108,7 +108,7 @@ p2b <- ggplot(faithfuld, aes(waiting, eruptions)) +
 p2b
 ```
 
-![](README-unnamed-chunk-8-1.png)
+![](./man/figures/README-unnamed-chunk-8-1.png)
 
 ### Example 3: Heatmaps using other colour palettes
 
@@ -126,7 +126,7 @@ p3 <- ggplot(faithfuld, aes(waiting, eruptions)) +
 p3
 ```
 
-![](README-unnamed-chunk-9-1.png)
+![](./man/figures/README-unnamed-chunk-9-1.png)
 
 ### Example 4: Histograms
 
@@ -136,7 +136,7 @@ p3
 hist_usq(diamonds$carat)
 ```
 
-![](README-unnamed-chunk-10-1.png)
+![](./man/figures/README-unnamed-chunk-10-1.png)
 
 #### Using *ggplot2* and `theme_usq()`
 
@@ -149,7 +149,7 @@ p4
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](README-unnamed-chunk-11-1.png)
+![](./man/figures/README-unnamed-chunk-11-1.png)
 
 ### Example 5: Boxplots
 
@@ -163,7 +163,7 @@ Plot the highway miles per gallon (mpg) of 38 popular car models in the US by cl
 boxplot_usq(mpg$hwy ~ mpg$class)
 ```
 
-![](README-unnamed-chunk-12-1.png)
+![](./man/figures/README-unnamed-chunk-12-1.png)
 
 #### Using *ggplot2* and `theme_usq()`
 
@@ -177,7 +177,7 @@ p5 <- ggplot(mpg, aes(class, hwy)) +
 p5
 ```
 
-![](README-unnamed-chunk-13-1.png)
+![](./man/figures/README-unnamed-chunk-13-1.png)
 
 Use the USQ colours to fill the box-plots while using `drv` (*e.g.*, 4-wheel drive, front-wheel drive or rear-wheel drive) for the box-plot colour.
 
@@ -190,7 +190,7 @@ p5.1 <- ggplot(mpg, aes(class, hwy)) +
 p5.1
 ```
 
-![](README-unnamed-chunk-14-1.png)
+![](./man/figures/README-unnamed-chunk-14-1.png)
 
 ### Example 6: Timeseries
 
@@ -207,7 +207,7 @@ p6 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
 p6
 ```
 
-![](README-example%206-1.png)
+![](./man/figures/README-example%206-1.png)
 
 ### Example 7: Barplots
 
@@ -219,7 +219,7 @@ Plot the areas in thousands of square miles of landmasses which exceed 10,000 sq
 barplot_usq(islands, col = 5)
 ```
 
-![](README-example_7.1-1.png)
+![](./man/figures/README-example_7.1-1.png)
 
 #### Using *ggplot2* and `theme_usq()`
 
@@ -238,7 +238,7 @@ ggplot(islands_df, aes(x = name, y = islands)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-![](README-example_7.2-1.png)
+![](./man/figures/README-example_7.2-1.png)
 
 Meta
 ----
