@@ -24,7 +24,7 @@ if(!require(devtools)){
     library(devtools)
 }
 
-devtools::install_github("adamhsparks/theme.usq", dependencies = TRUE)
+install_github("adamhsparks/theme.usq", dependencies = TRUE)
 
 library("ggplot2")
 library("theme.usq")
