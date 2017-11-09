@@ -210,7 +210,7 @@ colours for each variable of interest. While possible to do with base R
 graphics, _ggplot2_ simplifies the process greatly, so it is the only example
 provided and suggested for use.
 
-```{r, example 6}
+```{r, example_6}
 p6 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
   geom_line() +
   scale_colour_manual(values = usq_palette) +

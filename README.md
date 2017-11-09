@@ -207,7 +207,7 @@ p6 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
 p6
 ```
 
-![](./man/figures/README-example%206-1.png)
+![](./man/figures/README-example_6-1.png)
 
 ### Example 7: Barplots
 
