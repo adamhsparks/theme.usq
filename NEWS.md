@@ -1,4 +1,17 @@
 
+# theme.usq 0.1.1
+
+## Bug fixes
+
+* Implement changes to pass travis and appveyor CI
+
+* Implement changes to pass CRAN WIN Builder checks
+
+## Minor changes
+
+* Check for OS, then check if Verdana has been imported. If not import. Check
+again, if not, import recursively
+
 # theme.usq 0.1.0
 
 ## Major changes
