@@ -1,5 +1,18 @@
-# theme.usq 0.1.1
 
+# theme.usq 0.1.0
+
+## Major changes
+
+* Add base plot options in addition to _ggplot2_
+  
+  * `plot_usq()`
+  
+  * `hist_usq()`
+  
+  * `boxplot_usq()`
+  
+  * `barplot_usq()`
+  
 ### Minor enhancements
 
 * Use col for `hist_usq()` border colour to match _ggplot2_ style
@@ -12,19 +25,6 @@
 
 * _ggplot2_ is moved to "imports" since base graphing capabilities are now
 included, the package does not strictly rely on _ggplot2_ alone now
-
-# theme.usq 0.1.0
-
-* Add base plot options in addition to _ggplot2_
-  
-  * `plot_usq()`
-  
-  * `hist_usq()`
-  
-  * `boxplot_usq()`
-  
-  * `barplot_usq()`
-  
 
 # theme.usq 0.0.4
 
