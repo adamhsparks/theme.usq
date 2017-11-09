@@ -52,7 +52,7 @@ barplot_usq <- function(height,
 
   # set new pars
   graphics::par(
-    family = "verdana",
+    family = "Verdana",
     pch = 16,
     fg = "#ffffff",
     bg = "#ffffff",
