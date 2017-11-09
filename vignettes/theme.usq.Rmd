@@ -13,6 +13,7 @@ vignette: >
 
 ```{r, eval = TRUE, message=FALSE, echo=FALSE}
 library(theme.usq)
+library(ggplot2)
 knitr::opts_chunk$set(eval = TRUE, collapse = TRUE, comment = "#>", fig.width = 7, fig.height = 5, fig.align = "center")
 ```
 
@@ -30,33 +31,6 @@ Windows 7. For Linux users, if you have not installed the MS Core Fonts, you
 will need to do that for this package to function properly and generate the
 graphs with the proper typography. Windows and macOS users should be ready to go
 with just the installation of this package.
-
-# Quickstart
-
-The _theme.usq_ package is only available from GitHub. The easiest way to
-install it is by using the [_devtools_](https://github.com/hadley/devtools)
-package.
-
-The installation may take some time as some system fonts need to be catalogued
-to use the Microsoft Verdana font that USQ suggests. Once the installation is
-done, it should not be necessary to re-catalogue the fonts so loading
-_theme.usq_ will not take any longer than expected.
-
-```{r, eval=FALSE}
-if(!require(ggplot2)){
-    install.packages("ggplot2")
-}
-
-if(!require(devtools)){
-    install.packages("devtools")
-    library(devtools)
-}
-
-devtools::install_github("adamhsparks/theme_usq")
-
-library("ggplot2")
-library("theme.usq")
-```
 
 # Examples
 
