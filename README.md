@@ -1,7 +1,7 @@
 theme.usq
 ================
 
-[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme.usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme.usq) [![Build status](https://ci.appveyor.com/api/projects/status/kl8y1bvwakd4884r/branch/master?svg=true)](https://ci.appveyor.com/project/adamhsparks/theme-usq-8c8gf/branch/master)
+[![Travis-CI Build Status](https://travis-ci.org/adamhsparks/theme.usq.svg?branch=master)](https://travis-ci.org/adamhsparks/theme.usq) [![Build status](https://ci.appveyor.com/api/projects/status/kl8y1bvwakd4884r/branch/master?svg=true)](https://ci.appveyor.com/project/adamhsparks/theme-usq-8c8gf/branch/master) [![DOI](https://zenodo.org/badge/103536536.svg)](https://zenodo.org/badge/latestdoi/103536536)
 
 Introduction to *theme.usq*
 ---------------------------
