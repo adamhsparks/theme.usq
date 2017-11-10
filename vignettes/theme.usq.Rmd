@@ -201,12 +201,6 @@ reports, but if you wish to use it in a presentation you can use the _ggplot2_
 option `base_size = ` to increase the size of the fonts, points and lines in the
 graphs.
 
-## Example 7: Using _ggplot2_'s `base_size` with `theme_usq()`
-
-As an example, using `base_size = 24` helps ensure that the graphs are legible
-on a standard sized PowerPoint slide when exported at a size of 33.87mm x 19.05mm, using `ggsave()`, for a 16x9 presentation slide that fills the whole
-slide.
-
 ## Example 7: Barplots
 
 ### Using `barplot_usq()` 
@@ -236,9 +230,15 @@ ggplot(islands_df, aes(x = name, y = islands)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
+## Example 8: Using _ggplot2_'s `base_size` with theme_usq
+
+As an example, using `base_size = 24` helps ensure that the graphs are legible
+on a standard sized PowerPoint slide when exported at a size of 33.87mm x 19.05mm, using `ggsave()`, for a 16x9 presentation slide that fills the whole
+slide.
+
 
 ```{r example8, eval = FALSE}
-p7 <-  ggplot(mpg, aes(class, hwy)) +
+p8 <-  ggplot(mpg, aes(class, hwy)) +
   geom_boxplot(fill = usq_palette[1],
                colour = usq_palette[1],
                alpha = 0.5) +

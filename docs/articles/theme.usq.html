@@ -249,12 +249,6 @@ p6</code></pre></div>
 <h1 class="hasAnchor">
 <a href="#using-theme_usq-in-presentations" class="anchor"></a>Using theme_usq() in presentations</h1>
 <p>The default settings for <code><a href="../reference/theme_usq.html">theme_usq()</a></code> are fine for printed materials such as reports, but if you wish to use it in a presentation you can use the <em>ggplot2</em> option <code>base_size =</code> to increase the size of the fonts, points and lines in the graphs.</p>
-<div id="example-7-using-ggplot2s-base_size-with-theme_usq" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example-7-using-ggplot2s-base_size-with-theme_usq" class="anchor"></a>Example 7: Using <em>ggplot2</em>’s <code>base_size</code> with <code><a href="../reference/theme_usq.html">theme_usq()</a></code>
-</h2>
-<p>As an example, using <code>base_size = 24</code> helps ensure that the graphs are legible on a standard sized PowerPoint slide when exported at a size of 33.87mm x 19.05mm, using <code>ggsave()</code>, for a 16x9 presentation slide that fills the whole slide.</p>
-</div>
 <div id="example-7-barplots" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example-7-barplots" class="anchor"></a>Example 7: Barplots</h2>
@@ -282,7 +276,13 @@ islands_df &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rd
 <span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>() <span class="op">+</span>
 <span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">angle =</span> <span class="dv">45</span>, <span class="dt">hjust =</span> <span class="dv">1</span>))</code></pre></div>
 <p><img src="theme.usq_files/figure-html/example7.2-1.png" width="672" style="display: block; margin: auto;"></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p7 &lt;-<span class="st">  </span><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(class, hwy)) <span class="op">+</span>
+</div>
+</div>
+<div id="example-8-using-ggplot2s-base_size-with-theme_usq" class="section level2">
+<h2 class="hasAnchor">
+<a href="#example-8-using-ggplot2s-base_size-with-theme_usq" class="anchor"></a>Example 8: Using <em>ggplot2</em>’s <code>base_size</code> with theme_usq</h2>
+<p>As an example, using <code>base_size = 24</code> helps ensure that the graphs are legible on a standard sized PowerPoint slide when exported at a size of 33.87mm x 19.05mm, using <code>ggsave()</code>, for a 16x9 presentation slide that fills the whole slide.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p8 &lt;-<span class="st">  </span><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(class, hwy)) <span class="op">+</span>
 <span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">fill =</span> usq_palette[<span class="dv">1</span>],
                <span class="dt">colour =</span> usq_palette[<span class="dv">1</span>],
                <span class="dt">alpha =</span> <span class="fl">0.5</span>) <span class="op">+</span>
@@ -291,7 +291,6 @@ islands_df &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rd
 
 <span class="kw">ggsave</span>(<span class="st">"slide_p7.png"</span>, <span class="dt">width =</span> <span class="fl">33.87</span>, <span class="dt">height =</span> <span class="fl">19.05</span>, <span class="dt">units =</span> <span class="st">"cm"</span>,
        <span class="dt">dpi =</span> <span class="dv">150</span>)</code></pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -315,8 +314,8 @@ islands_df &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rd
 </li>
       <li>
 <a href="#using-theme_usq-in-presentations">Using theme_usq() in presentations</a><ul class="nav nav-pills nav-stacked">
-<li><a href="#example-7-using-ggplot2s-base_size-with-theme_usq">Example 7: Using <em>ggplot2</em>’s <code>base_size</code> with <code><a href="--/reference/theme_usq-html">theme_usq()</a></code></a></li>
-      <li><a href="#example-7-barplots">Example 7: Barplots</a></li>
+<li><a href="#example-7-barplots">Example 7: Barplots</a></li>
+      <li><a href="#example-8-using-ggplot2s-base_size-with-theme_usq">Example 8: Using <em>ggplot2</em>’s <code>base_size</code> with theme_usq</a></li>
       </ul>
 </li>
       </ul>
