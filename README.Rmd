@@ -56,7 +56,6 @@ _theme.usq_ will not take any longer than expected.
 To install _theme.usq_, use the code in the following code block.
 
 ```{r, eval=FALSE}
-
 if(!require(devtools)){
     install.packages("devtools")
     library(devtools)
@@ -77,6 +76,10 @@ update it. To keep _theme.usq_ updated, use:
 ```{r, eval=FALSE}
 devtools::update_packages("theme.usq")
 ```
+
+Following are a few examples of _theme.usq's_ capabilities. Please see the 
+[package vignette](https://adamhsparks.github.io/theme.usq/articles/theme.usq.html)
+for a more complete listing of capabilities and examples.
 
 ## Examples
 

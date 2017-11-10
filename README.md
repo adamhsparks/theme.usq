@@ -24,7 +24,6 @@ The installation may take some time as some system fonts need to be catalogued t
 To install *theme.usq*, use the code in the following code block.
 
 ``` r
-
 if(!require(devtools)){
     install.packages("devtools")
     library(devtools)
@@ -43,6 +42,8 @@ Since *theme.usq* is still under development with bug fixes and new features bei
 ``` r
 devtools::update_packages("theme.usq")
 ```
+
+Following are a few examples of *theme.usq's* capabilities. Please see the [package vignette](https://adamhsparks.github.io/theme.usq/articles/theme.usq.html) for a more complete listing of capabilities and examples.
 
 Examples
 --------

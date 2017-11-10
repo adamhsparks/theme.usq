@@ -83,8 +83,7 @@
 <p>The <em>theme.usq</em> package is only available from GitHub. The easiest way to install it is by using the <a href="https://github.com/hadley/devtools"><em>devtools</em></a> package.</p>
 <p>The installation may take some time as some system fonts need to be catalogued to use the Microsoft Verdana font that USQ suggests. Once the installation is complete, it should not be necessary to re-catalogue the fonts so loading <em>theme.usq</em> will not take any longer than expected.</p>
 <p>To install <em>theme.usq</em>, use the code in the following code block.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
-<span class="cf">if</span>(<span class="op">!</span><span class="kw">require</span>(devtools)){
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">if</span>(<span class="op">!</span><span class="kw">require</span>(devtools)){
     <span class="kw">install.packages</span>(<span class="st">"devtools"</span>)
     <span class="kw">library</span>(devtools)
 }
@@ -98,6 +97,7 @@
 <a href="#keeping-theme-usq-up-to-date" class="anchor"></a>Keeping <em>theme.usq</em> up-to-date</h3>
 <p>Since <em>theme.usq</em> is still under development with bug fixes and new features being added and it is not available from CRAN; <code>update.packages()</code> will not update it. To keep <em>theme.usq</em> updated, use:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/update_packages">update_packages</a></span>(<span class="st">"theme.usq"</span>)</code></pre></div>
+<p>Following are a few examples of <em>theme.usq’s</em> capabilities. Please see the <a href="https://adamhsparks.github.io/theme.usq/articles/theme.usq.html">package vignette</a> for a more complete listing of capabilities and examples.</p>
 </div>
 </div>
 <div id="examples" class="section level2">
