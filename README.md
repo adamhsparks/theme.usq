@@ -21,6 +21,8 @@ The *theme.usq* package is only available from GitHub. The easiest way to instal
 
 The installation may take some time as some system fonts need to be catalogued to use the Microsoft Verdana font that USQ suggests. Once the installation is complete, it should not be necessary to re-catalogue the fonts so loading *theme.usq* will not take any longer than expected.
 
+To install *theme.usq*, use the code in the following code block.
+
 ``` r
 
 if(!require(devtools)){

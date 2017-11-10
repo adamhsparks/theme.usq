@@ -52,6 +52,8 @@ to use the Microsoft Verdana font that USQ suggests. Once the installation is
 complete, it should not be necessary to re-catalogue the fonts so loading
 _theme.usq_ will not take any longer than expected.
 
+To install _theme.usq_, use the code in the following code block.
+
 ```{r, eval=FALSE}
 
 if(!require(devtools)){
