@@ -13,9 +13,13 @@ This package has been tested on macOS, Ubuntu Linux and USQ computers using Wind
 Quickstart
 ----------
 
+If you do not already have R installed, because *theme.usq* is an R package, you will need to install R first. Download and install the proper version for your computer from [CRAN](https://cran.r-project.org). It is also suggested to have RStudio installed as well. You can download the proper installation file from <https://www.rstudio.com/products/rstudio/download/> for your platform.
+
+Once R and RStudio are set up, you're ready to install *theme.usq* through an R session.
+
 The *theme.usq* package is only available from GitHub. The easiest way to install it is by using the [*devtools*](https://github.com/hadley/devtools) package.
 
-The installation may take some time as some system fonts need to be catalogued to use the Microsoft Verdana font that USQ suggests. Once the installation is done, it should not be necessary to re-catalogue the fonts so loading *theme.usq* will not take any longer than expected.
+The installation may take some time as some system fonts need to be catalogued to use the Microsoft Verdana font that USQ suggests. Once the installation is complete, it should not be necessary to re-catalogue the fonts so loading *theme.usq* will not take any longer than expected.
 
 ``` r
 
@@ -53,7 +57,7 @@ plot_usq(x = mtcars$wt, y = mtcars$mpg)
 
 ![](./man/figures/README-unnamed-chunk-4-1.png)
 
-#### Using *ggplot2* and `theme.usq()`
+#### Using *ggplot2* and `theme_usq()`
 
 Plot car weights by miles per gallon and facet by `Transmission` (0 = automatic, 1 = manual) using the `usq_palette` in the `scale_colour_manual` discrete scale function to use USQ colours for the graph.
 
