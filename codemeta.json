@@ -14,10 +14,10 @@
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.4.2",
+    "version": "3.4.3",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.4.2 (2017-09-28)",
+  "runtimePlatform": "R version 3.4.3 (2017-11-30)",
   "author": [
     {
       "@type": "Person",
@@ -144,6 +144,23 @@
   ],
   "releaseNotes": "https://adamhsparks@github.com/adamhsparks/theme.usq.git/blob/devel/NEWS.md",
   "readme": "https://adamhsparks@github.com/adamhsparks/theme.usq.git/blob/devel/README.md",
-  "fileSize": "534.955KB",
-  "contIntegration": "https://travis-ci.org/adamhsparks/theme"
+  "fileSize": "532.636KB",
+  "contIntegration": "https://travis-ci.org/adamhsparks/theme",
+  "citation": [
+    {
+      "@type": "SoftwareSourceCode",
+      "author": [
+        {
+          "@type": "Person",
+          "givenName": "Adam",
+          "familyName": "Sparks"
+        }
+      ],
+      "name": "{theme.usq}: USQ Themed Plots from R",
+      "identifier": "10.5281/zenodo.1044768",
+      "url": "https://github.com/adamhsparks/theme.usq/",
+      "@id": "https://doi.org/10.5281/zenodo.1044768",
+      "sameAs": "https://doi.org/10.5281/zenodo.1044768"
+    }
+  ]
 }
