@@ -66,7 +66,7 @@
       <h1>theme.usq</h1>
                         <h4 class="author">Adam H Sparks</h4>
             
-            <h4 class="date">2017-12-13</h4>
+            <h4 class="date">2017-12-15</h4>
           </div>
 
     
@@ -89,7 +89,7 @@
 <a href="#using-plot_usq" class="anchor"></a>Using <code><a href="../reference/plot_usq.html">plot_usq()</a></code>
 </h3>
 <p>Plot car weights by miles per gallon.</p>
-<pre class="sourceCode r" id="cb1"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="../reference/plot_usq.html">plot_usq</a></span>(<span class="dt">x =</span> mtcars<span class="op">$</span>wt, <span class="dt">y =</span> mtcars<span class="op">$</span>mpg, <span class="dt">xlab =</span> <span class="st">"wt"</span>, <span class="dt">ylab =</span> <span class="st">"mpg"</span>)</a></code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="../reference/plot_usq.html">plot_usq</a></span>(<span class="dt">x =</span> mtcars<span class="op">$</span>wt, <span class="dt">y =</span> mtcars<span class="op">$</span>mpg, <span class="dt">xlab =</span> <span class="st">"wt"</span>, <span class="dt">ylab =</span> <span class="st">"mpg"</span>)</a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example1.1-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq" class="section level3">
@@ -97,14 +97,14 @@
 <a href="#using-ggplot2-and-theme_usq" class="anchor"></a>Using <em>ggplot2</em> and <code><a href="../reference/theme_usq.html">theme_usq()</a></code>
 </h3>
 <p>Plot car weights by miles per gallon.</p>
-<pre class="sourceCode r" id="cb2"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">p1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt,  <span class="dt">y =</span> mpg)) <span class="op">+</span></a>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">p1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> mtcars, <span class="kw">aes</span>(<span class="dt">x =</span> wt,  <span class="dt">y =</span> mpg)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb2-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb2-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</a>
 <a class="sourceLine" id="cb2-4" data-line-number="4"> </a>
-<a class="sourceLine" id="cb2-5" data-line-number="5">p1</a></code></pre>
+<a class="sourceLine" id="cb2-5" data-line-number="5">p1</a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example1.2-1.png" width="672" style="display: block; margin: auto;"></p>
 <p>Plot car weights by miles per gallon and facet by <code>Transmission</code> (0 = automatic, 1 = manual) using the <code>usq_palette</code> in the <code>scale_colour_manual</code> discrete scale function to use USQ colours for the graph.</p>
-<pre class="sourceCode r" id="cb3"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">p1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mtcars) <span class="op">+</span></a>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">p1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mtcars) <span class="op">+</span></a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(</a>
 <a class="sourceLine" id="cb3-3" data-line-number="3">    <span class="dt">x =</span> wt,</a>
 <a class="sourceLine" id="cb3-4" data-line-number="4">    <span class="dt">y =</span> mpg,</a>
@@ -114,7 +114,7 @@
 <a class="sourceLine" id="cb3-8" data-line-number="8"><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>am) <span class="op">+</span></a>
 <a class="sourceLine" id="cb3-9" data-line-number="9"><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</a>
 <a class="sourceLine" id="cb3-10" data-line-number="10"></a>
-<a class="sourceLine" id="cb3-11" data-line-number="11">p1</a></code></pre>
+<a class="sourceLine" id="cb3-11" data-line-number="11">p1</a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example1.2a-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -130,23 +130,23 @@
 <div id="warm-gradients" class="section level3">
 <h3 class="hasAnchor">
 <a href="#warm-gradients" class="anchor"></a>Warm gradients</h3>
-<pre class="sourceCode r" id="cb4"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">p2a &lt;-<span class="st"> </span><span class="kw">ggplot</span>(faithfuld, <span class="kw">aes</span>(waiting, eruptions)) <span class="op">+</span></a>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">p2a &lt;-<span class="st"> </span><span class="kw">ggplot</span>(faithfuld, <span class="kw">aes</span>(waiting, eruptions)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_raster</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> density), <span class="dt">interpolate =</span> <span class="ot">TRUE</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="../reference/usq_colour_gradient.html">usq_fill_gradient_warm</a></span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</a>
 <a class="sourceLine" id="cb4-5" data-line-number="5">  </a>
-<a class="sourceLine" id="cb4-6" data-line-number="6">p2a</a></code></pre>
+<a class="sourceLine" id="cb4-6" data-line-number="6">p2a</a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example2a-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="cool-gradients" class="section level3">
 <h3 class="hasAnchor">
 <a href="#cool-gradients" class="anchor"></a>Cool gradients</h3>
-<pre class="sourceCode r" id="cb5"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">p2b &lt;-<span class="st"> </span><span class="kw">ggplot</span>(faithfuld, <span class="kw">aes</span>(waiting, eruptions)) <span class="op">+</span></a>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">p2b &lt;-<span class="st"> </span><span class="kw">ggplot</span>(faithfuld, <span class="kw">aes</span>(waiting, eruptions)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb5-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_raster</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> density), <span class="dt">interpolate =</span> <span class="ot">TRUE</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb5-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="../reference/usq_colour_gradient.html">usq_fill_gradient_cool</a></span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</a>
 <a class="sourceLine" id="cb5-5" data-line-number="5">  </a>
-<a class="sourceLine" id="cb5-6" data-line-number="6">p2b</a></code></pre>
+<a class="sourceLine" id="cb5-6" data-line-number="6">p2b</a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example2b-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -159,11 +159,11 @@
 </h3>
 <p><code><a href="../reference/theme_usq.html">theme_usq()</a></code> can be used with any colour palette that you wish to use, while still applying the graph styling and typography to the graph.</p>
 <p>Use the default <em>ggplot2</em> colour scheme to fill the density plot while using the <code><a href="../reference/theme_usq.html">theme_usq()</a></code> to theme the graph.</p>
-<pre class="sourceCode r" id="cb6"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">p3 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(faithfuld, <span class="kw">aes</span>(waiting, eruptions)) <span class="op">+</span></a>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">p3 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(faithfuld, <span class="kw">aes</span>(waiting, eruptions)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb6-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_raster</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> density), <span class="dt">interpolate =</span> <span class="ot">TRUE</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb6-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</a>
 <a class="sourceLine" id="cb6-4" data-line-number="4">  </a>
-<a class="sourceLine" id="cb6-5" data-line-number="5">p3</a></code></pre>
+<a class="sourceLine" id="cb6-5" data-line-number="5">p3</a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example3-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -174,19 +174,19 @@
 <h3 class="hasAnchor">
 <a href="#using-hist_usq" class="anchor"></a>Using <code><a href="../reference/hist_usq.html">hist_usq()</a></code>
 </h3>
-<pre class="sourceCode r" id="cb7"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw"><a href="../reference/hist_usq.html">hist_usq</a></span>(diamonds<span class="op">$</span>carat, <span class="dt">xlab =</span> <span class="st">"carat"</span>)</a></code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw"><a href="../reference/hist_usq.html">hist_usq</a></span>(diamonds<span class="op">$</span>carat, <span class="dt">xlab =</span> <span class="st">"carat"</span>)</a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example4.1-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq-3" class="section level3">
 <h3 class="hasAnchor">
 <a href="#using-ggplot2-and-theme_usq-3" class="anchor"></a>Using <em>ggplot2</em> and <code><a href="../reference/theme_usq.html">theme_usq()</a></code>
 </h3>
-<pre class="sourceCode r" id="cb8"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">p4 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamonds, <span class="kw">aes</span>(carat)) <span class="op">+</span></a>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">p4 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamonds, <span class="kw">aes</span>(carat)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb8-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">fill =</span> usq_palette[<span class="dv">1</span>]) <span class="op">+</span></a>
 <a class="sourceLine" id="cb8-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</a>
 <a class="sourceLine" id="cb8-4" data-line-number="4"></a>
 <a class="sourceLine" id="cb8-5" data-line-number="5">p4</a>
-<a class="sourceLine" id="cb8-6" data-line-number="6"><span class="co">#&gt; `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</span></a></code></pre>
+<a class="sourceLine" id="cb8-6" data-line-number="6"><span class="co">#&gt; `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</span></a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example4.2-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -203,28 +203,28 @@
 <h3 class="hasAnchor">
 <a href="#using-boxplot_usq-1" class="anchor"></a>Using <code><a href="../reference/boxplot_usq.html">boxplot_usq()</a></code>
 </h3>
-<pre class="sourceCode r" id="cb9"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw"><a href="../reference/boxplot_usq.html">boxplot_usq</a></span>(mpg<span class="op">$</span>hwy <span class="op">~</span><span class="st"> </span>mpg<span class="op">$</span>class)</a></code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw"><a href="../reference/boxplot_usq.html">boxplot_usq</a></span>(mpg<span class="op">$</span>hwy <span class="op">~</span><span class="st"> </span>mpg<span class="op">$</span>class)</a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example5.1-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq-4" class="section level3">
 <h3 class="hasAnchor">
 <a href="#using-ggplot2-and-theme_usq-4" class="anchor"></a>Using <em>ggplot2</em> and <code><a href="../reference/theme_usq.html">theme_usq()</a></code>
 </h3>
-<pre class="sourceCode r" id="cb10"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1">p5 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(class, hwy)) <span class="op">+</span></a>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1">p5 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(class, hwy)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb10-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">fill =</span> usq_palette[<span class="dv">1</span>],</a>
 <a class="sourceLine" id="cb10-3" data-line-number="3">               <span class="dt">colour =</span> usq_palette[<span class="dv">1</span>],</a>
 <a class="sourceLine" id="cb10-4" data-line-number="4">               <span class="dt">alpha =</span> <span class="fl">0.5</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb10-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</a>
 <a class="sourceLine" id="cb10-6" data-line-number="6">  </a>
-<a class="sourceLine" id="cb10-7" data-line-number="7">p5</a></code></pre>
+<a class="sourceLine" id="cb10-7" data-line-number="7">p5</a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example5.2-1.png" width="672" style="display: block; margin: auto;"></p>
 <p>Use the USQ colours to fill the box-plots while using <code>drv</code> (<em>e.g.</em>, 4-wheel drive, front-wheel drive or rear-wheel drive) for the box-plot colour.</p>
-<pre class="sourceCode r" id="cb11"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1">p5<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(class, hwy)) <span class="op">+</span></a>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1">p5<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(class, hwy)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb11-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> drv), <span class="dt">colour =</span> usq_palette[<span class="dv">1</span>]) <span class="op">+</span></a>
 <a class="sourceLine" id="cb11-3" data-line-number="3"><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> usq_palette) <span class="op">+</span></a>
 <a class="sourceLine" id="cb11-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</a>
 <a class="sourceLine" id="cb11-5" data-line-number="5">  </a>
-<a class="sourceLine" id="cb11-6" data-line-number="6">p5<span class="fl">.1</span></a></code></pre>
+<a class="sourceLine" id="cb11-6" data-line-number="6">p5<span class="fl">.1</span></a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example5.3-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -235,12 +235,12 @@
 <h3 class="hasAnchor">
 <a href="#using-ggplot2-and-theme_usq-to-plot-timeseries-lines" class="anchor"></a>Using <em>ggplot2</em> and <code><a href="../reference/theme_usq.html">theme_usq()</a></code> to plot timeseries lines</h3>
 <p>This example uses discrete colours for each variable of interest. While possible to do with base R graphics, <em>ggplot2</em> simplifies the process greatly, so it is the only example provided and suggested for use.</p>
-<pre class="sourceCode r" id="cb12"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">p6 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(economics_long, <span class="kw">aes</span>(date, value01, <span class="dt">colour =</span> variable)) <span class="op">+</span></a>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">p6 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(economics_long, <span class="kw">aes</span>(date, value01, <span class="dt">colour =</span> variable)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb12-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_line</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb12-3" data-line-number="3"><span class="st">  </span><span class="kw">scale_colour_manual</span>(<span class="dt">values =</span> usq_palette) <span class="op">+</span></a>
 <a class="sourceLine" id="cb12-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</a>
 <a class="sourceLine" id="cb12-5" data-line-number="5">  </a>
-<a class="sourceLine" id="cb12-6" data-line-number="6">p6</a></code></pre>
+<a class="sourceLine" id="cb12-6" data-line-number="6">p6</a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example6-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -252,7 +252,7 @@
 <a href="#using-barplot_usq" class="anchor"></a>Using <code><a href="../reference/barplot_usq.html">barplot_usq()</a></code>
 </h3>
 <p>Plot the areas in thousands of square miles of landmasses which exceed 10,000 sqm.</p>
-<pre class="sourceCode r" id="cb13"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw"><a href="../reference/barplot_usq.html">barplot_usq</a></span>(islands, <span class="dt">col =</span> <span class="dv">5</span>)</a></code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw"><a href="../reference/barplot_usq.html">barplot_usq</a></span>(islands, <span class="dt">col =</span> <span class="dv">5</span>)</a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example7.1-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq-5" class="section level3">
@@ -260,7 +260,7 @@
 <a href="#using-ggplot2-and-theme_usq-5" class="anchor"></a>Using <em>ggplot2</em> and <code><a href="../reference/theme_usq.html">theme_usq()</a></code>
 </h3>
 <p>Plot the areas in thousands of square miles of landmasses which exceed 10,000 sqm.</p>
-<pre class="sourceCode r" id="cb14"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="kw">library</span>(tibble)</a>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="kw">library</span>(tibble)</a>
 <a class="sourceLine" id="cb14-2" data-line-number="2">islands_df &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(islands)</a>
 <a class="sourceLine" id="cb14-3" data-line-number="3">islands_df &lt;-<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/tibble/topics/rownames">rownames_to_column</a></span>(islands_df, <span class="st">"name"</span>)</a>
 <a class="sourceLine" id="cb14-4" data-line-number="4"></a>
@@ -269,7 +269,7 @@
 <a class="sourceLine" id="cb14-7" data-line-number="7">           <span class="dt">colour =</span> usq_palette[<span class="dv">5</span>],</a>
 <a class="sourceLine" id="cb14-8" data-line-number="8">           <span class="dt">fill =</span> usq_palette[<span class="dv">5</span>]) <span class="op">+</span></a>
 <a class="sourceLine" id="cb14-9" data-line-number="9"><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb14-10" data-line-number="10"><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">angle =</span> <span class="dv">45</span>, <span class="dt">hjust =</span> <span class="dv">1</span>))</a></code></pre>
+<a class="sourceLine" id="cb14-10" data-line-number="10"><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">angle =</span> <span class="dv">45</span>, <span class="dt">hjust =</span> <span class="dv">1</span>))</a></code></pre></div>
 <p><img src="theme.usq_files/figure-html/example7.2-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -282,7 +282,7 @@
 <h2 class="hasAnchor">
 <a href="#example-8-using-ggplot2s-base_size-with-theme_usq" class="anchor"></a>Example 8: Using <em>ggplot2</em>’s <code>base_size</code> with theme_usq</h2>
 <p>As an example, using <code>base_size = 24</code> helps ensure that the graphs are legible on a standard sized PowerPoint slide when exported at a size of 33.87mm x 19.05mm, using <code>ggsave()</code>, for a 16x9 presentation slide that fills the whole slide.</p>
-<pre class="sourceCode r" id="cb15"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1">p8 &lt;-<span class="st">  </span><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(class, hwy)) <span class="op">+</span></a>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1">p8 &lt;-<span class="st">  </span><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(class, hwy)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb15-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">fill =</span> usq_palette[<span class="dv">1</span>],</a>
 <a class="sourceLine" id="cb15-3" data-line-number="3">               <span class="dt">colour =</span> usq_palette[<span class="dv">1</span>],</a>
 <a class="sourceLine" id="cb15-4" data-line-number="4">               <span class="dt">alpha =</span> <span class="fl">0.5</span>) <span class="op">+</span></a>
@@ -290,7 +290,7 @@
 <a class="sourceLine" id="cb15-6" data-line-number="6"><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">angle =</span> <span class="dv">45</span>, <span class="dt">hjust =</span> <span class="dv">1</span>))</a>
 <a class="sourceLine" id="cb15-7" data-line-number="7"></a>
 <a class="sourceLine" id="cb15-8" data-line-number="8"><span class="kw">ggsave</span>(<span class="st">"slide_p7.png"</span>, <span class="dt">width =</span> <span class="fl">33.87</span>, <span class="dt">height =</span> <span class="fl">19.05</span>, <span class="dt">units =</span> <span class="st">"cm"</span>,</a>
-<a class="sourceLine" id="cb15-9" data-line-number="9">       <span class="dt">dpi =</span> <span class="dv">150</span>)</a></code></pre>
+<a class="sourceLine" id="cb15-9" data-line-number="9">       <span class="dt">dpi =</span> <span class="dv">150</span>)</a></code></pre></div>
 </div>
 </div>
 </div>
