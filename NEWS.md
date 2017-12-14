@@ -3,6 +3,14 @@
 
 ## Bug fixes
 
+* Fix ORCID entry in author field of DESCRIPTION
+
+--------------------------------------------------------------------------------
+
+# theme.usq 0.1.1
+
+## Bug fixes
+
 * Implement changes to pass travis and appveyor CI
 
 * Implement changes to pass CRAN WIN Builder checks
@@ -39,6 +47,8 @@ again, if not, import recursively
 * _ggplot2_ is moved to "imports" since base graphing capabilities are now
 included, the package does not strictly rely on _ggplot2_ alone now
 
+--------------------------------------------------------------------------------
+
 # theme.usq 0.0.4
 
 * Now works with most recent version of `ggplot2` on CRAN, 2.2.1 as of
@@ -46,13 +56,17 @@ included, the package does not strictly rely on _ggplot2_ alone now
 
 * Enhanced documentation
 
+--------------------------------------------------------------------------------
+
 # theme.usq 0.0.3
 
 * Tidy up documentation
 
 * Update minimum version of R to >= 3.1
 
-* Add minimum version of ggplot2  (>= 2.2.1.9000) 
+* Add minimum version of ggplot2  (>= 2.2.1.9000)
+
+--------------------------------------------------------------------------------
 
 # theme.usq 0.0.2
 
@@ -61,6 +75,8 @@ included, the package does not strictly rely on _ggplot2_ alone now
 * Add new cool gradient colour option
 
 * Make warm gradient colours more distinct
+
+--------------------------------------------------------------------------------
 
 # theme.usq 0.0.1
 
