@@ -36,14 +36,14 @@ guidelines that uses (hopefully) sensible defaults.
 \details{
 Colours for use in plots from the USQ Visual Identity Palette as a valid
 value for \code{col} include:
- \itemize{
-   \item{1} {- USQ Charcoal}
-   \item{2} {- USQ Yellow}
-   \item{3} {- Dark Warm Gray}
-   \item{4} {- Support Green}
-   \item{5} {- Secondary Orange}
-   \item{6} {- Support Blue}
- }
+\itemize{
+\item{1} {- USQ Charcoal}
+\item{2} {- USQ Yellow}
+\item{3} {- Dark Warm Gray}
+\item{4} {- Support Green}
+\item{5} {- Secondary Orange}
+\item{6} {- Support Blue}
+}
 }
 \examples{
 rb <- boxplot_usq(decrease ~ treatment, data = OrchardSprays)

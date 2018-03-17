@@ -37,18 +37,8 @@
 #' @export
 #'
 barplot_usq <- function(height,
-                        col = 1,
+                        col = usq_pal("usq_primary"),
                         ...) {
-  if (col > 6 | col == 0) {
-    col <- 1
-    message(
-      "You've selected a colour outside the range of this function.\n",
-      "Defaulting to USQ Charcoal\n"
-    )
-  }
-
-  colour <- usq_palette[1:6]
-  col <- colour[col]
 
   # set new pars
   graphics::par(

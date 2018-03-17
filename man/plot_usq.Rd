@@ -33,17 +33,17 @@ more.}
 \item{...}{Arguments to be passed to methods, such as graphical parameters
 (see \code{\link[graphics]{par}}). The most commonly used argument would be
 \code{type} what type of plot should be drawn. Possible types are:
- \itemize{
- \item{"p"} {for \strong{p}oints},
- \item{"l"} for \strong{l}ines,
- \item{"b"} for \strong{b}oth,
- \item{"c"} for the lines part alone of "\strong{b}",
- \item{"o"} for both ‘\strong{o}verplotted’,
- \item{"h"} for ‘\strong{h}istogram’ like (or ‘\strong{h}igh-density’)
- vertical lines,
- \item{"s"} for stair \strong{s}teps,
- \item{"n"} for \strong{n}o plotting.
- }}
+\itemize{
+\item{"p"} {for \strong{p}oints},
+\item{"l"} for \strong{l}ines,
+\item{"b"} for \strong{b}oth,
+\item{"c"} for the lines part alone of "\strong{b}",
+\item{"o"} for both ‘\strong{o}verplotted’,
+\item{"h"} for ‘\strong{h}istogram’ like (or ‘\strong{h}igh-density’)
+vertical lines,
+\item{"s"} for stair \strong{s}teps,
+\item{"n"} for \strong{n}o plotting.
+}}
 }
 \description{
 Basic X-Y plotting that follows USQ colour and typography
@@ -52,14 +52,14 @@ guidelines that uses (hopefully) sensible defaults.
 \details{
 Colours for use in plots from the USQ Visual Identity Palette as a valid
 value for \code{col} include:
- \itemize{
-   \item{1} {- USQ Charcoal}
-   \item{2} {- USQ Yellow}
-   \item{3} {- Dark Warm Gray}
-   \item{4} {- Support Green}
-   \item{5} {- Secondary Orange}
-   \item{6} {- Support Blue}
- }
+\itemize{
+\item{1} {- USQ Charcoal}
+\item{2} {- USQ Yellow}
+\item{3} {- Dark Warm Gray}
+\item{4} {- Support Green}
+\item{5} {- Secondary Orange}
+\item{6} {- Support Blue}
+}
 }
 \examples{
 library(datasets)
