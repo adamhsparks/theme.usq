@@ -18,13 +18,21 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+<meta property="og:title" content="A ggplot2 Theme Based on USQ Visual Identity and Typography Guidelines — theme_usq" />
+
+<meta property="og:description" content="This theme applies a standard USQ style to ggplot2 graphs,
+which includes no y-axis lines, major x-axis grid lines and the Microsoft's
+typeface, Verdana, for all text labeling and the legend key at the bottom." />
+<meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -32,6 +40,8 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
 
 
   </head>
@@ -47,8 +57,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">theme.usq</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">theme.usq</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.2</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -58,13 +72,13 @@
   </a>
 </li>
 <li>
-  <a href="../articles/theme.usq.html">Get Started</a>
+  <a href="../articles/theme.usq.html">Get started</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="../news/index.html">News</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -76,6 +90,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -83,10 +98,11 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>A ggplot2 Theme Based on USQ Visual Identity and Typography Guidelines</h1>
+    <small>Source: <a href='https://github.com/adamhsparks/theme.usq/blob/master/R/theme_usq.R'><code>R/theme_usq.R</code></a></small>
     </div>
 
     
@@ -97,7 +113,7 @@ typeface, Verdana, for all text labeling and the legend key at the bottom.</p>
 
     <pre class="usage"><span class='fu'>theme_usq</span>(<span class='kw'>base_size</span> <span class='kw'>=</span> <span class='fl'>11</span>, <span class='kw'>base_family</span> <span class='kw'>=</span> <span class='st'>"Verdana"</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -119,8 +135,8 @@ presentation slides, <em>e.g.</em>, <code>theme_usq(base_size = 24)</code>.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'>library</span>(<span class='no'>ggplot2</span>)</div><div class='output co'>#&gt; <span class='message'>Want to understand how all the pieces fit together? Buy the ggplot2</span>
-#&gt; <span class='message'>book: http://ggplot2.org/book/</span></div><div class='input'>
+<span class='fu'>library</span>(<span class='no'>ggplot2</span>)</div><div class='output co'>#&gt; <span class='message'>Want to understand how all the pieces fit together? See the R for Data</span>
+#&gt; <span class='message'>Science book: http://r4ds.had.co.nz/</span></div><div class='input'>
 <span class='co'># Discrete values</span>
 <span class='no'>p1</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>mtcars</span>) +
   <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_point'>geom_point</a></span>(<span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(
@@ -131,7 +147,7 @@ presentation slides, <em>e.g.</em>, <code>theme_usq(base_size = 24)</code>.</p>
   <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/scale_manual'>scale_colour_manual</a></span>(<span class='kw'>values</span> <span class='kw'>=</span> <span class='no'>usq_palette</span>) +
   <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/facet_wrap'>facet_wrap</a></span>(~ <span class='no'>am</span>) +
   <span class='fu'>theme_usq</span>()
-<span class='no'>p1</span></div><div class='img'><img src='theme_usq-1.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='no'>p1</span></div><div class='img'><img src='theme_usq-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Continous values</span>
 <span class='no'>df</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>reshape2</span><span class='kw ns'>::</span><span class='fu'><a href='http://www.rdocumentation.org/packages/reshape2/topics/melt'>melt</a></span>(<span class='fu'>outer</span>(<span class='fl'>1</span>:<span class='fl'>4</span>, <span class='fl'>1</span>:<span class='fl'>4</span>), <span class='kw'>varnames</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"X1"</span>, <span class='st'>"X2"</span>))
 
@@ -139,11 +155,11 @@ presentation slides, <em>e.g.</em>, <code>theme_usq(base_size = 24)</code>.</p>
   <span class='fu'><a href='usq_colour_gradient.html'>usq_fill_gradient_warm</a></span>()
 <span class='no'>p3</span> <span class='kw'>&lt;-</span> <span class='no'>p2</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_point'>geom_point</a></span>(<span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='kw'>size</span> <span class='kw'>=</span> <span class='no'>value</span>)) +
   <span class='fu'>theme_usq</span>()
-<span class='no'>p3</span></div><div class='img'><img src='theme_usq-2.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='no'>p3</span></div><div class='img'><img src='theme_usq-2.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Larger base size for presentation slides</span>
 <span class='no'>p4</span> <span class='kw'>&lt;-</span> <span class='no'>p3</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_point'>geom_point</a></span>(<span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='kw'>size</span> <span class='kw'>=</span> <span class='no'>value</span>)) +
   <span class='fu'>theme_usq</span>(<span class='kw'>base_size</span> <span class='kw'>=</span> <span class='fl'>24</span>)
-<span class='no'>p4</span></div><div class='img'><img src='theme_usq-3.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='no'>p4</span></div><div class='img'><img src='theme_usq-3.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -165,11 +181,14 @@ presentation slides, <em>e.g.</em>, <code>theme_usq(base_size = 24)</code>.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+
