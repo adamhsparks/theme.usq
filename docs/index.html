@@ -352,14 +352,13 @@
 </div>
 </div>
 </div>
-<div id="using-theme_usq-in-presentations" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#using-theme_usq-in-presentations" class="anchor"></a>Using <code><a href="reference/theme_usq.html">theme_usq()</a></code> in presentations</h1></div>
-<p>The default settings for <code><a href="reference/theme_usq.html">theme_usq()</a></code> are fine for printed materials such as reports, but if you wish to use it in a presentation you can use the <em><strong><code>ggplot2</code></strong></em> option <code>base_size =</code> to increase the size of the fonts, points and lines in the graphs.</p>
-<div id="example-8-using-ggplot2s-base_size-with-theme_usq" class="section level2">
+<div id="using-theme_usq-in-presentations" class="section level2">
 <h2 class="hasAnchor">
-<a href="#example-8-using-ggplot2s-base_size-with-theme_usq" class="anchor"></a>Example 8: Using <em>ggplot2</em>’s <code>base_size()</code> with <code><a href="reference/theme_usq.html">theme_usq()</a></code>
-</h2>
+<a href="#using-theme_usq-in-presentations" class="anchor"></a>Using theme_usq() in presentations</h2>
+<p>The default settings for <code><a href="reference/theme_usq.html">theme_usq()</a></code> are fine for printed materials such as reports, but if you wish to use it in a presentation you can use the <em><strong><code>ggplot2</code></strong></em> option <code>base_size =</code> to increase the size of the fonts, points and lines in the graphs.</p>
+<div id="example-8-using-ggplot2s-base_size-with-theme_usq" class="section level3">
+<h3 class="hasAnchor">
+<a href="#example-8-using-ggplot2s-base_size-with-theme_usq" class="anchor"></a>Example 8: Using <em>ggplot2</em>’s base_size() with theme_usq()</h3>
 <p>As an example, using <code>base_size = 24</code> helps ensure that the graphs are legible on a standard sized PowerPoint slide when exported at a size of 33.87mm x 19.05mm, using <code><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggsave">ggsave()</a></code>, for a 16x9 presentation slide that fills the whole slide.</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1">p8 &lt;-<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(mpg, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(class, hwy)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb20-2" data-line-number="2"><span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_boxplot">geom_boxplot</a></span>(<span class="dt">fill =</span> <span class="kw"><a href="reference/usq_cols.html">usq_cols</a></span>(<span class="st">"usq charcoal"</span>),</a>
@@ -371,6 +370,7 @@
 <a class="sourceLine" id="cb20-8" data-line-number="8"><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggsave">ggsave</a></span>(<span class="st">"slide_p7.png"</span>, <span class="dt">width =</span> <span class="fl">33.87</span>, <span class="dt">height =</span> <span class="fl">19.05</span>, <span class="dt">units =</span> <span class="st">"cm"</span>,</a>
 <a class="sourceLine" id="cb20-9" data-line-number="9">       <span class="dt">dpi =</span> <span class="dv">150</span>)</a></code></pre></div>
 </div>
+</div>
 <div id="meta" class="section level2">
 <h2 class="hasAnchor">
 <a href="#meta" class="anchor"></a>Meta</h2>
@@ -379,7 +379,6 @@
 <li><p>License: MIT</p></li>
 <li><p>Please note that this project is released with a <a href="CONDUCT.html">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p></li>
 </ul>
-</div>
 </div>
   </div>
 

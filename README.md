@@ -364,14 +364,14 @@ ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
 
 ![](./man/figures/README-example-bright-1.png)<!-- -->
 
-# Using `theme_usq()` in presentations
+## Using `theme_usq()` in presentations
 
 The default settings for `theme_usq()` are fine for printed materials
 such as reports, but if you wish to use it in a presentation you can use
 the ***`ggplot2`*** option `base_size =` to increase the size of the
 fonts, points and lines in the graphs.
 
-## Example 8: Using *ggplot2*’s `base_size()` with `theme_usq()`
+### Example 8: Using *ggplot2*’s `base_size()` with `theme_usq()`
 
 As an example, using `base_size = 24` helps ensure that the graphs are
 legible on a standard sized PowerPoint slide when exported at a size of
