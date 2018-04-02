@@ -4,8 +4,8 @@
 \alias{boxplot_usq}
 \title{Basic Boxplots Using USQ Colours and Typography}
 \usage{
-boxplot_usq(x, main = "", sub = "", xlab = "", ylab = "", col = 1,
-  ...)
+boxplot_usq(x, main = "", sub = "", xlab = "", ylab = "",
+  col = "usq charcoal", ...)
 }
 \arguments{
 \item{x}{for specifying data from which the boxplots are to be produced.
@@ -23,8 +23,8 @@ blank.}
 \item{ylab}{Y-axis label. Optional.}
 
 \item{col}{Colour to use as fill and outline for boxes and outlier points as
-a digit. Defaults to 1, USQ Charcoal. There are six colours that can be used,
-see \strong{Details} for more.}
+a digit. Defaults to "usq charcoal". There are fifteen colours that can be
+used, see \strong{Details} for more.}
 
 \item{...}{Arguments to be passed to methods, such as graphical parameters
 (see \code{\link[graphics]{par}}).}
@@ -34,24 +34,19 @@ Basic boxplots that follow USQ colour and typography
 guidelines that uses (hopefully) sensible defaults.
 }
 \details{
-Colours for use in plots from the USQ Visual Identity Palette as a valid
-value for \code{col} include:
-\itemize{
-\item{1} {- USQ Charcoal}
-\item{2} {- USQ Yellow}
-\item{3} {- Dark Warm Gray}
-\item{4} {- Support Green}
-\item{5} {- Secondary Orange}
-\item{6} {- Support Blue}
-}
+Names of colours for use in plots from the USQ Visual Identity Palette are
+available from \code{link{usq_cols}}.
 }
 \examples{
-rb <- boxplot_usq(decrease ~ treatment, data = OrchardSprays)
+# plot using "secondary orange" as the fill colour
+
+rb <- boxplot_usq(decrease ~ treatment,
+                  data = OrchardSprays,
+                  col = "secondary orange")
 title("Comparing boxplot()s and non-robust mean +/- SD")
 
 }
 \seealso{
-\code{\link[graphics]{boxplot}}  for full documentation of the basic
-boxplot
-capabilities
+\code{\link[graphics]{boxplot}} for full documentation of the basic
+boxplot capabilities
 }

@@ -2,9 +2,9 @@
 % Please edit documentation in R/usq_colours.R
 \name{usq_pal}
 \alias{usq_pal}
-\title{Return function to interpolate a USQ color palette}
+\title{Return function to interpolate a USQ colour palette}
 \usage{
-usq_pal(palette = "main", reverse = FALSE, ...)
+usq_pal(palette = "primary", reverse = FALSE, ...)
 }
 \arguments{
 \item{palette}{Character name of palette in usq_palettes}
@@ -14,5 +14,5 @@ usq_pal(palette = "main", reverse = FALSE, ...)
 \item{...}{Additional arguments to pass to colorRampPalette()}
 }
 \description{
-Return function to interpolate a USQ color palette
+Return function to interpolate a USQ colour palette
 }

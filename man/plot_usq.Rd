@@ -5,7 +5,7 @@
 \title{Basic X-Y Plotting Using USQ Colours and Typography}
 \usage{
 plot_usq(x, y = NULL, main = "", sub = "", xlab = "", ylab = "",
-  xlim = NULL, ylim = NULL, col = 1, ...)
+  xlim = NULL, ylim = NULL, col = "usq charcoal", ...)
 }
 \arguments{
 \item{x}{Values to be plotted on x-axis.}
@@ -26,9 +26,9 @@ label if one is available.}
 
 \item{ylim}{Numeric value for y-axis limits. Optional.}
 
-\item{col}{Colour to use as fill for the bars as a digit. Defaults to 1, USQ
-Charcoal. There are six colours that can be used, see \strong{Details} for
-more.}
+\item{col}{Colour to use as fill and outline for boxes and outlier points as
+a digit. Defaults to "usq charcoal". There are fifteen colours that can be
+used, see \strong{Details} for more.}
 
 \item{...}{Arguments to be passed to methods, such as graphical parameters
 (see \code{\link[graphics]{par}}). The most commonly used argument would be
@@ -50,22 +50,14 @@ Basic X-Y plotting that follows USQ colour and typography
 guidelines that uses (hopefully) sensible defaults.
 }
 \details{
-Colours for use in plots from the USQ Visual Identity Palette as a valid
-value for \code{col} include:
-\itemize{
-\item{1} {- USQ Charcoal}
-\item{2} {- USQ Yellow}
-\item{3} {- Dark Warm Gray}
-\item{4} {- Support Green}
-\item{5} {- Secondary Orange}
-\item{6} {- Support Blue}
-}
+Names of colours for use in plots from the USQ Visual Identity Palette are
+available from \code{link{usq_cols}}.
 }
 \examples{
 library(datasets)
 
 plot_usq(airquality$Ozone,
-         col = 3,
+         col = "usq charcoal",
          main = "Air Quality",
          xlab = "Ozone")
 
