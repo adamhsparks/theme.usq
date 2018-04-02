@@ -38,7 +38,7 @@ through an R session.
 
 The ***`theme.usq`*** package is only available from GitHub. The easiest
 way to install it is by using the
-[***`devtools`***](https://github.com/hadley/devtools) package.
+[`devtools`](https://github.com/r-lib/devtools) package.
 
 The installation may take some time as some system fonts need to be
 catalogued to use the Microsoft Verdana font that USQ suggests. Once the

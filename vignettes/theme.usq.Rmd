@@ -35,18 +35,19 @@ with just the installation of this package.
 
 ## Quickstart
 
-If you do not already have R installed, because _**`theme.usq`**_ is an R package,
-you will need to install R first. Download and install the proper version for
-your computer from [CRAN](https://cran.r-project.org). It is also suggested to
-have RStudio installed as well. You can download the proper installation file
-from https://www.rstudio.com/products/rstudio/download/ for your platform.
+If you do not already have R installed, because _**`theme.usq`**_ is an R
+package, you will need to install R first. Download and install the proper
+version for your computer from [CRAN](https://cran.r-project.org). It is also
+suggested to have RStudio installed as well. You can download the proper
+installation file from https://www.rstudio.com/products/rstudio/download/ for
+your platform.
 
-Once R and RStudio are set up, you're ready to install _**`theme.usq`**_ through an
-R session.
+Once R and RStudio are set up, you're ready to install _**`theme.usq`**_ through
+an R session.
 
 The _**`theme.usq`**_ package is only available from GitHub. The easiest way to
-install it is by using the [_**`devtools`**_](https://github.com/hadley/devtools)
-package.
+install it is by using the
+[`devtools`](https://github.com/r-lib/devtools) package.
 
 The installation may take some time as some system fonts need to be catalogued
 to use the Microsoft Verdana font that USQ suggests. Once the installation is
