@@ -1,9 +1,32 @@
 
-# theme.usq 0.1.1
+# theme.usq 1.0.0
+
+## Major changes
+
+* Add new palettes to the package for `primary`, `cool`, `warm`, `bright` and
+`digital`
+
+* Revamp package functionality to make it easier to use by specifying colour
+names rather than using numbers to index the values
+
+* Add new functions `scale_fill_usq()` and `scale_colour_usq()` for use with
+_ggplot2_ graphics for easier USQ colours
+
+* Add support for USQ "digital colours" palette
+
+* Change arguments in the base plotting functions for colours. Colours now
+simply specified by `col = "usq charcoal"` in the function call
+
+* Ribbon colours for facets are Dark Gray Warm, not USQ Yellow
 
 ## Bug fixes
 
 * Fix ORCID entry in author field of DESCRIPTION
+
+## Deprecated
+
+* ` usq_fill_gradient_warm()` and ` usq_fill_gradient_cool`; superceded by,
+`scale_fill_usq("warm")` or `scale_fill_usq("cool")`
 
 --------------------------------------------------------------------------------
 
