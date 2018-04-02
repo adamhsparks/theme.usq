@@ -13,23 +13,15 @@
 #' @param breaks Either \code{pretty}, default, or \code{exact}. Pretty uses
 #' Scott's Rule, whereas exact uses a bin-width of 1 so each value is
 #' represented individually with a bar.
-#' @param col Colour to use as fill for the bars as a digit. Defaults to 1, USQ
-#' Charcoal. There are six colours that can be used, see \strong{Details} for
-#' more.
+#' @param col Colour to use as fill and outline for boxes and outlier points as
+#' a digit. Defaults to "usq charcoal". There are fifteen colours that can be
+#' used, see \strong{Details} for more.
 #' @param ... Arguments to be passed to methods, such as graphical parameters
 #' (see \code{\link[graphics]{par}}).
 #'
 #' @details
-#' Colours for use in plots from the USQ Visual Identity Palette as a valid
-#' value for \code{col} include:
-#'  \itemize{
-#'    \item{1} {- USQ Charcoal}
-#'    \item{2} {- USQ Yellow}
-#'    \item{3} {- Dark Warm Gray}
-#'    \item{4} {- Support Green}
-#'    \item{5} {- Secondary Orange}
-#'    \item{6} {- Support Blue}
-#'  }
+#' Names of colours for use in plots from the USQ Visual Identity Palette are
+#' available from \code{link{usq_cols}}.
 #'
 #' @seealso \code{\link[graphics]{hist}} for full documentation of the basic
 #' histogram capabilities
@@ -54,17 +46,13 @@ hist_usq <- function(x,
                      xlab = "",
                      ylab = "Count",
                      breaks = "pretty",
-                     col = 1,
+                     col = "usq charcoal",
                      ...) {
   breaks <- tolower(breaks)
 
-  if (col > 6 | col == 0) {
-    col <- 1
-    message(
-      "You've selected a colour outside the range of this function.\n",
-      "Defaulting to USQ Charcoal\n"
-    )
-  }
+  col <- tolower(col)
+  col <- usq_cols(col)
+
 
   if (breaks == "pretty") {
     breaks <- "scott"
@@ -78,9 +66,6 @@ hist_usq <- function(x,
     breaks <- "scott"
     message("You've selected an invalid value for `breaks`, using `pretty`.\n")
   }
-
-  colour <- usq_palette[1:6]
-  col <- colour[col]
 
   # set new pars
   graphics::par(
