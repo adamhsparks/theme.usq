@@ -265,7 +265,7 @@ boxplot_usq(mpg$hwy ~ mpg$class)
 
 ``` r
 p5 <- ggplot(mpg, aes(class, hwy)) +
-  geom_boxplot(alpha = 0.5,
+  geom_boxplot(alpha = 0.75,
                fill = usq_cols("usq charcoal"),
                colour = usq_cols("usq charcoal")) +
   theme_usq()
@@ -373,7 +373,7 @@ fills the whole slide.
 p8 <-  ggplot(mpg, aes(class, hwy)) +
   geom_boxplot(fill = usq_cols("usq charcoal"),
                colour = usq_palette("usq charcoal"),
-               alpha = 0.5) +
+               alpha = 0.75) +
   theme_usq(base_size = 24) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
