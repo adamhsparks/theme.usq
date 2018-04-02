@@ -88,11 +88,19 @@ The resulting list shows the hexadecimal colour, e.g. "#ffd100", and it's name,
 "usq yellow". The names may be used to specify the colours at any time when
 plotting.
 
-Following are a few examples of _theme.usq's_ capabilities. Please see the 
-[package vignette](https://adamhsparks.github.io/theme.usq/articles/theme.usq.html)
-for a more complete listing of capabilities and examples.
+## Palettes
+
+Colours are grouped into convenient palettes as well. The palettes may be used
+when plotting. To see the palettes and colours included in each of them, simply
+type:
+
+```{r list-palettes, eval=TRUE}
+usq_palettes
+```
 
 ## Examples
+
+Following are a few examples of _**`theme.usq's`**_ capabilities.
 
 ### Example 1: Scatterplots of discrete data
 
@@ -107,8 +115,8 @@ plot_usq(x = mtcars$wt, y = mtcars$mpg)
 #### Using _ggplot2_ and `theme_usq()`
 
 Plot car weights by miles per gallon and facet by `Transmission` (0 = automatic,
-1 = manual) using the `scale_colour_usq` setting `discrete = TRUE` and using
-the `cool` palette to use bluish USQ colours for the graph.
+1 = manual) using the `scale_colour_usq()` setting `discrete = TRUE` and using
+the `cool` palette to use blue USQ colours for the plot.
 
 ```{r}
 p1 <- ggplot(mtcars) +
@@ -132,9 +140,9 @@ p1 + theme_usq()
 
 ### Example 2: Heatmaps or other continuous data
 
-Using the _theme.usq's_ `theme_usq()` for _ggplot2_, plot values using the
-`scale_fill_usq` to use USQ colours for continuous values in the graph. Two
-types of gradients are included, `warm_gradient` and `cool_gradient`.
+Using the _**`theme.usq's`**_ `theme_usq()` for _**`ggplot2`**_, plot values
+using the `scale_fill_usq()` to use USQ colours for continuous values in the
+graph.
 
 #### Warm gradients
 
@@ -164,13 +172,13 @@ p2b
 
 ### Example 3: Heatmaps using other colour palettes
 
-#### Using _**ggplot2**_ and `theme_usq()`
+#### Using _ggplot2_ and `theme_usq()`
 
 `theme_usq()` can be used with any colour palette that you wish to use, while
 still applying the graph styling and typography to the graph.
 
-Use the default `_**ggplot2**_` colour scheme to fill the density plot while using
-the `theme_usq()` to theme the graph.
+Use the default _**`ggplot2`**_ colour scheme to fill the density plot while
+using the `theme_usq()` to theme the graph.
 
 ```{r}
 p3 <- ggplot(faithfuld, aes(waiting, eruptions)) +
@@ -236,9 +244,9 @@ p5.1
 
 ### Example 6: Timeseries
 
-#### Using `_**ggplot2**_` and `theme_usq()` to plot timeseries lines using
+#### Using _ggplot2_ and `theme_usq()` to plot timeseries lines using
 discrete colours for each variable of interest. While possible to do with base R
-graphics, `_**ggplot2**_` simplifies the process greatly, so it is the only
+graphics, _**`ggplot2`**_ simplifies the process greatly, so it is the only
 example provided and suggested for use.
 
 ```{r, example_6}
@@ -293,7 +301,7 @@ ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
 
 The default settings for `theme_usq()` are fine for printed materials such as
 reports, but if you wish to use it in a presentation you can use the
-`_**ggplot2**_` option `base_size = ` to increase the size of the fonts, points
+_**`ggplot2`**_ option `base_size = ` to increase the size of the fonts, points
 and lines in the graphs.
 
 ## Example 8: Using _ggplot2_'s `base_size()` with `theme_usq()`

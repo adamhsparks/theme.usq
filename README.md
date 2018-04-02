@@ -78,28 +78,53 @@ To view a list of named colours in this package, simply type:
 
 ``` r
 usq_cols()
-#>        usq yellow      usq charcoal  secondary yellow  secondary orange 
-#>         "#ffd100"         "#1e1e1e"         "#fdba12"         "#faa61a" 
-#>         cool gray    dark warm gray   light_warm gray    support orange 
-#>         "#76848f"         "#aca095"         "#efe9e5"         "#f58220" 
-#>       support red   support magenta     support green      support blue 
-#>         "#e63e30"         "#b63393"         "#63a945"         "#0090ba" 
-#>      support navy    support purple support turquiose        light grey 
-#>         "#003d77"         "#6a288a"         "#46c1be"         "#f6f6f6" 
-#>       medium grey         dark grey 
-#>         "#e5e5e5"         "#333333"
+#> named character(0)
 ```
 
 The resulting list shows the hexadecimal colour, e.g. “\#ffd100”, and
 it’s name, “usq yellow”. The names may be used to specify the colours
 at any time when plotting.
 
-Following are a few examples of *theme.usq’s* capabilities. Please see
-the [package
-vignette](https://adamhsparks.github.io/theme.usq/articles/theme.usq.html)
-for a more complete listing of capabilities and examples.
+## Palettes
+
+Colours are grouped into convenient palettes as well. The palettes may
+be used when plotting. To see the palettes and colours included in each
+of them, simply type:
+
+``` r
+usq_palettes
+#> $primary
+#>       usq yellow     usq charcoal secondary yellow secondary orange 
+#>        "#ffd100"        "#1e1e1e"        "#fdba12"        "#faa61a" 
+#>        cool gray   dark warm gray 
+#>        "#76848f"        "#aca095" 
+#> 
+#> $cool
+#>      support navy      support blue support turquiose 
+#>         "#003d77"         "#0090ba"         "#46c1be" 
+#> 
+#> $warm
+#>      support red   support orange secondary orange secondary yellow 
+#>        "#e63e30"        "#f58220"        "#faa61a"        "#fdba12" 
+#>       usq yellow 
+#>        "#ffd100" 
+#> 
+#> $bright
+#>      support navy      support blue support turquiose     support green 
+#>         "#003d77"         "#0090ba"         "#46c1be"         "#63a945" 
+#>        usq yellow  secondary yellow  secondary orange    support orange 
+#>         "#ffd100"         "#fdba12"         "#faa61a"         "#f58220" 
+#>       support red   support magenta    support purple 
+#>         "#e63e30"         "#b63393"         "#6a288a" 
+#> 
+#> $digital
+#>  light grey medium grey   dark grey 
+#>   "#f6f6f6"   "#e5e5e5"   "#333333"
+```
 
 ## Examples
+
+Following are a few examples of ***`theme.usq's`*** capabilities.
 
 ### Example 1: Scatterplots of discrete data
 
@@ -116,9 +141,9 @@ plot_usq(x = mtcars$wt, y = mtcars$mpg)
 #### Using *ggplot2* and `theme_usq()`
 
 Plot car weights by miles per gallon and facet by `Transmission` (0 =
-automatic, 1 = manual) using the `scale_colour_usq` setting `discrete =
-TRUE` and using the `cool` palette to use bluish USQ colours for the
-graph.
+automatic, 1 = manual) using the `scale_colour_usq()` setting `discrete
+= TRUE` and using the `cool` palette to use blue USQ colours for the
+plot.
 
 ``` r
 p1 <- ggplot(mtcars) +
@@ -146,10 +171,9 @@ p1 + theme_usq()
 
 ### Example 2: Heatmaps or other continuous data
 
-Using the *theme.usq’s* `theme_usq()` for *ggplot2*, plot values using
-the `scale_fill_usq` to use USQ colours for continuous values in the
-graph. Two types of gradients are included, `warm_gradient` and
-`cool_gradient`.
+Using the ***`theme.usq's`*** `theme_usq()` for ***`ggplot2`***, plot
+values using the `scale_fill_usq()` to use USQ colours for continuous
+values in the graph.
 
 #### Warm gradients
 
@@ -183,12 +207,12 @@ p2b
 
 ### Example 3: Heatmaps using other colour palettes
 
-#### Using ***ggplot2*** and `theme_usq()`
+#### Using *ggplot2* and `theme_usq()`
 
 `theme_usq()` can be used with any colour palette that you wish to use,
 while still applying the graph styling and typography to the graph.
 
-Use the default `_**ggplot2**_` colour scheme to fill the density plot
+Use the default ***`ggplot2`*** colour scheme to fill the density plot
 while using the `theme_usq()` to theme the graph.
 
 ``` r
@@ -269,10 +293,10 @@ p5.1
 
 ### Example 6: Timeseries
 
-#### Using `_**ggplot2**_` and `theme_usq()` to plot timeseries lines using
+#### Using *ggplot2* and `theme_usq()` to plot timeseries lines using
 
 discrete colours for each variable of interest. While possible to do
-with base R graphics, `_**ggplot2**_` simplifies the process greatly, so
+with base R graphics, ***`ggplot2`*** simplifies the process greatly, so
 it is the only example provided and suggested for use.
 
 ``` r
