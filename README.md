@@ -183,7 +183,7 @@ p2b
 
 ### Example 3: Heatmaps using other colour palettes
 
-#### Using ***ggplot2*** and theme\_usq()
+#### Using ***ggplot2*** and `theme_usq()`
 
 `theme_usq()` can be used with any colour palette that you wish to use,
 while still applying the graph styling and typography to the graph.
@@ -211,7 +211,7 @@ hist_usq(diamonds$carat)
 
 ![](./man/figures/README-unnamed-chunk-10-1.png)<!-- -->
 
-#### Using *ggplot2* and theme\_usq()
+#### Using *ggplot2* and `theme_usq()`
 
 ``` r
 p4 <- ggplot(diamonds, aes(carat)) +
@@ -226,7 +226,7 @@ p4
 
 ### Example 5: Boxplots
 
-#### Using boxplot\_usq()
+#### Using `boxplot_usq()`
 
 Plot the highway miles per gallon (mpg) of 38 popular car models in the
 US by class of car.
@@ -237,7 +237,7 @@ boxplot_usq(mpg$hwy ~ mpg$class)
 
 ![](./man/figures/README-unnamed-chunk-12-1.png)<!-- -->
 
-#### Using *ggplot2* and theme\_usq()
+#### Using *ggplot2* and `theme_usq()`
 
 ``` r
 p5 <- ggplot(mpg, aes(class, hwy)) +
@@ -288,7 +288,7 @@ p6
 
 ### Example 7: Barplots
 
-#### Using barplot\_usq()
+#### Using `barplot_usq()`
 
 Plot the areas in thousands of square miles of landmasses which exceed
 10,000 sqm.
@@ -299,7 +299,7 @@ barplot_usq(islands, col = "cool gray")
 
 ![](./man/figures/README-example_7.1-1.png)<!-- -->
 
-#### Using *ggplot2* and theme\_usq()
+#### Using *ggplot2* and `theme_usq()`
 
 Plot the areas in thousands of square miles of landmasses which exceed
 10,000 sqm.
@@ -331,14 +331,14 @@ ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
 
 ![](./man/figures/README-example-bright-1.png)<!-- -->
 
-# Using theme\_usq() in presentations
+# Using `theme_usq()` in presentations
 
 The default settings for `theme_usq()` are fine for printed materials
 such as reports, but if you wish to use it in a presentation you can use
-the `_**ggplot2**_` option `base_size =` to increase the size of the
+the ***`ggplot2`*** option `base_size =` to increase the size of the
 fonts, points and lines in the graphs.
 
-## Example 8: Using *ggplot2*’s base\_size() with theme\_usq()
+## Example 8: Using *ggplot2*’s `base_size()` with `theme_usq()`
 
 As an example, using `base_size = 24` helps ensure that the graphs are
 legible on a standard sized PowerPoint slide when exported at a size of

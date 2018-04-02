@@ -293,7 +293,7 @@ ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
 
 The default settings for `theme_usq()` are fine for printed materials such as
 reports, but if you wish to use it in a presentation you can use the
-`_**ggplot2**_` option `base_size = ` to increase the size of the fonts, points
+_**`ggplot2`**_ option `base_size = ` to increase the size of the fonts, points
 and lines in the graphs.
 
 ## Example 8: Using _ggplot2_'s `base_size()` with `theme_usq()`
