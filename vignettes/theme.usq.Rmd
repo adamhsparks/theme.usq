@@ -82,7 +82,7 @@ devtools::update_packages("theme.usq")
 
 To view a list of named colours in this package, simply type:
 ```{r list-colours, eval=TRUE}
-usq_cols()
+usq_colours
 ```
 
 The resulting list shows the hexadecimal colour, e.g. "#ffd100", and it's name,

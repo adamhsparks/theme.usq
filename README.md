@@ -77,8 +77,17 @@ devtools::update_packages("theme.usq")
 To view a list of named colours in this package, simply type:
 
 ``` r
-usq_cols()
-#> named character(0)
+usq_colours
+#>        usq yellow      usq charcoal  secondary yellow  secondary orange 
+#>         "#ffd100"         "#1e1e1e"         "#fdba12"         "#faa61a" 
+#>         cool gray    dark warm gray   light_warm gray    support orange 
+#>         "#76848f"         "#aca095"         "#efe9e5"         "#f58220" 
+#>       support red   support magenta     support green      support blue 
+#>         "#e63e30"         "#b63393"         "#63a945"         "#0090ba" 
+#>      support navy    support purple support turquiose        light grey 
+#>         "#003d77"         "#6a288a"         "#46c1be"         "#f6f6f6" 
+#>       medium grey         dark grey 
+#>         "#e5e5e5"         "#333333"
 ```
 
 The resulting list shows the hexadecimal colour, e.g. “\#ffd100”, and
