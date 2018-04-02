@@ -52,12 +52,7 @@
       if (!file.exists(system.file("metrics",
                                    "Verdana.afm.gz",
                                    package = "extrafontdb"))) {
-        extrafont::font_import(prompt = FALSE,
-                               recursive = FALSE)
-      }  #if Verdana still not found, do a recursive import
-      if (!file.exists(system.file("metrics",
-                                   "Verdana.afm.gz",
-                                   package = "extrafontdb"))) {
+        message("Have you installed the MS Corefonts package yet?")
         extrafont::font_import(prompt = FALSE,
                                recursive = TRUE)
       }
