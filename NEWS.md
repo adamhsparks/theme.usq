@@ -17,7 +17,8 @@ _ggplot2_ graphics for easier USQ colours
 * Change arguments in the base plotting functions for colours. Colours now
 simply specified by `col = "usq charcoal"` in the function call
 
-* Ribbon colours for facets are Dark Gray Warm, not USQ Yellow
+* Ribbon colours for facets are Dark Gray Warm, not USQ Yellow, with bold, white
+font face
 
 ## Bug fixes
 
