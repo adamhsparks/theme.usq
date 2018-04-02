@@ -17,6 +17,18 @@ usq_palettes <- list(
     "dark warm gray"
   ),
 
+  `primary dark` = usq_cols(
+    "usq charcoal",
+    "cool gray",
+    "dark warm gray"
+  ),
+
+  `primary light` = usq_cols(
+    "usq yellow",
+    "secondary yellow",
+    "secondary orange"
+  ),
+
   `cool` = usq_cols("support navy",
                     "support blue",
                     "support turquiose"),
