@@ -32,7 +32,7 @@ p1 <- ggplot(mtcars) +
     y = mpg,
     colour = factor(gear)
    )) +
-  scale_colour_manual(values = usq_palette) +
+  scale_colour_usq("primary") +
   facet_wrap(~ am) +
   theme_usq()
 p1
@@ -41,7 +41,8 @@ p1
 df <- reshape2::melt(outer(1:4, 1:4), varnames = c("X1", "X2"))
 
 p2 <- ggplot(df, aes(X1, X2)) + geom_tile(aes(fill = value)) +
-  usq_fill_gradient_warm()
+  scale_fill_usq("warm",
+  discrete = FALSE)
 p3 <- p2 + geom_point(aes(size = value)) +
   theme_usq()
 p3

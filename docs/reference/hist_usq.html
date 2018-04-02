@@ -58,7 +58,7 @@ guidelines that uses (hopefully) sensible defaults." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">theme.usq</a>
-        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.2</span>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">1.0.0</span>
       </span>
     </div>
 
@@ -110,7 +110,7 @@ guidelines that uses (hopefully) sensible defaults.</p>
     
 
     <pre class="usage"><span class='fu'>hist_usq</span>(<span class='no'>x</span>, <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>sub</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>"Count"</span>,
-  <span class='kw'>breaks</span> <span class='kw'>=</span> <span class='st'>"pretty"</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>...</span>)</pre>
+  <span class='kw'>breaks</span> <span class='kw'>=</span> <span class='st'>"pretty"</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='st'>"usq charcoal"</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -144,9 +144,9 @@ represented individually with a bar.</p></td>
     </tr>
     <tr>
       <th>col</th>
-      <td><p>Colour to use as fill for the bars as a digit. Defaults to 1, USQ
-Charcoal. There are six colours that can be used, see <strong>Details</strong> for
-more.</p></td>
+      <td><p>Colour to use as fill and outline for boxes and outlier points as
+a digit. Defaults to "usq charcoal". There are fifteen colours that can be
+used, see <strong>Details</strong> for more.</p></td>
     </tr>
     <tr>
       <th>...</th>
@@ -157,15 +157,8 @@ more.</p></td>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Colours for use in plots from the USQ Visual Identity Palette as a valid
-value for <code>col</code> include:</p><ul>
-<li><p>1 - USQ Charcoal</p></li>
-<li><p>2 - USQ Yellow</p></li>
-<li><p>3 - Dark Warm Gray</p></li>
-<li><p>4 - Support Green</p></li>
-<li><p>5 - Secondary Orange</p></li>
-<li><p>6 - Support Blue</p></li>
-</ul>
+    <p>Names of colours for use in plots from the USQ Visual Identity Palette are
+available from <code>link{usq_cols}</code>.</p>
     
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
@@ -205,7 +198,7 @@ histogram capabilities</p></div>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Adam Sparks.</p>
+  <p>Developed by Adam H. Sparks.</p>
 </div>
 
 <div class="pkgdown">

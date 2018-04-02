@@ -58,7 +58,7 @@ guidelines that uses (hopefully) sensible defaults." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">theme.usq</a>
-        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.2</span>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">1.0.0</span>
       </span>
     </div>
 
@@ -110,7 +110,7 @@ guidelines that uses (hopefully) sensible defaults.</p>
     
 
     <pre class="usage"><span class='fu'>plot_usq</span>(<span class='no'>x</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>sub</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>""</span>,
-  <span class='kw'>xlim</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>ylim</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>...</span>)</pre>
+  <span class='kw'>xlim</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>ylim</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='st'>"usq charcoal"</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -151,9 +151,9 @@ label if one is available.</p></td>
     </tr>
     <tr>
       <th>col</th>
-      <td><p>Colour to use as fill for the bars as a digit. Defaults to 1, USQ
-Charcoal. There are six colours that can be used, see <strong>Details</strong> for
-more.</p></td>
+      <td><p>Colour to use as fill and outline for boxes and outlier points as
+a digit. Defaults to "usq charcoal". There are fifteen colours that can be
+used, see <strong>Details</strong> for more.</p></td>
     </tr>
     <tr>
       <th>...</th>
@@ -166,7 +166,7 @@ more.</p></td>
 <li><p>"c" for the lines part alone of "<strong>b</strong>",</p></li>
 <li><p>"o" for both ‘<strong>o</strong>verplotted’,</p></li>
 <li><p>"h" for ‘<strong>h</strong>istogram’ like (or ‘<strong>h</strong>igh-density’)
- vertical lines,</p></li>
+vertical lines,</p></li>
 <li><p>"s" for stair <strong>s</strong>teps,</p></li>
 <li><p>"n" for <strong>n</strong>o plotting.</p></li>
 </ul></td>
@@ -175,15 +175,8 @@ more.</p></td>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Colours for use in plots from the USQ Visual Identity Palette as a valid
-value for <code>col</code> include:</p><ul>
-<li><p>1 - USQ Charcoal</p></li>
-<li><p>2 - USQ Yellow</p></li>
-<li><p>3 - Dark Warm Gray</p></li>
-<li><p>4 - Support Green</p></li>
-<li><p>5 - Secondary Orange</p></li>
-<li><p>6 - Support Blue</p></li>
-</ul>
+    <p>Names of colours for use in plots from the USQ Visual Identity Palette are
+available from <code>link{usq_cols}</code>.</p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
@@ -195,7 +188,7 @@ capabilities.</p></div>
     <pre class="examples"><div class='input'><span class='fu'>library</span>(<span class='no'>datasets</span>)
 
 <span class='fu'>plot_usq</span>(<span class='no'>airquality</span>$<span class='no'>Ozone</span>,
-         <span class='kw'>col</span> <span class='kw'>=</span> <span class='fl'>3</span>,
+         <span class='kw'>col</span> <span class='kw'>=</span> <span class='st'>"usq charcoal"</span>,
          <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Air Quality"</span>,
          <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"Ozone"</span>)</div><div class='img'><img src='plot_usq-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
@@ -217,7 +210,7 @@ capabilities.</p></div>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Adam Sparks.</p>
+  <p>Developed by Adam H. Sparks.</p>
 </div>
 
 <div class="pkgdown">

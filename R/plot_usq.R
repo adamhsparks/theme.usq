@@ -14,9 +14,9 @@
 #' label if one is available.
 #' @param xlim Numeric value for x-axis limits. Optional.
 #' @param ylim Numeric value for y-axis limits. Optional.
-#' @param col Colour to use as fill for the bars as a digit. Defaults to 1, USQ
-#' Charcoal. There are six colours that can be used, see \strong{Details} for
-#' more.
+#' @param col Colour to use as fill and outline for boxes and outlier points as
+#' a digit. Defaults to "usq charcoal". There are fifteen colours that can be
+#' used, see \strong{Details} for more.
 #' @param ... Arguments to be passed to methods, such as graphical parameters
 #' (see \code{\link[graphics]{par}}). The most commonly used argument would be
 #' \code{type} what type of plot should be drawn. Possible types are:
@@ -32,16 +32,8 @@
 #'  \item{"n"} for \strong{n}o plotting.
 #'  }
 #' @details
-#' Colours for use in plots from the USQ Visual Identity Palette as a valid
-#' value for \code{col} include:
-#'  \itemize{
-#'    \item{1} {- USQ Charcoal}
-#'    \item{2} {- USQ Yellow}
-#'    \item{3} {- Dark Warm Gray}
-#'    \item{4} {- Support Green}
-#'    \item{5} {- Secondary Orange}
-#'    \item{6} {- Support Blue}
-#'  }
+#' Names of colours for use in plots from the USQ Visual Identity Palette are
+#' available from \code{link{usq_cols}}.
 #' @seealso
 #' \code{\link[graphics]{plot}} for full documentation of the basic plotting
 #' capabilities.
@@ -49,7 +41,7 @@
 #' library(datasets)
 #'
 #' plot_usq(airquality$Ozone,
-#'          col = 3,
+#'          col = "usq charcoal",
 #'          main = "Air Quality",
 #'          xlab = "Ozone")
 #'
@@ -63,18 +55,11 @@ plot_usq <- function(x,
                      ylab = "",
                      xlim = NULL,
                      ylim = NULL,
-                     col = 1,
+                     col = "usq charcoal",
                      ...) {
-  if (col > 6 | col == 0) {
-    col <- 1
-    message(
-      "You've selected a colour outside the range of this function.\n",
-      "Defaulting to USQ Charcoal\n"
-    )
-  }
 
-  colour <- usq_palette[1:6]
-  col <- colour[col]
+  col <- tolower(col)
+  col <- usq_cols(col)
 
   # set new pars
   graphics::par(

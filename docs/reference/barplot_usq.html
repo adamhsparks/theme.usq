@@ -58,7 +58,7 @@ guidelines that uses (hopefully) sensible defaults." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">theme.usq</a>
-        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.2</span>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">1.0.0</span>
       </span>
     </div>
 
@@ -109,7 +109,7 @@ guidelines that uses (hopefully) sensible defaults." />
 guidelines that uses (hopefully) sensible defaults.</p>
     
 
-    <pre class="usage"><span class='fu'>barplot_usq</span>(<span class='no'>height</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>barplot_usq</span>(<span class='no'>height</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='st'>"usq charcoal"</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -140,20 +140,13 @@ more.</p></td>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Colours for use in plots from the USQ Visual Identity Palette as a valid
-value for <code>col</code> include:</p><ul>
-<li><p>1 - USQ Charcoal</p></li>
-<li><p>2 - USQ Yellow</p></li>
-<li><p>3 - Dark Warm Gray</p></li>
-<li><p>4 - Support Green</p></li>
-<li><p>5 - Secondary Orange</p></li>
-<li><p>6 - Support Blue</p></li>
-</ul>
+    <p>Names of colours for use in plots from the USQ Visual Identity Palette are
+available from <code>link{usq_cols}</code>.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'>barplot_usq</span>(<span class='no'>islands</span>)</div><div class='img'><img src='barplot_usq-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'>barplot_usq</span>(<span class='no'>islands</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='st'>"secondary orange"</span>)</div><div class='img'><img src='barplot_usq-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -171,7 +164,7 @@ value for <code>col</code> include:</p><ul>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Adam Sparks.</p>
+  <p>Developed by Adam H. Sparks.</p>
 </div>
 
 <div class="pkgdown">

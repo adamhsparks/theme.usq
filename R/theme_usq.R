@@ -20,7 +20,7 @@
 #'     y = mpg,
 #'     colour = factor(gear)
 #'    )) +
-#'   scale_colour_manual(values = usq_palette) +
+#'   scale_colour_usq("primary") +
 #'   facet_wrap(~ am) +
 #'   theme_usq()
 #' p1
@@ -29,7 +29,8 @@
 #' df <- reshape2::melt(outer(1:4, 1:4), varnames = c("X1", "X2"))
 #'
 #' p2 <- ggplot(df, aes(X1, X2)) + geom_tile(aes(fill = value)) +
-#'   usq_fill_gradient_warm()
+#'   scale_fill_usq("warm",
+#'   discrete = FALSE)
 #' p3 <- p2 + geom_point(aes(size = value)) +
 #'   theme_usq()
 #' p3
@@ -46,7 +47,7 @@
 #'
 theme_usq <- function(base_size = 11,
                       base_family = "Verdana") {
-  colors <-
+  colours <-
   ggplot2::theme_bw(
     base_size = base_size,
     base_family = base_family
@@ -65,7 +66,7 @@ theme_usq <- function(base_size = 11,
 
       # USQ colour facet strips
       strip.background = ggplot2::element_rect(
-        fill = "#ffd100",
+        fill = "#aca095",
         colour = "#efe9e5",
         size = ggplot2::rel(2)
       ),

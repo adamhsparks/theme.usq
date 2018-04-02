@@ -4,7 +4,7 @@
 \alias{barplot_usq}
 \title{Basic barplots Using USQ Colours and Typography}
 \usage{
-barplot_usq(height, col = 1, ...)
+barplot_usq(height, col = "usq charcoal", ...)
 }
 \arguments{
 \item{height}{Either a vector or matrix of values describing the bars which
@@ -28,19 +28,11 @@ Basic barplots that follow USQ colour and typography
 guidelines that uses (hopefully) sensible defaults.
 }
 \details{
-Colours for use in plots from the USQ Visual Identity Palette as a valid
-value for \code{col} include:
- \itemize{
-   \item{1} {- USQ Charcoal}
-   \item{2} {- USQ Yellow}
-   \item{3} {- Dark Warm Gray}
-   \item{4} {- Support Green}
-   \item{5} {- Secondary Orange}
-   \item{6} {- Support Blue}
- }
+Names of colours for use in plots from the USQ Visual Identity Palette are
+available from \code{link{usq_cols}}.
 }
 \examples{
 
-barplot_usq(islands)
+barplot_usq(islands, col = "secondary orange")
 
 }

@@ -5,7 +5,7 @@
 \title{Basic Histograms Using USQ Colours and Typography}
 \usage{
 hist_usq(x, main = "", sub = "", xlab = "", ylab = "Count",
-  breaks = "pretty", col = 1, ...)
+  breaks = "pretty", col = "usq charcoal", ...)
 }
 \arguments{
 \item{x}{a vector of values for which the histogram is desired.}
@@ -23,9 +23,9 @@ blank.}
 Scott's Rule, whereas exact uses a bin-width of 1 so each value is
 represented individually with a bar.}
 
-\item{col}{Colour to use as fill for the bars as a digit. Defaults to 1, USQ
-Charcoal. There are six colours that can be used, see \strong{Details} for
-more.}
+\item{col}{Colour to use as fill and outline for boxes and outlier points as
+a digit. Defaults to "usq charcoal". There are fifteen colours that can be
+used, see \strong{Details} for more.}
 
 \item{...}{Arguments to be passed to methods, such as graphical parameters
 (see \code{\link[graphics]{par}}).}
@@ -35,16 +35,8 @@ Basic histograms that follow USQ colour and typography
 guidelines that uses (hopefully) sensible defaults.
 }
 \details{
-Colours for use in plots from the USQ Visual Identity Palette as a valid
-value for \code{col} include:
- \itemize{
-   \item{1} {- USQ Charcoal}
-   \item{2} {- USQ Yellow}
-   \item{3} {- Dark Warm Gray}
-   \item{4} {- Support Green}
-   \item{5} {- Secondary Orange}
-   \item{6} {- Support Blue}
- }
+Names of colours for use in plots from the USQ Visual Identity Palette are
+available from \code{link{usq_cols}}.
 }
 \examples{
 

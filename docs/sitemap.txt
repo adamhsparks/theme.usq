@@ -2,8 +2,12 @@ https://adamhsparks.github.io/theme.usq//reference/barplot_usq.html
 https://adamhsparks.github.io/theme.usq//reference/boxplot_usq.html
 https://adamhsparks.github.io/theme.usq//reference/hist_usq.html
 https://adamhsparks.github.io/theme.usq//reference/plot_usq.html
+https://adamhsparks.github.io/theme.usq//reference/scale_colour_usq.html
+https://adamhsparks.github.io/theme.usq//reference/scale_fill_usq.html
 https://adamhsparks.github.io/theme.usq//reference/theme.usq-package.html
 https://adamhsparks.github.io/theme.usq//reference/theme_usq.html
-https://adamhsparks.github.io/theme.usq//reference/usq_colour_gradient.html
-https://adamhsparks.github.io/theme.usq//reference/usq_palette.html
+https://adamhsparks.github.io/theme.usq//reference/usq_colours.html
+https://adamhsparks.github.io/theme.usq//reference/usq_cols.html
+https://adamhsparks.github.io/theme.usq//reference/usq_pal.html
+https://adamhsparks.github.io/theme.usq//reference/usq_palettes.html
 https://adamhsparks.github.io/theme.usq//articles/theme.usq.html

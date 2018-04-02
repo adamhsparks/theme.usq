@@ -19,11 +19,11 @@ knitr::opts_chunk$set(
 
 ## Introduction to _theme.usq_
 
-The goal of _theme.usq_ is to provide 
+The goal of _**`theme.usq`**_ is to provide 
 [University of Southern Queensland](https://usq.edu.au) (USQ) staff and students
 a quick and easy way to apply USQ colours and typography to graphs created in R
-using the base _graphics_ package or _ggplot2_ while providing clear graphs for
-reports and presentations. All of the colours provided are defined in USQ's
+using the base _**`graphics`**_ package or _**`ggplot2`**_ while providing clear graphs
+for reports and presentations. All of the colours provided are defined in USQ's
 Visual Identity Colour Palette, but do not all appear in the same order to
 maintain usability for the purposes of graphing.
 
@@ -35,25 +35,25 @@ with just the installation of this package.
 
 ## Quickstart
 
-If you do not already have R installed, because _theme.usq_ is an R package, you
-will need to install R first. Download and install the proper version for your
-computer from [CRAN](https://cran.r-project.org). It is also suggested to have
-RStudio installed as well. You can download the proper installation file from
-https://www.rstudio.com/products/rstudio/download/ for your platform.
+If you do not already have R installed, because _**`theme.usq`**_ is an R package,
+you will need to install R first. Download and install the proper version for
+your computer from [CRAN](https://cran.r-project.org). It is also suggested to
+have RStudio installed as well. You can download the proper installation file
+from https://www.rstudio.com/products/rstudio/download/ for your platform.
 
-Once R and RStudio are set up, you're ready to install _theme.usq_ through an R
-session.
+Once R and RStudio are set up, you're ready to install _**`theme.usq`**_ through an
+R session.
 
-The _theme.usq_ package is only available from GitHub. The easiest way to
-install it is by using the [_devtools_](https://github.com/hadley/devtools)
+The _**`theme.usq`**_ package is only available from GitHub. The easiest way to
+install it is by using the [_**`devtools`**_](https://github.com/hadley/devtools)
 package.
 
 The installation may take some time as some system fonts need to be catalogued
 to use the Microsoft Verdana font that USQ suggests. Once the installation is
 complete, it should not be necessary to re-catalogue the fonts so loading
-_theme.usq_ will not take any longer than expected.
+_**`theme.usq`**_ will not take any longer than expected.
 
-To install _theme.usq_, use the code in the following code block.
+To install _**`theme.usq`**_, copy/paste the code in the following code block.
 
 ```{r, eval=FALSE}
 if(!require(devtools)){
@@ -69,13 +69,24 @@ library("theme.usq")
 
 ### Keeping _theme.usq_ up-to-date
 
-Since _theme.usq_ is still under development with bug fixes and new features
+Since _**`theme.usq`**_ is still under development with bug fixes and new features
 being added and it is not available from CRAN; `update.packages()` will not
-update it. To keep _theme.usq_ updated, use:
+update it. To keep _**`theme.usq`**_ updated, use:
 
 ```{r, eval=FALSE}
 devtools::update_packages("theme.usq")
 ```
+
+## Colours
+
+To view a list of named colours in this package, simply type:
+```{r list-colours, eval=TRUE}
+usq_cols()
+```
+
+The resulting list shows the hexadecimal colour, e.g. "#ffd100", and it's name,
+"usq yellow". The names may be used to specify the colours at any time when
+plotting.
 
 Following are a few examples of _theme.usq's_ capabilities. Please see the 
 [package vignette](https://adamhsparks.github.io/theme.usq/articles/theme.usq.html)
@@ -96,8 +107,8 @@ plot_usq(x = mtcars$wt, y = mtcars$mpg)
 #### Using _ggplot2_ and `theme_usq()`
 
 Plot car weights by miles per gallon and facet by `Transmission` (0 = automatic,
-1 = manual) using the `usq_palette` in the `scale_colour_manual` discrete scale
-function to use USQ colours for the graph.
+1 = manual) using the `scale_colour_usq` setting `discrete = TRUE` and using
+the `cool` palette to use bluish USQ colours for the graph.
 
 ```{r}
 p1 <- ggplot(mtcars) +
@@ -106,7 +117,8 @@ p1 <- ggplot(mtcars) +
     y = mpg,
     colour = factor(gear)
   )) +
-  scale_colour_manual(values = usq_palette) +
+  scale_colour_usq(discrete = TRUE,
+                   palette = "cool") +
   facet_wrap(~ am)
 
 p1
@@ -121,16 +133,17 @@ p1 + theme_usq()
 ### Example 2: Heatmaps or other continuous data
 
 Using the _theme.usq's_ `theme_usq()` for _ggplot2_, plot values using the
-`usq_fill_gradient` to use USQ colours for continuous values in the graph. Two
-types of gradients are included, warm and cool for both `scale_fill_gradient()`
-and `scale_colour_gradient()` as necessary.
+`scale_fill_usq` to use USQ colours for continuous values in the graph. Two
+types of gradients are included, `warm_gradient` and `cool_gradient`.
 
 #### Warm gradients
 
 ```{r}
 p2a <- ggplot(faithfuld, aes(waiting, eruptions)) +
-  geom_raster(aes(fill = density), interpolate = TRUE) +
-  usq_fill_gradient_warm() +
+  geom_raster(aes(fill = density),
+              interpolate = TRUE) +
+  scale_fill_usq("warm",
+                 discrete = FALSE) +
   theme_usq()
   
 p2a
@@ -140,8 +153,10 @@ p2a
 
 ```{r}
 p2b <- ggplot(faithfuld, aes(waiting, eruptions)) +
-  geom_raster(aes(fill = density), interpolate = TRUE) +
-  usq_fill_gradient_cool() +
+  geom_raster(aes(fill = density),
+              interpolate = TRUE) +
+  scale_fill_usq("cool",
+                 discrete = FALSE) +
   theme_usq()
   
 p2b
@@ -149,12 +164,12 @@ p2b
 
 ### Example 3: Heatmaps using other colour palettes
 
-#### Using _ggplot2_ and `theme_usq()`
+#### Using _**ggplot2**_ and `theme_usq()`
 
 `theme_usq()` can be used with any colour palette that you wish to use, while
 still applying the graph styling and typography to the graph.
 
-Use the default _ggplot2_ colour scheme to fill the density plot while using
+Use the default `_**ggplot2**_` colour scheme to fill the density plot while using
 the `theme_usq()` to theme the graph.
 
 ```{r}
@@ -177,7 +192,7 @@ hist_usq(diamonds$carat)
 
 ```{r}
 p4 <- ggplot(diamonds, aes(carat)) +
-  geom_histogram(fill = usq_palette[1]) +
+  geom_histogram(fill = usq_cols("usq charcoal")) +
   theme_usq()
 
 p4
@@ -185,12 +200,10 @@ p4
 
 ### Example 5: Boxplots
 
-###3 Using `boxplot_usq()`
+#### Using `boxplot_usq()`
 
 Plot the highway miles per gallon (mpg) of 38 popular car models in the US by
 class of car.
-
-#### Using `boxplot_usq()`
 
 ```{r}
 boxplot_usq(mpg$hwy ~ mpg$class)
@@ -200,20 +213,22 @@ boxplot_usq(mpg$hwy ~ mpg$class)
 
 ```{r}
 p5 <- ggplot(mpg, aes(class, hwy)) +
-  geom_boxplot(fill = usq_palette[1],
-               colour = usq_palette[1],
-               alpha = 0.5) +
+  geom_boxplot(alpha = 0.5,
+               fill = usq_cols("usq charcoal"),
+               colour = usq_cols("usq charcoal")) +
   theme_usq()
   
 p5
 ```
 
-Use the USQ colours to fill the box-plots while using `drv` (_e.g._, 4-wheel drive, front-wheel drive or rear-wheel drive) for the box-plot colour.
+Use the USQ colours to fill the box-plots while using `drv` (_e.g._, 4-wheel
+drive, front-wheel drive or rear-wheel drive) for the box-plot colour.
 
 ```{r}
 p5.1 <- ggplot(mpg, aes(class, hwy)) +
-  geom_boxplot(aes(fill = drv), colour = usq_palette[1]) +
-  scale_fill_manual(values = usq_palette) +
+  geom_boxplot(aes(fill = drv),
+               colour = usq_cols("usq charcoal")) +
+  scale_fill_usq("primary") +
   theme_usq()
   
 p5.1
@@ -221,15 +236,15 @@ p5.1
 
 ### Example 6: Timeseries
 
-#### Using `ggplot2` and `theme_usq()` to plot timeseries lines using discrete
-colours for each variable of interest. While possible to do with base R
-graphics, _ggplot2_ simplifies the process greatly, so it is the only example
-provided and suggested for use.
+#### Using `_**ggplot2**_` and `theme_usq()` to plot timeseries lines using
+discrete colours for each variable of interest. While possible to do with base R
+graphics, `_**ggplot2**_` simplifies the process greatly, so it is the only
+example provided and suggested for use.
 
 ```{r, example_6}
 p6 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
   geom_line() +
-  scale_colour_manual(values = usq_palette) +
+  scale_colour_usq("bright") +
   theme_usq()
   
 p6
@@ -237,13 +252,13 @@ p6
 
 ### Example 7: Barplots
 
-#### Using `barplot_usq()` 
+#### Using `barplot_usq()`
 
 Plot the areas in thousands of square miles of landmasses which exceed 10,000
 sqm.
 
 ```{r example_7.1}
-barplot_usq(islands, col = 5)
+barplot_usq(islands, col = "cool gray")
 ```
 
 #### Using _ggplot2_ and `theme_usq()`
@@ -258,16 +273,56 @@ islands_df <- rownames_to_column(islands_df, "name")
 
 ggplot(islands_df, aes(x = name, y = islands)) +
   geom_bar(stat = "identity", 
-           colour = usq_palette[5],
-           fill = usq_palette[5]) +
+           colour = usq_cols("cool gray"),
+           fill = usq_cols("cool gray")) +
   theme_usq() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
+Plot the number of cars from each manufacturer in the `mpg()` dataset.
+
+```{r example-bright}
+ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
+  geom_bar() +
+  scale_fill_usq(palette = "bright", guide = "none") +
+  theme_usq() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+# Using `theme_usq()` in presentations
+
+The default settings for `theme_usq()` are fine for printed materials such as
+reports, but if you wish to use it in a presentation you can use the
+_**`ggplot2`**_ option `base_size = ` to increase the size of the fonts, points
+and lines in the graphs.
+
+## Example 8: Using _ggplot2_'s `base_size()` with `theme_usq()`
+
+As an example, using `base_size = 24` helps ensure that the graphs are legible
+on a standard sized PowerPoint slide when exported at a size of 33.87mm x
+19.05mm, using `ggsave()`, for a 16x9 presentation slide that fills the whole
+slide.
+
+
+```{r example8, eval = FALSE}
+p8 <-  ggplot(mpg, aes(class, hwy)) +
+  geom_boxplot(fill = usq_cols("usq charcoal"),
+               colour = usq_palette("usq charcoal"),
+               alpha = 0.5) +
+  theme_usq(base_size = 24) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggsave("slide_p7.png", width = 33.87, height = 19.05, units = "cm",
+       dpi = 150)
+```
+
 ## Meta
 
-* Please report any [issues or bugs](https://github.com/adamhsparks/theme.usq/issues).
+* Please report any
+[issues or bugs](https://github.com/adamhsparks/theme.usq/issues).
 
 * License: MIT
 
-* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+* Please note that this project is released with a
+[Contributor Code of Conduct](CONDUCT.md). By participating in this project you
+agree to abide by its terms.
