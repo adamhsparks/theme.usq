@@ -1,9 +1,14 @@
 Package: theme.usq
 Title: USQ Themed Plots from R
-Version: 0.1.2
-Authors@R: person("Adam", "Sparks", role = c("aut", "cre"),
-    email = "adamhsparks@gmail.com",
-    comment = c(ORCID = "0000-0002-0061-8359"))
+Version: 1.0.0
+Authors@R: c(person(given = "Adam H.", family = "Sparks",
+    role = c("aut", "cre"), email = "adamhsparks@gmail.com",
+    comment = c(ORCID = "0000-0002-0061-8359")),
+    person("Simon", "Jackson",
+    role = "ctb",
+    comment = "Contributed many ideas for palettes and functions through blog
+    post,
+    https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2"))
 Description: Provides University of Southern Queensland (USQ) style,
     typography and colours for plots generated using R base graphics and
     ggplot2.
@@ -22,6 +27,7 @@ Imports:
     scales,
     stats
 RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)
 Suggests:
     datasets,
     knitr,
