@@ -46,8 +46,8 @@ installation is complete, it should not be necessary to re-catalogue the
 fonts so loading ***`theme.usq`*** will not take any longer than
 expected.
 
-To install ***`theme.usq`***, copy/paste the code in the following code
-block.
+To install ***`theme.usq`*** copy and paste the code in the following
+code block in your R session console.
 
 ``` r
 if(!require(devtools)){
@@ -107,14 +107,6 @@ usq_palettes
 #>        "#ffd100"        "#1e1e1e"        "#fdba12"        "#faa61a" 
 #>        cool gray   dark warm gray 
 #>        "#76848f"        "#aca095" 
-#> 
-#> $`primary dark`
-#>   usq charcoal      cool gray dark warm gray 
-#>      "#1e1e1e"      "#76848f"      "#aca095" 
-#> 
-#> $`primary light`
-#>       usq yellow secondary yellow secondary orange 
-#>        "#ffd100"        "#fdba12"        "#faa61a" 
 #> 
 #> $cool
 #>      support navy      support blue support turquiose 
