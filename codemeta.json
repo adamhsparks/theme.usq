@@ -7,10 +7,10 @@
   "identifier": "theme.usq",
   "description": "Provides University of Southern Queensland (USQ) style,\n    typography and colours for plots generated using R base graphics and\n    ggplot2.",
   "name": "theme.usq: USQ Themed Plots from R",
-  "codeRepository": "https://adamhsparks@github.com/adamhsparks/theme.usq",
+  "codeRepository": "https://github.com/adamhsparks/theme.usq",
   "issueTracker": "https://github.com/adamhsparks/theme.usq/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -21,7 +21,7 @@
   "author": [
     {
       "@type": "Person",
-      "givenName": "Adam",
+      "givenName": "Adam H.",
       "familyName": "Sparks",
       "email": "adamhsparks@gmail.com",
       "@id": "https://orcid.org/0000-0002-0061-8359"
@@ -29,7 +29,7 @@
   ],
   "maintainer": {
     "@type": "Person",
-    "givenName": "Adam",
+    "givenName": "Adam H.",
     "familyName": "Sparks",
     "email": "adamhsparks@gmail.com",
     "@id": "https://orcid.org/0000-0002-0061-8359"
@@ -142,9 +142,9 @@
       "version": "3.1"
     }
   ],
-  "releaseNotes": "https://adamhsparks@github.com/adamhsparks/theme.usq/blob/master/NEWS.md",
-  "readme": "https://adamhsparks@github.com/adamhsparks/theme.usq/blob/master/README.md",
-  "fileSize": "1540.69KB",
+  "releaseNotes": "https://github.com/adamhsparks/theme.usq/blob/master/NEWS.md",
+  "readme": "https://github.com/adamhsparks/theme.usq/blob/master/README.md",
+  "fileSize": "1138.081KB",
   "contIntegration": "https://travis-ci.org/adamhsparks/theme",
   "citation": [
     {
@@ -159,9 +159,16 @@
       "name": "{theme.usq}: USQ Themed Plots from R",
       "identifier": "10.5281/zenodo.1044768",
       "url": "https://github.com/adamhsparks/theme.usq/",
-      "description": "R package version 0.1.2",
+      "description": "R package version 1.0.0",
       "@id": "https://doi.org/10.5281/zenodo.1044768",
       "sameAs": "https://doi.org/10.5281/zenodo.1044768"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "givenName": "Simon",
+      "familyName": "Jackson"
     }
   ]
 }
