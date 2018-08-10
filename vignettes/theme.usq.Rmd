@@ -251,7 +251,8 @@ graphics, _**`ggplot2`**_ simplifies the process greatly, so it is the only
 example provided and suggested for use.
 
 ```{r, example_6}
-p6 <- ggplot(economics_long, aes(date, value01, colour = variable)) +
+p6 <- ggplot(as.data.frame(economics_long),
+             aes(date, value01, colour = variable)) +
   geom_line() +
   scale_colour_usq("bright") +
   theme_usq()
