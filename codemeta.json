@@ -100,6 +100,18 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "dplyr",
+      "name": "dplyr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=dplyr"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "extrafont",
       "name": "extrafont",
       "provider": {
@@ -153,7 +165,7 @@
   ],
   "releaseNotes": "https://github.com/adamhsparks/theme.usq/blob/master/NEWS.md",
   "readme": "https://github.com/adamhsparks/theme.usq/blob/master/README.md",
-  "fileSize": "1135.435KB",
+  "fileSize": "1135.443KB",
   "contIntegration": "https://travis-ci.org/adamhsparks/theme",
   "citation": [
     {
@@ -179,5 +191,12 @@
       "familyName": "Jackson"
     }
   ],
-  "keywords": ["ggplot2", "university-of-southern-queensland", "usq", "theme", "branding", "r"]
+  "keywords": [
+    "ggplot2",
+    "university-of-southern-queensland",
+    "usq",
+    "theme",
+    "branding",
+    "r"
+  ]
 }
