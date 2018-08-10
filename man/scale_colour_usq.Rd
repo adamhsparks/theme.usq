@@ -4,8 +4,8 @@
 \alias{scale_colour_usq}
 \title{ggplot2 color scale constructor for USQ colours}
 \usage{
-scale_colour_usq(palette = "primary", discrete = TRUE, reverse = FALSE,
-  ...)
+scale_colour_usq(palette = "primary", discrete = TRUE,
+  reverse = FALSE, ...)
 }
 \arguments{
 \item{palette}{Character name of palette in usq_palettes}
