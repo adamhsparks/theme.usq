@@ -56,6 +56,18 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "pkgdown",
+      "name": "pkgdown",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=pkgdown"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "reshape2",
       "name": "reshape2",
       "provider": {
@@ -153,7 +165,7 @@
   ],
   "releaseNotes": "https://github.com/adamhsparks/theme.usq/blob/master/NEWS.md",
   "readme": "https://github.com/adamhsparks/theme.usq/blob/master/README.md",
-  "fileSize": "1135.45KB",
+  "fileSize": "1135.436KB",
   "contIntegration": "https://travis-ci.org/adamhsparks/theme",
   "citation": [
     {
