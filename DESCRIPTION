@@ -31,6 +31,7 @@ Roxygen: list(markdown = TRUE)
 Suggests:
     datasets,
     knitr,
+    pkgdown,
     reshape2,
     rmarkdown,
     tibble
