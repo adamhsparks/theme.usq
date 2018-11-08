@@ -1,0 +1,9 @@
+pandoc: '2.4'
+pkgdown: 1.1.0
+pkgdown_sha: ~
+articles:
+  theme.usq: theme.usq.html
+urls:
+  reference: https://adamhsparks.github.io/theme.usq//reference
+  article: https://adamhsparks.github.io/theme.usq//articles
+
