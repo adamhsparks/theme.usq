@@ -75,4 +75,5 @@ theme_usq <- function(base_size = 11,
                                          family = "Verdana"),
       complete = TRUE
     )
+  return(colours)
 }
