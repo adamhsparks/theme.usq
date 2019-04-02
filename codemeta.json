@@ -5,19 +5,19 @@
   ],
   "@type": "SoftwareSourceCode",
   "identifier": "theme.usq",
-  "description": "Provides University of Southern Queensland (USQ) style,\n    typography and colours for plots generated using R base graphics and\n    ggplot2.",
-  "name": "theme.usq: USQ Themed Plots from R",
+  "description": "Provides University of Southern Queensland (USQ) style,\n    typography and colours for plots generated using R base graphics and\n    'ggplot2'.",
+  "name": "theme.usq: USQ Themed Plots for Base Graphics and 'ggplot2'",
   "codeRepository": "https://github.com/adamhsparks/theme.usq",
   "issueTracker": "https://github.com/adamhsparks/theme.usq/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.5.1",
+    "version": "3.5.3",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.5.1 (2018-07-02)",
+  "runtimePlatform": "R version 3.5.3 (2019-03-11)",
   "author": [
     {
       "@type": "Person",
@@ -165,7 +165,7 @@
   ],
   "releaseNotes": "https://github.com/adamhsparks/theme.usq/blob/master/NEWS.md",
   "readme": "https://github.com/adamhsparks/theme.usq/blob/master/README.md",
-  "fileSize": "1135.436KB",
+  "fileSize": "1134.911KB",
   "contIntegration": "https://travis-ci.org/adamhsparks/theme",
   "citation": [
     {
@@ -198,5 +198,7 @@
     "theme",
     "branding",
     "r"
-  ]
+  ],
+  "copyrightHolder": {},
+  "funder": {}
 }
