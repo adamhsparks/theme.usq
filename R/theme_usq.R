@@ -66,8 +66,8 @@ theme_usq <- function(base_size = 11,
 
       # USQ colour facet strips
       strip.background = ggplot2::element_rect(
-        fill = "#aca095",
-        colour = "#efe9e5",
+        fill = "#ffd100",
+        colour = "#ffffff",
         size = ggplot2::rel(2)
       ),
       strip.text = ggplot2::element_text(colour = "white",
