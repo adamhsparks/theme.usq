@@ -1,13 +1,13 @@
 
-#' ggplot2 color scale constructor for USQ colours
+#' ggplot2 Colour Scale Constructor for USQ Colours
 #'
-#' @param palette Character name of palette in usq_palettes
+#' @param palette Character name of palette in `usq_palettes()`
 #' @param discrete Boolean indicating whether colour aesthetic is discrete or
 #' not
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to `discrete_scale()` or
-#'            `scale_colour_gradientn()`, used respectively when discrete is TRUE
-#'            or FALSE
+#'            `scale_colour_gradientn()`, used respectively when discrete is
+#'            `TRUE` or `FALSE`
 #'
 #' @export
 scale_colour_usq <- function(palette = "primary",
@@ -23,9 +23,9 @@ scale_colour_usq <- function(palette = "primary",
   }
 }
 
-#' ggplot2 fill scale constructor for USQ colours
+#' ggplot2 Fill Scale Constructor for USQ Colours
 #'
-#' @param palette Character name of palette in usq_palettes
+#' @param palette Character name of palette in `usq_palettes()`
 #' @param discrete Boolean indicating whether colour aesthetic is discrete or
 #' not
 #' @param reverse Boolean indicating whether the palette should be reversed

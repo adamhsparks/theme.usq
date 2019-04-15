@@ -2,13 +2,13 @@
 % Please edit documentation in R/usq_ggplot2_scales.R
 \name{scale_fill_usq}
 \alias{scale_fill_usq}
-\title{ggplot2 fill scale constructor for USQ colours}
+\title{ggplot2 Fill Scale Constructor for USQ Colours}
 \usage{
 scale_fill_usq(palette = "primary", discrete = TRUE, reverse = FALSE,
   ...)
 }
 \arguments{
-\item{palette}{Character name of palette in usq_palettes}
+\item{palette}{Character name of palette in \code{usq_palettes()}}
 
 \item{discrete}{Boolean indicating whether colour aesthetic is discrete or
 not}
@@ -20,5 +20,5 @@ not}
 or FALSE}
 }
 \description{
-ggplot2 fill scale constructor for USQ colours
+ggplot2 Fill Scale Constructor for USQ Colours
 }

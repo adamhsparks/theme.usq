@@ -2,13 +2,13 @@
 % Please edit documentation in R/usq_ggplot2_scales.R
 \name{scale_colour_usq}
 \alias{scale_colour_usq}
-\title{ggplot2 color scale constructor for USQ colours}
+\title{ggplot2 Colour Scale Constructor for USQ Colours}
 \usage{
 scale_colour_usq(palette = "primary", discrete = TRUE,
   reverse = FALSE, ...)
 }
 \arguments{
-\item{palette}{Character name of palette in usq_palettes}
+\item{palette}{Character name of palette in \code{usq_palettes()}}
 
 \item{discrete}{Boolean indicating whether colour aesthetic is discrete or
 not}
@@ -16,9 +16,9 @@ not}
 \item{reverse}{Boolean indicating whether the palette should be reversed}
 
 \item{...}{Additional arguments passed to \code{discrete_scale()} or
-\code{scale_colour_gradientn()}, used respectively when discrete is TRUE
-or FALSE}
+\code{scale_colour_gradientn()}, used respectively when discrete is
+\code{TRUE} or \code{FALSE}}
 }
 \description{
-ggplot2 color scale constructor for USQ colours
+ggplot2 Colour Scale Constructor for USQ Colours
 }
