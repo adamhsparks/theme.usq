@@ -1,6 +1,6 @@
 Package: theme.usq
 Title: USQ Themed Plots for Base Graphics and 'ggplot2'
-Version: 1.0.1
+Version: 1.0.1.9000
 Authors@R: c(person(given = "Adam H.", family = "Sparks",
     role = c("aut", "cre"), email = "adamhsparks@gmail.com",
     comment = c(ORCID = "0000-0002-0061-8359")),
