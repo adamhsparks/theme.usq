@@ -1,4 +1,5 @@
 
+
 #' A ggplot2 Theme Based on USQ Visual Identity and Typography Guidelines
 #'
 #' This theme applies a standard USQ style to \code{\link{ggplot2}} graphs,
@@ -48,10 +49,8 @@
 theme_usq <- function(base_size = 11,
                       base_family = "Verdana") {
   colours <-
-    ggplot2::theme_bw(
-      base_size = base_size,
-      base_family = base_family
-    ) %+replace%
+    ggplot2::theme_bw(base_size = base_size,
+                      base_family = base_family) %+replace%
     ggplot2::theme(
       # no background no minor grid no axis line
       panel.border = ggplot2::element_blank(),
@@ -70,8 +69,11 @@ theme_usq <- function(base_size = 11,
         colour = "#ffffff",
         size = ggplot2::rel(2)
       ),
-      strip.text = ggplot2::element_text(colour = "#ffffff",
-                                         family = "Verdana"),
+      strip.text = ggplot2::element_text(
+        colour = "#ffffff",
+        family = "Verdana",
+        margin = ggplot2::margin(0.1, 0.1, 0.1, 0.1, "cm")
+      ),
       complete = TRUE
     )
   return(colours)
