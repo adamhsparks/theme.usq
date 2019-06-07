@@ -1,5 +1,4 @@
 
-
 #' A ggplot2 Theme Based on USQ Visual Identity and Typography Guidelines
 #'
 #' This theme applies a standard USQ style to \code{\link{ggplot2}} graphs,
