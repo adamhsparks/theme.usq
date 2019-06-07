@@ -66,12 +66,11 @@ theme_usq <- function(base_size = 11,
 
       # USQ colour facet strips
       strip.background = ggplot2::element_rect(
-        fill = "#ffd100",
+        fill = "#1e1e1e",
         colour = "#ffffff",
         size = ggplot2::rel(2)
       ),
-      strip.text = ggplot2::element_text(colour = "white",
-                                         face = "bold",
+      strip.text = ggplot2::element_text(colour = "#ffffff",
                                          family = "Verdana"),
       complete = TRUE
     )
