@@ -2,10 +2,20 @@
 % Please edit documentation in R/plot_usq.R
 \name{plot_usq}
 \alias{plot_usq}
-\title{Basic X-Y Plotting Using USQ Colours and Typography}
+\title{Basic X-Y plotting using USQ colours and typography}
 \usage{
-plot_usq(x, y = NULL, main = "", sub = "", xlab = "", ylab = "",
-  xlim = NULL, ylim = NULL, col = "usq charcoal", ...)
+plot_usq(
+  x,
+  y = NULL,
+  main = "",
+  sub = "",
+  xlab = "",
+  ylab = "",
+  xlim = NULL,
+  ylim = NULL,
+  col = "usq charcoal",
+  ...
+)
 }
 \arguments{
 \item{x}{Values to be plotted on x-axis.}

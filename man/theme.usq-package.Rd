@@ -3,9 +3,9 @@
 \docType{package}
 \name{theme.usq-package}
 \alias{theme.usq-package}
-\title{Provides USQ Style Typography, Colours and Themes for Plots from R}
+\title{Provides USQ style typography, colours and themes for plots from \R}
 \description{
-Provides USQ Style Typography, Colours and Themes for Plots from R
+Provides USQ style typography, colours and themes for plots from \R
 }
 \seealso{
 \strong{Useful links:}

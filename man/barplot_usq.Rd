@@ -2,7 +2,7 @@
 % Please edit documentation in R/barplot_usq.R
 \name{barplot_usq}
 \alias{barplot_usq}
-\title{Basic barplots Using USQ Colours and Typography}
+\title{Basic barplots using USQ colours and typography}
 \usage{
 barplot_usq(height, col = "usq charcoal", ...)
 }
@@ -16,8 +16,8 @@ stacked sub-bars making up the bar. If height is a matrix and beside is
 \code{TRUE}, then the values in each column are juxtaposed rather than
 stacked.}
 
-\item{col}{Colour to use as fill for the bars as a digit. Defaults to 1, USQ
-Charcoal. There are six colours that can be used, see \strong{Details} for
+\item{col}{Colour to use as fill for the bars as a digit. Defaults to 1, "usq
+charcoal". There are six colours that can be used, see \strong{Details} for
 more.}
 
 \item{...}{Arguments to be passed to methods, such as graphical parameters

@@ -28,7 +28,7 @@ usq_colours <-
 
 #' Function to extract USQ colours as hex codes
 #'
-#' @param ... Character names of theme.usq colours
+#' @param ... Character names of \pkg{theme.usq} colours
 #' @examples
 #' # list the USQ colours names and hex codes
 #' usq_cols()

@@ -7,7 +7,7 @@
 usq_cols(...)
 }
 \arguments{
-\item{...}{Character names of theme.usq colours}
+\item{...}{Character names of \pkg{theme.usq} colours}
 }
 \description{
 Function to extract USQ colours as hex codes

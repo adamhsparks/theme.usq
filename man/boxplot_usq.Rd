@@ -2,10 +2,17 @@
 % Please edit documentation in R/boxplot_usq.R
 \name{boxplot_usq}
 \alias{boxplot_usq}
-\title{Basic Boxplots Using USQ Colours and Typography}
+\title{Basic boxplots using USQ colours and typography}
 \usage{
-boxplot_usq(x, main = "", sub = "", xlab = "", ylab = "",
-  col = "usq charcoal", ...)
+boxplot_usq(
+  x,
+  main = "",
+  sub = "",
+  xlab = "",
+  ylab = "",
+  col = "usq charcoal",
+  ...
+)
 }
 \arguments{
 \item{x}{for specifying data from which the boxplots are to be produced.

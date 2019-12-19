@@ -1,12 +1,12 @@
 
-#' @title Basic Boxplots Using USQ Colours and Typography
+#' @title Basic boxplots using USQ colours and typography
 #'
 #' @description Basic boxplots that follow USQ colour and typography
 #' guidelines that uses (hopefully) sensible defaults.
 #' @param x for specifying data from which the boxplots are to be produced.
 #' Either a numeric vector, or a single list containing such vectors. Additional
 #' unnamed arguments specify further data as separate vectors (each
-#' corresponding to a component boxplot). \code{NA}s are allowed in the data.
+#' corresponding to a component boxplot). `NA`s are allowed in the data.
 #' @param main Main title. Optional, if not supplied it will be blank.
 #' @param sub Sub title below x-axis label. Optional, if not supplied it will be
 #' blank.

@@ -2,10 +2,18 @@
 % Please edit documentation in R/hist_usq.R
 \name{hist_usq}
 \alias{hist_usq}
-\title{Basic Histograms Using USQ Colours and Typography}
+\title{Basic histograms using USQ colours and typography}
 \usage{
-hist_usq(x, main = "", sub = "", xlab = "", ylab = "Count",
-  breaks = "pretty", col = "usq charcoal", ...)
+hist_usq(
+  x,
+  main = "",
+  sub = "",
+  xlab = "",
+  ylab = "Count",
+  breaks = "pretty",
+  col = "usq charcoal",
+  ...
+)
 }
 \arguments{
 \item{x}{a vector of values for which the histogram is desired.}

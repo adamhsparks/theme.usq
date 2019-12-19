@@ -2,10 +2,9 @@
 % Please edit documentation in R/usq_ggplot2_scales.R
 \name{scale_fill_usq}
 \alias{scale_fill_usq}
-\title{ggplot2 Fill Scale Constructor for USQ Colours}
+\title{\pkg{ggplot2} fill scale constructor for USQ colours}
 \usage{
-scale_fill_usq(palette = "primary", discrete = TRUE, reverse = FALSE,
-  ...)
+scale_fill_usq(palette = "primary", discrete = TRUE, reverse = FALSE, ...)
 }
 \arguments{
 \item{palette}{Character name of palette in \code{usq_palettes()}}
@@ -20,5 +19,5 @@ not}
 or FALSE}
 }
 \description{
-ggplot2 Fill Scale Constructor for USQ Colours
+\pkg{ggplot2} fill scale constructor for USQ colours
 }

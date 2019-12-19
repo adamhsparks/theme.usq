@@ -3,14 +3,14 @@
 \docType{data}
 \name{usq_palettes}
 \alias{usq_palettes}
-\title{Palettes of USQ Colours}
+\title{Palettes of USQ colours}
 \format{\code{Palettes} of USQ colours from the visual identity
 colour palette for use in plotting.}
 \usage{
 usq_palettes
 }
 \description{
-Palettes of USQ Colours
+Palettes of USQ colours
 }
 \examples{
 usq_palettes

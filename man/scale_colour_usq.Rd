@@ -2,10 +2,9 @@
 % Please edit documentation in R/usq_ggplot2_scales.R
 \name{scale_colour_usq}
 \alias{scale_colour_usq}
-\title{ggplot2 Colour Scale Constructor for USQ Colours}
+\title{\pkg{ggplot2} colour scale constructor for USQ colours}
 \usage{
-scale_colour_usq(palette = "primary", discrete = TRUE,
-  reverse = FALSE, ...)
+scale_colour_usq(palette = "primary", discrete = TRUE, reverse = FALSE, ...)
 }
 \arguments{
 \item{palette}{Character name of palette in \code{usq_palettes()}}
@@ -20,5 +19,5 @@ not}
 \code{TRUE} or \code{FALSE}}
 }
 \description{
-ggplot2 Colour Scale Constructor for USQ Colours
+\pkg{ggplot2} colour scale constructor for USQ colours
 }
