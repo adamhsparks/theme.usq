@@ -4,8 +4,18 @@
 \alias{plot_usq}
 \title{Basic X-Y Plotting Using USQ Colours and Typography}
 \usage{
-plot_usq(x, y = NULL, main = "", sub = "", xlab = "", ylab = "",
-  xlim = NULL, ylim = NULL, col = "usq charcoal", ...)
+plot_usq(
+  x,
+  y = NULL,
+  main = "",
+  sub = "",
+  xlab = "",
+  ylab = "",
+  xlim = NULL,
+  ylim = NULL,
+  col = "usq charcoal",
+  ...
+)
 }
 \arguments{
 \item{x}{Values to be plotted on x-axis.}

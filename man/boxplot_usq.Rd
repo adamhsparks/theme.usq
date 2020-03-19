@@ -4,8 +4,15 @@
 \alias{boxplot_usq}
 \title{Basic Boxplots Using USQ Colours and Typography}
 \usage{
-boxplot_usq(x, main = "", sub = "", xlab = "", ylab = "",
-  col = "usq charcoal", ...)
+boxplot_usq(
+  x,
+  main = "",
+  sub = "",
+  xlab = "",
+  ylab = "",
+  col = "usq charcoal",
+  ...
+)
 }
 \arguments{
 \item{x}{for specifying data from which the boxplots are to be produced.

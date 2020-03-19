@@ -4,8 +4,7 @@
 \alias{scale_fill_usq}
 \title{ggplot2 Fill Scale Constructor for USQ Colours}
 \usage{
-scale_fill_usq(palette = "primary", discrete = TRUE, reverse = FALSE,
-  ...)
+scale_fill_usq(palette = "primary", discrete = TRUE, reverse = FALSE, ...)
 }
 \arguments{
 \item{palette}{Character name of palette in \code{usq_palettes()}}

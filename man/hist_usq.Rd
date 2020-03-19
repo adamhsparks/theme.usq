@@ -4,8 +4,16 @@
 \alias{hist_usq}
 \title{Basic Histograms Using USQ Colours and Typography}
 \usage{
-hist_usq(x, main = "", sub = "", xlab = "", ylab = "Count",
-  breaks = "pretty", col = "usq charcoal", ...)
+hist_usq(
+  x,
+  main = "",
+  sub = "",
+  xlab = "",
+  ylab = "Count",
+  breaks = "pretty",
+  col = "usq charcoal",
+  ...
+)
 }
 \arguments{
 \item{x}{a vector of values for which the histogram is desired.}

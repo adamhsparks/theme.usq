@@ -4,8 +4,10 @@
 \name{usq_colours}
 \alias{usq_colours}
 \title{USQ colours}
-\format{A \code{vector} of USQ colours from the visual identity
-colour palette.}
+\format{
+A \code{vector} of USQ colours from the visual identity
+colour palette.
+}
 \usage{
 usq_colours
 }
