@@ -173,7 +173,7 @@
 </h4>
 <p>Plot plot car weights by miles per gallon.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw"><a href="../reference/plot_usq.html">plot_usq</a></span>(<span class="dt">x =</span> mtcars<span class="op">$</span>wt, <span class="dt">y =</span> mtcars<span class="op">$</span>mpg)</span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/basic-plot-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq" class="section level4">
 <h4 class="hasAnchor">
@@ -191,10 +191,10 @@
 <span id="cb5-9"><a href="#cb5-9"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>am)</span>
 <span id="cb5-10"><a href="#cb5-10"></a></span>
 <span id="cb5-11"><a href="#cb5-11"></a>p1</span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/basic-ggplot2-1.png" width="672" style="display: block; margin: auto;"></p>
 <p>Now add the <code><a href="../reference/theme_usq.html">theme_usq()</a></code> to the graph.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>p1 <span class="op">+</span><span class="st"> </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/ggplot2-theme-usq-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
 <div id="example-2-heatmaps-or-other-continuous-data" class="section level3">
@@ -212,7 +212,7 @@
 <span id="cb7-6"><a href="#cb7-6"></a><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</span>
 <span id="cb7-7"><a href="#cb7-7"></a>  </span>
 <span id="cb7-8"><a href="#cb7-8"></a>p2a</span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/warm-gradients-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="cool-gradients" class="section level4">
 <h4 class="hasAnchor">
@@ -225,7 +225,7 @@
 <span id="cb8-6"><a href="#cb8-6"></a><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</span>
 <span id="cb8-7"><a href="#cb8-7"></a>  </span>
 <span id="cb8-8"><a href="#cb8-8"></a>p2b</span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/cool-gradients-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
 <div id="example-3-heatmaps-using-other-colour-palettes" class="section level3">
@@ -242,7 +242,7 @@
 <span id="cb9-3"><a href="#cb9-3"></a><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</span>
 <span id="cb9-4"><a href="#cb9-4"></a>  </span>
 <span id="cb9-5"><a href="#cb9-5"></a>p3</span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/unnamed-chunk-8-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/theme-usq-other-pals-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
 <div id="example-4-histograms" class="section level3">
@@ -253,7 +253,7 @@
 <a href="#using-hist_usq" class="anchor"></a>Using <code>hist_usq()</code>
 </h4>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="kw"><a href="../reference/hist_usq.html">hist_usq</a></span>(diamonds<span class="op">$</span>carat)</span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/unnamed-chunk-9-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/base-hist-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq-2" class="section level4">
 <h4 class="hasAnchor">
@@ -265,7 +265,7 @@
 <span id="cb11-4"><a href="#cb11-4"></a></span>
 <span id="cb11-5"><a href="#cb11-5"></a>p4</span>
 <span id="cb11-6"><a href="#cb11-6"></a><span class="co">#&gt; `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</span></span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/unnamed-chunk-10-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/ggplot2_hist-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
 <div id="example-5-boxplots" class="section level3">
@@ -277,7 +277,7 @@
 </h4>
 <p>Plot the highway miles per gallon (mpg) of 38 popular car models in the US by class of car.</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="kw"><a href="../reference/boxplot_usq.html">boxplot_usq</a></span>(mpg<span class="op">$</span>hwy <span class="op">~</span><span class="st"> </span>mpg<span class="op">$</span>class)</span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/unnamed-chunk-11-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/base-boxplot-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq-3" class="section level4">
 <h4 class="hasAnchor">
@@ -290,7 +290,7 @@
 <span id="cb13-5"><a href="#cb13-5"></a><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</span>
 <span id="cb13-6"><a href="#cb13-6"></a>  </span>
 <span id="cb13-7"><a href="#cb13-7"></a>p5</span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/unnamed-chunk-12-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/ggplot2-boxplot-1.png" width="672" style="display: block; margin: auto;"></p>
 <p>Use the USQ colours to fill the box-plots while using <code>drv</code> (<em>e.g.</em>, 4-wheel drive, front-wheel drive or rear-wheel drive) for the box-plot colour.</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>p5<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(class, hwy)) <span class="op">+</span></span>
 <span id="cb14-2"><a href="#cb14-2"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> drv),</span>
@@ -299,7 +299,7 @@
 <span id="cb14-5"><a href="#cb14-5"></a><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</span>
 <span id="cb14-6"><a href="#cb14-6"></a>  </span>
 <span id="cb14-7"><a href="#cb14-7"></a>p5<span class="fl">.1</span></span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/unnamed-chunk-13-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/ggplot2-boxplot-fill-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
 <div id="example-6-timeseries" class="section level3">
@@ -316,7 +316,7 @@
 <span id="cb15-5"><a href="#cb15-5"></a><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</span>
 <span id="cb15-6"><a href="#cb15-6"></a>  </span>
 <span id="cb15-7"><a href="#cb15-7"></a>p6</span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/example_6-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/timeseries-lines-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
 <div id="example-7-barplots" class="section level3">
@@ -328,7 +328,7 @@
 </h4>
 <p>Plot the areas in thousands of square miles of landmasses which exceed 10,000 sqm.</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="kw"><a href="../reference/barplot_usq.html">barplot_usq</a></span>(islands, <span class="dt">col =</span> <span class="st">"cool gray"</span>)</span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/example_7.1-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/base-barplots-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq-4" class="section level4">
 <h4 class="hasAnchor">
@@ -345,7 +345,7 @@
 <span id="cb17-8"><a href="#cb17-8"></a>           <span class="dt">fill =</span> <span class="kw"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"cool gray"</span>)) <span class="op">+</span></span>
 <span id="cb17-9"><a href="#cb17-9"></a><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>() <span class="op">+</span></span>
 <span id="cb17-10"><a href="#cb17-10"></a><span class="st">  </span><span class="kw">coord_flip</span>()</span></code></pre></div>
-<p><img src="theme.usq_files/figure-html/example_7.2-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="theme.usq_files/figure-html/ggplot2-barplot-1.png" width="672" style="display: block; margin: auto;"></p>
 <p>Plot the number of cars from each manufacturer in the <code>mpg()</code> dataset.</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(manufacturer, <span class="dt">fill =</span> manufacturer)) <span class="op">+</span></span>
 <span id="cb18-2"><a href="#cb18-2"></a><span class="st">  </span><span class="kw">geom_bar</span>() <span class="op">+</span></span>
