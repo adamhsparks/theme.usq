@@ -101,16 +101,20 @@
 <a href="#colours" class="anchor"></a>Colours</h2>
 <p>To view a list of named colours in this package, simply type:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>usq_colours</span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="co">#&gt;        usq yellow      usq charcoal  secondary yellow  secondary orange </span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="co">#&gt;         "#ffd100"         "#1e1e1e"         "#fdba12"         "#faa61a" </span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="co">#&gt;         cool gray    dark warm gray   light_warm gray    support orange </span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="co">#&gt;         "#76848f"         "#aca095"         "#efe9e5"         "#f58220" </span></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co">#&gt;       support red   support magenta     support green      support blue </span></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="co">#&gt;         "#e63e30"         "#b63393"         "#63a945"         "#0090ba" </span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="co">#&gt;      support navy    support purple support turquiose        light grey </span></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="co">#&gt;         "#003d77"         "#6a288a"         "#46c1be"         "#f6f6f6" </span></span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="co">#&gt;       medium grey         dark grey </span></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="co">#&gt;         "#e5e5e5"         "#333333"</span></span></code></pre></div>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="co">#&gt;              usq yellow            usq charcoal        secondary yellow </span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="co">#&gt;               "#ffd100"               "#1e1e1e"               "#fdba12" </span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co">#&gt;        secondary orange               cool gray          dark warm gray </span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="co">#&gt;               "#faa61a"               "#76848f"               "#aca095" </span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="co">#&gt;         light_warm gray          support orange             support red </span></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="co">#&gt;               "#efe9e5"               "#f58220"               "#e63e30" </span></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="co">#&gt;         support magenta           support green            support blue </span></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="co">#&gt;               "#b63393"               "#63a945"               "#0090ba" </span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="co">#&gt;            support navy          support purple       support turquiose </span></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="co">#&gt;               "#003d77"               "#6a288a"               "#46c1be" </span></span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="co">#&gt;              light grey             medium grey               dark grey </span></span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="co">#&gt;               "#f6f6f6"               "#e5e5e5"               "#333333" </span></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="co">#&gt;       unspecified brown unknown deep blue green </span></span>
+<span id="cb2-15"><a href="#cb2-15"></a><span class="co">#&gt;               "#a17401"               "#005670"</span></span></code></pre></div>
 <p>The resulting list shows the hexadecimal colour, e.g. “#ffd100”, and it’s name, “usq yellow”. The names may be used to specify the colours at any time when plotting.</p>
 </div>
 <div id="palettes" class="section level2">
@@ -119,40 +123,42 @@
 <p>Colours are grouped into convenient palettes as well. The palettes may be used when plotting. To see the palettes and colours included in each of them, simply type:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>usq_palettes</span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="co">#&gt; $primary</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="co">#&gt;       usq yellow     usq charcoal secondary yellow secondary orange </span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="co">#&gt;        "#ffd100"        "#1e1e1e"        "#fdba12"        "#faa61a" </span></span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="co">#&gt;        cool gray   dark warm gray </span></span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="co">#&gt;        "#76848f"        "#aca095" </span></span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="co">#&gt; </span></span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="co">#&gt; $`primary dark`</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="co">#&gt;   usq charcoal      cool gray dark warm gray </span></span>
-<span id="cb3-10"><a href="#cb3-10"></a><span class="co">#&gt;      "#1e1e1e"      "#76848f"      "#aca095" </span></span>
-<span id="cb3-11"><a href="#cb3-11"></a><span class="co">#&gt; </span></span>
-<span id="cb3-12"><a href="#cb3-12"></a><span class="co">#&gt; $`primary light`</span></span>
-<span id="cb3-13"><a href="#cb3-13"></a><span class="co">#&gt;       usq yellow secondary yellow secondary orange </span></span>
-<span id="cb3-14"><a href="#cb3-14"></a><span class="co">#&gt;        "#ffd100"        "#fdba12"        "#faa61a" </span></span>
-<span id="cb3-15"><a href="#cb3-15"></a><span class="co">#&gt; </span></span>
-<span id="cb3-16"><a href="#cb3-16"></a><span class="co">#&gt; $cool</span></span>
-<span id="cb3-17"><a href="#cb3-17"></a><span class="co">#&gt;      support navy      support blue support turquiose </span></span>
-<span id="cb3-18"><a href="#cb3-18"></a><span class="co">#&gt;         "#003d77"         "#0090ba"         "#46c1be" </span></span>
-<span id="cb3-19"><a href="#cb3-19"></a><span class="co">#&gt; </span></span>
-<span id="cb3-20"><a href="#cb3-20"></a><span class="co">#&gt; $warm</span></span>
-<span id="cb3-21"><a href="#cb3-21"></a><span class="co">#&gt;      support red   support orange secondary orange secondary yellow </span></span>
-<span id="cb3-22"><a href="#cb3-22"></a><span class="co">#&gt;        "#e63e30"        "#f58220"        "#faa61a"        "#fdba12" </span></span>
-<span id="cb3-23"><a href="#cb3-23"></a><span class="co">#&gt;       usq yellow </span></span>
-<span id="cb3-24"><a href="#cb3-24"></a><span class="co">#&gt;        "#ffd100" </span></span>
-<span id="cb3-25"><a href="#cb3-25"></a><span class="co">#&gt; </span></span>
-<span id="cb3-26"><a href="#cb3-26"></a><span class="co">#&gt; $bright</span></span>
-<span id="cb3-27"><a href="#cb3-27"></a><span class="co">#&gt;      support navy      support blue support turquiose     support green </span></span>
-<span id="cb3-28"><a href="#cb3-28"></a><span class="co">#&gt;         "#003d77"         "#0090ba"         "#46c1be"         "#63a945" </span></span>
-<span id="cb3-29"><a href="#cb3-29"></a><span class="co">#&gt;        usq yellow  secondary yellow  secondary orange    support orange </span></span>
-<span id="cb3-30"><a href="#cb3-30"></a><span class="co">#&gt;         "#ffd100"         "#fdba12"         "#faa61a"         "#f58220" </span></span>
-<span id="cb3-31"><a href="#cb3-31"></a><span class="co">#&gt;       support red   support magenta    support purple </span></span>
-<span id="cb3-32"><a href="#cb3-32"></a><span class="co">#&gt;         "#e63e30"         "#b63393"         "#6a288a" </span></span>
-<span id="cb3-33"><a href="#cb3-33"></a><span class="co">#&gt; </span></span>
-<span id="cb3-34"><a href="#cb3-34"></a><span class="co">#&gt; $digital</span></span>
-<span id="cb3-35"><a href="#cb3-35"></a><span class="co">#&gt;  light grey medium grey   dark grey </span></span>
-<span id="cb3-36"><a href="#cb3-36"></a><span class="co">#&gt;   "#f6f6f6"   "#e5e5e5"   "#333333"</span></span></code></pre></div>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="co">#&gt;        secondary yellow         support magenta       support turquiose </span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="co">#&gt;               "#fdba12"               "#b63393"               "#46c1be" </span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="co">#&gt;             support red           support green            support navy </span></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="co">#&gt;               "#e63e30"               "#63a945"               "#003d77" </span></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="co">#&gt;       unspecified brown          support purple unknown deep blue green </span></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="co">#&gt;               "#a17401"               "#6a288a"               "#005670" </span></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="co">#&gt; </span></span>
+<span id="cb3-10"><a href="#cb3-10"></a><span class="co">#&gt; $`primary dark`</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="co">#&gt;   usq charcoal      cool gray dark warm gray </span></span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="co">#&gt;      "#1e1e1e"      "#76848f"      "#aca095" </span></span>
+<span id="cb3-13"><a href="#cb3-13"></a><span class="co">#&gt; </span></span>
+<span id="cb3-14"><a href="#cb3-14"></a><span class="co">#&gt; $`primary light`</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a><span class="co">#&gt;       usq yellow secondary yellow secondary orange </span></span>
+<span id="cb3-16"><a href="#cb3-16"></a><span class="co">#&gt;        "#ffd100"        "#fdba12"        "#faa61a" </span></span>
+<span id="cb3-17"><a href="#cb3-17"></a><span class="co">#&gt; </span></span>
+<span id="cb3-18"><a href="#cb3-18"></a><span class="co">#&gt; $cool</span></span>
+<span id="cb3-19"><a href="#cb3-19"></a><span class="co">#&gt;      support navy      support blue support turquiose </span></span>
+<span id="cb3-20"><a href="#cb3-20"></a><span class="co">#&gt;         "#003d77"         "#0090ba"         "#46c1be" </span></span>
+<span id="cb3-21"><a href="#cb3-21"></a><span class="co">#&gt; </span></span>
+<span id="cb3-22"><a href="#cb3-22"></a><span class="co">#&gt; $warm</span></span>
+<span id="cb3-23"><a href="#cb3-23"></a><span class="co">#&gt;      support red   support orange secondary orange secondary yellow </span></span>
+<span id="cb3-24"><a href="#cb3-24"></a><span class="co">#&gt;        "#e63e30"        "#f58220"        "#faa61a"        "#fdba12" </span></span>
+<span id="cb3-25"><a href="#cb3-25"></a><span class="co">#&gt;       usq yellow </span></span>
+<span id="cb3-26"><a href="#cb3-26"></a><span class="co">#&gt;        "#ffd100" </span></span>
+<span id="cb3-27"><a href="#cb3-27"></a><span class="co">#&gt; </span></span>
+<span id="cb3-28"><a href="#cb3-28"></a><span class="co">#&gt; $bright</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a><span class="co">#&gt;      support navy      support blue support turquiose     support green </span></span>
+<span id="cb3-30"><a href="#cb3-30"></a><span class="co">#&gt;         "#003d77"         "#0090ba"         "#46c1be"         "#63a945" </span></span>
+<span id="cb3-31"><a href="#cb3-31"></a><span class="co">#&gt;        usq yellow  secondary yellow  secondary orange    support orange </span></span>
+<span id="cb3-32"><a href="#cb3-32"></a><span class="co">#&gt;         "#ffd100"         "#fdba12"         "#faa61a"         "#f58220" </span></span>
+<span id="cb3-33"><a href="#cb3-33"></a><span class="co">#&gt;       support red   support magenta    support purple </span></span>
+<span id="cb3-34"><a href="#cb3-34"></a><span class="co">#&gt;         "#e63e30"         "#b63393"         "#6a288a" </span></span>
+<span id="cb3-35"><a href="#cb3-35"></a><span class="co">#&gt; </span></span>
+<span id="cb3-36"><a href="#cb3-36"></a><span class="co">#&gt; $digital</span></span>
+<span id="cb3-37"><a href="#cb3-37"></a><span class="co">#&gt;  light grey medium grey   dark grey </span></span>
+<span id="cb3-38"><a href="#cb3-38"></a><span class="co">#&gt;   "#f6f6f6"   "#e5e5e5"   "#333333"</span></span></code></pre></div>
 </div>
 <div id="examples" class="section level2">
 <h2 class="hasAnchor">
