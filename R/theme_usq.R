@@ -1,5 +1,5 @@
 
-#' A ggplot2 Theme Based on USQ Visual Identity and Typography Guidelines
+#' A ggplot2 theme based on USQ visual identity and typography guidelines
 #'
 #' This theme applies a standard USQ style to \code{\link{ggplot2}} graphs,
 #' which includes no y-axis lines, major x-axis grid lines and the Microsoft's

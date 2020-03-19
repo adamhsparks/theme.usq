@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_usq.R
 \name{theme_usq}
 \alias{theme_usq}
-\title{A ggplot2 Theme Based on USQ Visual Identity and Typography Guidelines}
+\title{A ggplot2 theme based on USQ visual identity and typography guidelines}
 \usage{
 theme_usq(base_size = 11, base_family = "Verdana")
 }
