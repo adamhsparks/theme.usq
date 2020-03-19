@@ -9,12 +9,15 @@
 
 usq_palettes <- list(
   `primary` = usq_cols(
-    "usq yellow",
-    "usq charcoal",
     "secondary yellow",
-    "secondary orange",
-    "cool gray",
-    "dark warm gray"
+    "support magenta",
+    "support turquiose",
+    "support red",
+    "support green",
+    "support navy",
+    "unspecified brown",
+    "support purple",
+    "unknown deep blue green"
   ),
 
   `primary dark` = usq_cols(
@@ -29,9 +32,10 @@ usq_palettes <- list(
     "secondary orange"
   ),
 
-  `cool` = usq_cols("support navy",
-                    "support blue",
-                    "support turquiose"),
+  `cool` = usq_cols(
+    "support navy",
+    "support blue",
+    "support turquiose"),
 
   `warm` = usq_cols(
     "support red",
@@ -55,7 +59,8 @@ usq_palettes <- list(
     "support purple"
   ),
 
-  `digital` = usq_cols("light grey",
-                       "medium grey",
-                       "dark grey")
+  `digital` = usq_cols(
+    "light grey",
+    "medium grey",
+    "dark grey")
 )

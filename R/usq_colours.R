@@ -23,7 +23,9 @@ usq_colours <-
     `support turquiose` = "#46c1be",
     `light grey` = "#f6f6f6",
     `medium grey` = "#e5e5e5",
-    `dark grey` = "#333333"
+    `dark grey` = "#333333",
+    `unspecified brown` = "#a17401",
+    `unknown deep blue green` = "#005670"
   )
 
 #' Function to extract USQ colours as hex codes
