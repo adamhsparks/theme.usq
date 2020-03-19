@@ -1,5 +1,5 @@
 
-#' \pkg{ggplot2} colour scale constructor for USQ colours
+#' ggplot2 colour scale constructor for USQ colours
 #'
 #' @param palette Character name of palette in `usq_palettes()`
 #' @param discrete Boolean indicating whether colour aesthetic is discrete or
@@ -24,7 +24,7 @@ scale_colour_usq <- function(palette = "primary",
   }
 }
 
-#' \pkg{ggplot2} fill scale constructor for USQ colours
+#' ggplot2 fill scale constructor for USQ colours
 #'
 #' @param palette Character name of palette in `usq_palettes()`
 #' @param discrete Boolean indicating whether colour aesthetic is discrete or

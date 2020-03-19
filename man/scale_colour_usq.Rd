@@ -2,7 +2,7 @@
 % Please edit documentation in R/usq_ggplot2_scales.R
 \name{scale_colour_usq}
 \alias{scale_colour_usq}
-\title{\pkg{ggplot2} colour scale constructor for USQ colours}
+\title{ggplot2 colour scale constructor for USQ colours}
 \usage{
 scale_colour_usq(palette = "primary", discrete = TRUE, reverse = FALSE, ...)
 }
@@ -19,5 +19,5 @@ not}
 \code{TRUE} or \code{FALSE}}
 }
 \description{
-\pkg{ggplot2} colour scale constructor for USQ colours
+ggplot2 colour scale constructor for USQ colours
 }
