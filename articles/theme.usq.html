@@ -180,7 +180,7 @@
 <a href="#using-ggplot2-and-theme_usq" class="anchor"></a>Using <em>ggplot2</em> and <code>theme_usq()</code>
 </h4>
 <p>Plot car weights by miles per gallon and facet by <code>Transmission</code> (0 = automatic, 1 = manual) using the <code><a href="../reference/scale_colour_usq.html">scale_colour_usq()</a></code> setting <code>discrete = TRUE</code> and using the <code>cool</code> palette to use blue USQ colours for the plot.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>p1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mtcars) <span class="op">+</span></span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>p1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> mtcars) <span class="op">+</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(</span>
 <span id="cb5-3"><a href="#cb5-3"></a>    <span class="dt">x =</span> wt,</span>
 <span id="cb5-4"><a href="#cb5-4"></a>    <span class="dt">y =</span> mpg,</span>
@@ -204,20 +204,20 @@
 <div id="warm-gradients" class="section level4">
 <h4 class="hasAnchor">
 <a href="#warm-gradients" class="anchor"></a>Warm gradients</h4>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>p2a &lt;-<span class="st"> </span><span class="kw">ggplot</span>(faithfuld, <span class="kw">aes</span>(waiting, eruptions)) <span class="op">+</span></span>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>p2a &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> faithfuld, <span class="kw">aes</span>(<span class="dt">x =</span> waiting, <span class="dt">y =</span> eruptions)) <span class="op">+</span></span>
 <span id="cb7-2"><a href="#cb7-2"></a><span class="st">  </span><span class="kw">geom_raster</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> density),</span>
 <span id="cb7-3"><a href="#cb7-3"></a>              <span class="dt">interpolate =</span> <span class="ot">TRUE</span>) <span class="op">+</span></span>
 <span id="cb7-4"><a href="#cb7-4"></a><span class="st">  </span><span class="kw"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span>(<span class="st">"warm"</span>,</span>
 <span id="cb7-5"><a href="#cb7-5"></a>                 <span class="dt">discrete =</span> <span class="ot">FALSE</span>) <span class="op">+</span></span>
 <span id="cb7-6"><a href="#cb7-6"></a><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</span>
-<span id="cb7-7"><a href="#cb7-7"></a>  </span>
+<span id="cb7-7"><a href="#cb7-7"></a></span>
 <span id="cb7-8"><a href="#cb7-8"></a>p2a</span></code></pre></div>
 <p><img src="theme.usq_files/figure-html/warm-gradients-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="cool-gradients" class="section level4">
 <h4 class="hasAnchor">
 <a href="#cool-gradients" class="anchor"></a>Cool gradients</h4>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>p2b &lt;-<span class="st"> </span><span class="kw">ggplot</span>(faithfuld, <span class="kw">aes</span>(waiting, eruptions)) <span class="op">+</span></span>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>p2b &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> faithfuld, <span class="kw">aes</span>(<span class="dt">x =</span> waiting, <span class="dt">y =</span> eruptions)) <span class="op">+</span></span>
 <span id="cb8-2"><a href="#cb8-2"></a><span class="st">  </span><span class="kw">geom_raster</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> density),</span>
 <span id="cb8-3"><a href="#cb8-3"></a>              <span class="dt">interpolate =</span> <span class="ot">TRUE</span>) <span class="op">+</span></span>
 <span id="cb8-4"><a href="#cb8-4"></a><span class="st">  </span><span class="kw"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span>(<span class="st">"cool"</span>,</span>
@@ -237,7 +237,7 @@
 </h4>
 <p><code><a href="../reference/theme_usq.html">theme_usq()</a></code> can be used with any colour palette that you wish to use, while still applying the graph styling and typography to the graph.</p>
 <p>Use the default <em><strong><code>ggplot2</code></strong></em> colour scheme to fill the density plot while using the <code><a href="../reference/theme_usq.html">theme_usq()</a></code> to theme the graph.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>p3 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(faithfuld, <span class="kw">aes</span>(waiting, eruptions)) <span class="op">+</span></span>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>p3 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> faithfuld, <span class="kw">aes</span>(<span class="dt">x =</span> waiting, <span class="dt">y =</span> eruptions)) <span class="op">+</span></span>
 <span id="cb9-2"><a href="#cb9-2"></a><span class="st">  </span><span class="kw">geom_raster</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> density), <span class="dt">interpolate =</span> <span class="ot">TRUE</span>) <span class="op">+</span></span>
 <span id="cb9-3"><a href="#cb9-3"></a><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</span>
 <span id="cb9-4"><a href="#cb9-4"></a>  </span>
@@ -259,7 +259,7 @@
 <h4 class="hasAnchor">
 <a href="#using-ggplot2-and-theme_usq-2" class="anchor"></a>Using <em>ggplot2</em> and <code>theme_usq()</code>
 </h4>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>p4 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamonds, <span class="kw">aes</span>(carat)) <span class="op">+</span></span>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>p4 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> diamonds, <span class="kw">aes</span>(<span class="dt">x =</span> carat)) <span class="op">+</span></span>
 <span id="cb11-2"><a href="#cb11-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">fill =</span> <span class="kw"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"usq charcoal"</span>)) <span class="op">+</span></span>
 <span id="cb11-3"><a href="#cb11-3"></a><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</span>
 <span id="cb11-4"><a href="#cb11-4"></a></span>
@@ -283,7 +283,7 @@
 <h4 class="hasAnchor">
 <a href="#using-ggplot2-and-theme_usq-3" class="anchor"></a>Using <em>ggplot2</em> and <code>theme_usq()</code>
 </h4>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>p5 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(class, hwy)) <span class="op">+</span></span>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>p5 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> mpg, <span class="kw">aes</span>(<span class="dt">x =</span> class, <span class="dt">y =</span> hwy)) <span class="op">+</span></span>
 <span id="cb13-2"><a href="#cb13-2"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">alpha =</span> <span class="fl">0.75</span>,</span>
 <span id="cb13-3"><a href="#cb13-3"></a>               <span class="dt">fill =</span> <span class="kw"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"usq charcoal"</span>),</span>
 <span id="cb13-4"><a href="#cb13-4"></a>               <span class="dt">colour =</span> <span class="kw"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"usq charcoal"</span>)) <span class="op">+</span></span>
@@ -292,7 +292,7 @@
 <span id="cb13-7"><a href="#cb13-7"></a>p5</span></code></pre></div>
 <p><img src="theme.usq_files/figure-html/ggplot2-boxplot-1.png" width="672" style="display: block; margin: auto;"></p>
 <p>Use the USQ colours to fill the box-plots while using <code>drv</code> (<em>e.g.</em>, 4-wheel drive, front-wheel drive or rear-wheel drive) for the box-plot colour.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>p5<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(class, hwy)) <span class="op">+</span></span>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>p5<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> mpg, <span class="kw">aes</span>(<span class="dt">x =</span> class, <span class="dt">y =</span> hwy)) <span class="op">+</span></span>
 <span id="cb14-2"><a href="#cb14-2"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> drv),</span>
 <span id="cb14-3"><a href="#cb14-3"></a>               <span class="dt">colour =</span> <span class="kw"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"usq charcoal"</span>)) <span class="op">+</span></span>
 <span id="cb14-4"><a href="#cb14-4"></a><span class="st">  </span><span class="kw"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span>(<span class="st">"primary"</span>) <span class="op">+</span></span>
@@ -309,8 +309,8 @@
 <h4 class="hasAnchor">
 <a href="#using-ggplot2-and-theme_usq-to-plot-timeseries-lines-using" class="anchor"></a>Using <em>ggplot2</em> and <code>theme_usq()</code> to plot timeseries lines using</h4>
 <p>discrete colours for each variable of interest. While possible to do with base R graphics, <em><strong><code>ggplot2</code></strong></em> simplifies the process greatly, so it is the only example provided and suggested for use.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>p6 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="kw"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span>(economics_long),</span>
-<span id="cb15-2"><a href="#cb15-2"></a>             <span class="kw">aes</span>(date, value01, <span class="dt">colour =</span> variable)) <span class="op">+</span></span>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>p6 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> <span class="kw"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span>(economics_long),</span>
+<span id="cb15-2"><a href="#cb15-2"></a>             <span class="kw">aes</span>(<span class="dt">x =</span> date, <span class="dt">y =</span> value01, <span class="dt">colour =</span> variable)) <span class="op">+</span></span>
 <span id="cb15-3"><a href="#cb15-3"></a><span class="st">  </span><span class="kw">geom_line</span>() <span class="op">+</span></span>
 <span id="cb15-4"><a href="#cb15-4"></a><span class="st">  </span><span class="kw"><a href="../reference/scale_colour_usq.html">scale_colour_usq</a></span>(<span class="st">"bright"</span>) <span class="op">+</span></span>
 <span id="cb15-5"><a href="#cb15-5"></a><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>()</span>
@@ -339,7 +339,7 @@
 <span id="cb17-2"><a href="#cb17-2"></a>islands_df &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span>(islands)</span>
 <span id="cb17-3"><a href="#cb17-3"></a>islands_df &lt;-<span class="st"> </span><span class="kw"><a href="https://tibble.tidyverse.org/reference/rownames.html">rownames_to_column</a></span>(islands_df, <span class="st">"name"</span>)</span>
 <span id="cb17-4"><a href="#cb17-4"></a></span>
-<span id="cb17-5"><a href="#cb17-5"></a><span class="kw">ggplot</span>(islands_df, <span class="kw">aes</span>(<span class="dt">x =</span> name, <span class="dt">y =</span> islands)) <span class="op">+</span></span>
+<span id="cb17-5"><a href="#cb17-5"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> islands_df, <span class="kw">aes</span>(<span class="dt">x =</span> name, <span class="dt">y =</span> islands)) <span class="op">+</span></span>
 <span id="cb17-6"><a href="#cb17-6"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">"identity"</span>, </span>
 <span id="cb17-7"><a href="#cb17-7"></a>           <span class="dt">colour =</span> <span class="kw"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"cool gray"</span>),</span>
 <span id="cb17-8"><a href="#cb17-8"></a>           <span class="dt">fill =</span> <span class="kw"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"cool gray"</span>)) <span class="op">+</span></span>
@@ -347,7 +347,7 @@
 <span id="cb17-10"><a href="#cb17-10"></a><span class="st">  </span><span class="kw">coord_flip</span>()</span></code></pre></div>
 <p><img src="theme.usq_files/figure-html/ggplot2-barplot-1.png" width="672" style="display: block; margin: auto;"></p>
 <p>Plot the number of cars from each manufacturer in the <code>mpg()</code> dataset.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(manufacturer, <span class="dt">fill =</span> manufacturer)) <span class="op">+</span></span>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> mpg, <span class="kw">aes</span>(<span class="dt">x =</span> manufacturer, <span class="dt">fill =</span> manufacturer)) <span class="op">+</span></span>
 <span id="cb18-2"><a href="#cb18-2"></a><span class="st">  </span><span class="kw">geom_bar</span>() <span class="op">+</span></span>
 <span id="cb18-3"><a href="#cb18-3"></a><span class="st">  </span><span class="kw"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span>(<span class="dt">palette =</span> <span class="st">"bright"</span>, <span class="dt">guide =</span> <span class="st">"none"</span>) <span class="op">+</span></span>
 <span id="cb18-4"><a href="#cb18-4"></a><span class="st">  </span><span class="kw"><a href="../reference/theme_usq.html">theme_usq</a></span>() <span class="op">+</span></span>
@@ -364,7 +364,7 @@
 <h3 class="hasAnchor">
 <a href="#example-8-using-ggplot2s-base_size-with-theme_usq" class="anchor"></a>Example 8: Using <em>ggplot2</em>’s base_size() with theme_usq()</h3>
 <p>As an example, using <code>base_size = 24</code> helps ensure that the graphs are legible on a standard sized PowerPoint slide when exported at a size of 33.87mm x 19.05mm, using <code>ggsave()</code>, for a 16x9 presentation slide that fills the whole slide.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>p8 &lt;-<span class="st">  </span><span class="kw">ggplot</span>(mpg, <span class="kw">aes</span>(class, hwy)) <span class="op">+</span></span>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>p8 &lt;-<span class="st">  </span><span class="kw">ggplot</span>(<span class="dt">data =</span> mpg, <span class="kw">aes</span>(<span class="dt">x =</span> class, <span class="dt">y =</span> hwy)) <span class="op">+</span></span>
 <span id="cb19-2"><a href="#cb19-2"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">fill =</span> <span class="kw"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"usq charcoal"</span>),</span>
 <span id="cb19-3"><a href="#cb19-3"></a>               <span class="dt">colour =</span> <span class="kw">usq_palette</span>(<span class="st">"usq charcoal"</span>),</span>
 <span id="cb19-4"><a href="#cb19-4"></a>               <span class="dt">alpha =</span> <span class="fl">0.75</span>) <span class="op">+</span></span>
