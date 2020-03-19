@@ -1,5 +1,5 @@
 
-#' Provides USQ Style Typography, Colours and Themes for Plots from R
+#' Provides USQ style typography, colours and themes for plots from \R
 #'
 #' @name theme.usq-package
 #' @author Adam H Sparks

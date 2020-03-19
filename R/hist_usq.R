@@ -1,5 +1,5 @@
 
-#' @title Basic Histograms Using USQ Colours and Typography
+#' @title Basic histograms using USQ colours and typography
 #'
 #' @description Basic histograms that follow USQ colour and typography
 #' guidelines that uses (hopefully) sensible defaults.
@@ -10,7 +10,7 @@
 #' blank.
 #' @param xlab X-axis label. Optional, if not supplied will be taken from data.
 #' @param ylab Y-axis label. Optional, if not supplied will default to "Count".
-#' @param breaks Either \code{pretty}, default, or \code{exact}. Pretty uses
+#' @param breaks Either `pretty`, default, or `exact`. Pretty uses
 #' Scott's Rule, whereas exact uses a bin-width of 1 so each value is
 #' represented individually with a bar.
 #' @param col Colour to use as fill and outline for boxes and outlier points as

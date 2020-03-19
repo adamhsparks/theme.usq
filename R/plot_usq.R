@@ -1,5 +1,5 @@
 
-#' @title Basic X-Y Plotting Using USQ Colours and Typography
+#' @title Basic X-Y plotting using USQ colours and typography
 #'
 #' @description Basic X-Y plotting that follows USQ colour and typography
 #' guidelines that uses (hopefully) sensible defaults.

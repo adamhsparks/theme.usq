@@ -2,7 +2,7 @@
 % Please edit documentation in R/hist_usq.R
 \name{hist_usq}
 \alias{hist_usq}
-\title{Basic Histograms Using USQ Colours and Typography}
+\title{Basic histograms using USQ colours and typography}
 \usage{
 hist_usq(
   x,

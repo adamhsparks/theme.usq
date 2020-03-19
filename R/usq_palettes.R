@@ -1,7 +1,7 @@
 
-#' Palettes of USQ Colours
-#' @format \code{Palettes} of USQ colours from the visual identity
-#' colour palette for use in plotting.
+#' Palettes of USQ colours
+#' @format `Palettes` of USQ colours from the visual identity
+#'  colour palette for use in plotting.
 #' @rdname usq_palettes
 #' @examples
 #' usq_palettes
