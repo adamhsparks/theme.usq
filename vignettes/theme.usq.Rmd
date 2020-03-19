@@ -82,7 +82,7 @@ Plot car weights by miles per gallon and facet by `Transmission` (0 = automatic,
 the `cool` palette to use blue USQ colours for the plot.
 
 ```{r basic-ggplot2}
-p1 <- ggplot(mtcars) +
+p1 <- ggplot(data = mtcars) +
   geom_point(aes(
     x = wt,
     y = mpg,
@@ -110,20 +110,20 @@ graph.
 #### Warm gradients
 
 ```{r warm-gradients}
-p2a <- ggplot(faithfuld, aes(waiting, eruptions)) +
+p2a <- ggplot(data = faithfuld, aes(x = waiting, y = eruptions)) +
   geom_raster(aes(fill = density),
               interpolate = TRUE) +
   scale_fill_usq("warm",
                  discrete = FALSE) +
   theme_usq()
-  
+
 p2a
 ```
 
 #### Cool gradients
 
 ```{r cool-gradients}
-p2b <- ggplot(faithfuld, aes(waiting, eruptions)) +
+p2b <- ggplot(data = faithfuld, aes(x = waiting, y = eruptions)) +
   geom_raster(aes(fill = density),
               interpolate = TRUE) +
   scale_fill_usq("cool",
@@ -144,7 +144,7 @@ Use the default _**`ggplot2`**_ colour scheme to fill the density plot while
 using the `theme_usq()` to theme the graph.
 
 ```{r theme-usq-other-pals}
-p3 <- ggplot(faithfuld, aes(waiting, eruptions)) +
+p3 <- ggplot(data = faithfuld, aes(x = waiting, y = eruptions)) +
   geom_raster(aes(fill = density), interpolate = TRUE) +
   theme_usq()
   
@@ -162,7 +162,7 @@ hist_usq(diamonds$carat)
 #### Using _ggplot2_ and `theme_usq()`
 
 ```{r ggplot2_hist}
-p4 <- ggplot(diamonds, aes(carat)) +
+p4 <- ggplot(data = diamonds, aes(x = carat)) +
   geom_histogram(fill = usq_cols("usq charcoal")) +
   theme_usq()
 
@@ -183,7 +183,7 @@ boxplot_usq(mpg$hwy ~ mpg$class)
 #### Using _ggplot2_ and `theme_usq()`
 
 ```{r ggplot2-boxplot}
-p5 <- ggplot(mpg, aes(class, hwy)) +
+p5 <- ggplot(data = mpg, aes(x = class, y = hwy)) +
   geom_boxplot(alpha = 0.75,
                fill = usq_cols("usq charcoal"),
                colour = usq_cols("usq charcoal")) +
@@ -196,7 +196,7 @@ Use the USQ colours to fill the box-plots while using `drv` (_e.g._, 4-wheel
 drive, front-wheel drive or rear-wheel drive) for the box-plot colour.
 
 ```{r ggplot2-boxplot-fill}
-p5.1 <- ggplot(mpg, aes(class, hwy)) +
+p5.1 <- ggplot(data = mpg, aes(x = class, y = hwy)) +
   geom_boxplot(aes(fill = drv),
                colour = usq_cols("usq charcoal")) +
   scale_fill_usq("primary") +
@@ -213,8 +213,8 @@ graphics, _**`ggplot2`**_ simplifies the process greatly, so it is the only
 example provided and suggested for use.
 
 ```{r timeseries-lines}
-p6 <- ggplot(as.data.frame(economics_long),
-             aes(date, value01, colour = variable)) +
+p6 <- ggplot(data = as.data.frame(economics_long),
+             aes(x = date, y = value01, colour = variable)) +
   geom_line() +
   scale_colour_usq("bright") +
   theme_usq()
@@ -244,7 +244,7 @@ library(tibble)
 islands_df <- as.data.frame(islands)
 islands_df <- rownames_to_column(islands_df, "name")
 
-ggplot(islands_df, aes(x = name, y = islands)) +
+ggplot(data = islands_df, aes(x = name, y = islands)) +
   geom_bar(stat = "identity", 
            colour = usq_cols("cool gray"),
            fill = usq_cols("cool gray")) +
@@ -255,7 +255,7 @@ ggplot(islands_df, aes(x = name, y = islands)) +
 Plot the number of cars from each manufacturer in the `mpg()` dataset.
 
 ```{r example-bright}
-ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
+ggplot(data = mpg, aes(x = manufacturer, fill = manufacturer)) +
   geom_bar() +
   scale_fill_usq(palette = "bright", guide = "none") +
   theme_usq() +
@@ -277,7 +277,7 @@ on a standard sized PowerPoint slide when exported at a size of 33.87mm x
 slide.
 
 ```{r ggplot2-presentation, eval = FALSE}
-p8 <-  ggplot(mpg, aes(class, hwy)) +
+p8 <-  ggplot(data = mpg, aes(x = class, y = hwy)) +
   geom_boxplot(fill = usq_cols("usq charcoal"),
                colour = usq_palette("usq charcoal"),
                alpha = 0.75) +
