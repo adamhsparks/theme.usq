@@ -8,3 +8,4 @@
 ^codemeta\.json$
 ^appveyor\.yml$
 ^\.travis\.yml$
+^\.github$
