@@ -4,8 +4,6 @@
 #' @param palette Character name of palette in `usq_palettes()`
 #' @param discrete Boolean indicating whether colour aesthetic is discrete or
 #'  not
-#' @param alpha Transparency value from 1 - no transparency to 0 - fully
-#'  transparent
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to `discrete_scale()` or
 #'            `scale_colour_gradientn()`, used respectively when discrete is
@@ -15,9 +13,7 @@
 
 scale_colour_usq <- function(palette = "primary",
                              discrete = TRUE,
-                             alpha  = 1,
                              reverse = FALSE,
-                             interpolate = FALSE,
                              ...) {
   if (isTRUE(discrete)) {
     ggplot2::scale_colour_manual(...,
@@ -35,10 +31,6 @@ scale_colour_usq <- function(palette = "primary",
 #' @param discrete Boolean indicating whether colour aesthetic is discrete or
 #' not
 #' @param reverse Boolean indicating whether the palette should be reversed
-#' @param interpolate Boolean indicating whether to interpolate colours or not.
-#'  This can be used when you wish to use a colour palette that does not have
-#'  sufficient individual colours for a given aesthetic for discrete variable.
-#'  Defaults to `FALSE`.
 #' @param ... Additional arguments passed to `discrete_scale()` or
 #'            `scale_fill_gradientn()`, used respectively when discrete is TRUE
 #'            or FALSE
@@ -46,7 +38,6 @@ scale_colour_usq <- function(palette = "primary",
 scale_fill_usq <- function(palette = "primary",
                            discrete = TRUE,
                            reverse = FALSE,
-                           interpolate = FALSE,
                            ...) {
   if (isTRUE(discrete)) {
     ggplot2::scale_fill_manual(...,

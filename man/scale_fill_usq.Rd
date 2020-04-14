@@ -4,13 +4,7 @@
 \alias{scale_fill_usq}
 \title{ggplot2 fill scale constructor for USQ colours}
 \usage{
-scale_fill_usq(
-  palette = "primary",
-  discrete = TRUE,
-  reverse = FALSE,
-  interpolate = FALSE,
-  ...
-)
+scale_fill_usq(palette = "primary", discrete = TRUE, reverse = FALSE, ...)
 }
 \arguments{
 \item{palette}{Character name of palette in \code{usq_palettes()}}
@@ -19,11 +13,6 @@ scale_fill_usq(
 not}
 
 \item{reverse}{Boolean indicating whether the palette should be reversed}
-
-\item{interpolate}{Boolean indicating whether to interpolate colours or not.
-This can be used when you wish to use a colour palette that does not have
-sufficient individual colours for a given aesthetic for discrete variable.
-Defaults to \code{FALSE}.}
 
 \item{...}{Additional arguments passed to \code{discrete_scale()} or
 \code{scale_fill_gradientn()}, used respectively when discrete is TRUE

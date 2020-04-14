@@ -4,23 +4,13 @@
 \alias{scale_colour_usq}
 \title{ggplot2 colour scale constructor for USQ colours}
 \usage{
-scale_colour_usq(
-  palette = "primary",
-  discrete = TRUE,
-  alpha = 1,
-  reverse = FALSE,
-  interpolate = FALSE,
-  ...
-)
+scale_colour_usq(palette = "primary", discrete = TRUE, reverse = FALSE, ...)
 }
 \arguments{
 \item{palette}{Character name of palette in \code{usq_palettes()}}
 
 \item{discrete}{Boolean indicating whether colour aesthetic is discrete or
 not}
-
-\item{alpha}{Transparency value from 1 - no transparency to 0 - fully
-transparent}
 
 \item{reverse}{Boolean indicating whether the palette should be reversed}
 
