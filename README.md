@@ -2,8 +2,7 @@ theme.usq
 ================
 
 ![pkgdown](https://github.com/adamhsparks/theme.usq/workflows/pkgdown/badge.svg)
-[![Build
-status](https://ci.appveyor.com/api/projects/status/kl8y1bvwakd4884r/branch/master?svg=true)](https://ci.appveyor.com/project/adamhsparks/theme-usq-8c8gf/branch/master)
+![R-CMD-check](https://github.com/adamhsparks/theme.usq/workflows/R-CMD-check/badge.svg)
 [![DOI](https://zenodo.org/badge/103536536.svg)](https://zenodo.org/badge/latestdoi/103536536)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
