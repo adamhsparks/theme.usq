@@ -348,12 +348,6 @@
   <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>() +
   <span class="fu">coord_flip</span>()</pre></body></html></div>
 <p><img src="theme.usq_files/figure-html/ggplot2-barplot-1.png" width="672" style="display: block; margin: auto;"></p>
-<p>Plot the number of cars from each manufacturer in the <code>mpg()</code> dataset. Note the use of <code>interpolate = TRUE</code> here, this data set has 15 values (carmakers) but the palette only has 15 colours. This extends the colours to allow the use of this palette. Note that here, rather than using <code>coord-flip()</code> that “manufacturer” has been mapped to the y-axis.</p>
-<div class="sourceCode" id="cb18"><html><body><pre class="r"><span class="fu">ggplot</span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">mpg</span>, <span class="fu">aes</span>(<span class="kw">y</span> <span class="kw">=</span> <span class="no">manufacturer</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">manufacturer</span>)) +
-  <span class="fu">geom_bar</span>() +
-  <span class="fu"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span>(<span class="kw">palette</span> <span class="kw">=</span> <span class="st">"bright"</span>, <span class="kw">guide</span> <span class="kw">=</span> <span class="st">"none"</span>, <span class="kw">interpolate</span> <span class="kw">=</span> <span class="fl">TRUE</span>) +
-  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>()</pre></body></html></div>
-<p><img src="theme.usq_files/figure-html/example-bright-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
 </div>
@@ -365,7 +359,7 @@
 <h3 class="hasAnchor">
 <a href="#example-8-using-ggplot2s-base_size-with-theme_usq" class="anchor"></a>Example 8: Using <em>ggplot2</em>’s base_size() with theme_usq()</h3>
 <p>As an example, using <code>base_size = 24</code> helps ensure that the graphs are legible on a standard sized PowerPoint slide when exported at a size of 33.87mm x 19.05mm, using <code>ggsave()</code>, for a 16x9 presentation slide that fills the whole slide.</p>
-<div class="sourceCode" id="cb19"><html><body><pre class="r"><span class="no">p8</span> <span class="kw">&lt;-</span>  <span class="fu">ggplot</span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">mpg</span>, <span class="fu">aes</span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">class</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">hwy</span>)) +
+<div class="sourceCode" id="cb18"><html><body><pre class="r"><span class="no">p8</span> <span class="kw">&lt;-</span>  <span class="fu">ggplot</span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">mpg</span>, <span class="fu">aes</span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">class</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">hwy</span>)) +
   <span class="fu">geom_boxplot</span>(<span class="kw">fill</span> <span class="kw">=</span> <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"usq charcoal"</span>),
                <span class="kw">colour</span> <span class="kw">=</span> <span class="fu">usq_palette</span>(<span class="st">"usq charcoal"</span>),
                <span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.75</span>) +
