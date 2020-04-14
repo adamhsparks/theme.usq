@@ -253,18 +253,6 @@ ggplot(data = islands_df, aes(x = name, y = islands)) +
   coord_flip()
 ```
 
-Plot the number of cars from each manufacturer in the `mpg()` dataset.
-Note the use of `interpolate = TRUE` here, this data set has 15 values (carmakers) but the palette only has 15 colours.
-This extends the colours to allow the use of this palette.
-Note that here, rather than using `coord-flip()` that "manufacturer" has been mapped to the y-axis.
-
-```{r example-bright}
-ggplot(data = mpg, aes(y = manufacturer, fill = manufacturer)) +
-  geom_bar() +
-  scale_fill_usq(palette = "bright", guide = "none", interpolate = TRUE) +
-  theme_usq()
-```
-
 ## Using theme_usq() in presentations
 
 The default settings for `theme_usq()` are fine for printed materials such as

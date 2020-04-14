@@ -24,11 +24,6 @@ transparent}
 
 \item{reverse}{Boolean indicating whether the palette should be reversed}
 
-\item{interpolate}{Boolean indicating whether to interpolate colours or not.
-This can be used when you wish to use a colour palette that does not have
-sufficient individual colours for a given aesthetic for discrete variables.
-Defaults to \code{FALSE}.}
-
 \item{...}{Additional arguments passed to \code{discrete_scale()} or
 \code{scale_colour_gradientn()}, used respectively when discrete is
 \code{TRUE} or \code{FALSE}}
