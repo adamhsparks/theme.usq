@@ -85,7 +85,7 @@
       <h1 data-toc-skip>theme.usq</h1>
                         <h4 class="author">Adam H Sparks</h4>
             
-            <h4 class="date">2020-04-13</h4>
+            <h4 class="date">2020-04-14</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/adamhsparks/theme.usq/blob/master/vignettes/theme.usq.Rmd"><code>vignettes/theme.usq.Rmd</code></a></small>
       <div class="hidden name"><code>theme.usq.Rmd</code></div>
@@ -167,7 +167,7 @@
 <span class="co">#&gt;       support red   support magenta    support purple </span>
 <span class="co">#&gt;         "#e63e30"         "#b63393"         "#6a288a" </span>
 <span class="co">#&gt; </span>
-<span class="co">#&gt; $digital</span>
+<span class="co">#&gt; $igital</span>
 <span class="co">#&gt;  light grey medium grey   dark grey </span>
 <span class="co">#&gt;   "#f6f6f6"   "#e5e5e5"   "#333333"</span></pre></body></html></div>
 </div>
@@ -348,12 +348,11 @@
   <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>() +
   <span class="fu">coord_flip</span>()</pre></body></html></div>
 <p><img src="theme.usq_files/figure-html/ggplot2-barplot-1.png" width="672" style="display: block; margin: auto;"></p>
-<p>Plot the number of cars from each manufacturer in the <code>mpg()</code> dataset.</p>
-<div class="sourceCode" id="cb18"><html><body><pre class="r"><span class="fu">ggplot</span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">mpg</span>, <span class="fu">aes</span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">manufacturer</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">manufacturer</span>)) +
+<p>Plot the number of cars from each manufacturer in the <code>mpg()</code> dataset. Note the use of <code>interpolate = TRUE</code> here, this data set has 15 values (carmakers) but the palette only has 15 colours. This extends the colours to allow the use of this palette. Note that here, rather than using <code>coord-flip()</code> that “manufacturer” has been mapped to the y-axis.</p>
+<div class="sourceCode" id="cb18"><html><body><pre class="r"><span class="fu">ggplot</span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">mpg</span>, <span class="fu">aes</span>(<span class="kw">y</span> <span class="kw">=</span> <span class="no">manufacturer</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">manufacturer</span>)) +
   <span class="fu">geom_bar</span>() +
-  <span class="fu"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span>(<span class="kw">palette</span> <span class="kw">=</span> <span class="st">"bright"</span>, <span class="kw">guide</span> <span class="kw">=</span> <span class="st">"none"</span>) +
-  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>() +
-  <span class="fu">coord_flip</span>()</pre></body></html></div>
+  <span class="fu"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span>(<span class="kw">palette</span> <span class="kw">=</span> <span class="st">"bright"</span>, <span class="kw">guide</span> <span class="kw">=</span> <span class="st">"none"</span>, <span class="kw">interpolate</span> <span class="kw">=</span> <span class="fl">TRUE</span>) +
+  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>()</pre></body></html></div>
 <p><img src="theme.usq_files/figure-html/example-bright-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>

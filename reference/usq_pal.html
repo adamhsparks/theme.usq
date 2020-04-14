@@ -132,22 +132,27 @@
     <p>Return function to interpolate a USQ colour palette</p>
     </div>
 
-    <pre class="usage"><span class='fu'>usq_pal</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='st'>"primary"</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>usq_pal</span>(<span class='kw'>p</span> <span class='kw'>=</span> <span class='st'>"primary"</span>, <span class='kw'>r</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>a</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>...</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>palette</th>
-      <td><p>Character name of palette in usq_palettes</p></td>
+      <th>p</th>
+      <td><p>Character name of palette in <code><a href='usq_palettes.html'>usq_palettes()</a></code></p></td>
     </tr>
     <tr>
-      <th>reverse</th>
+      <th>r</th>
       <td><p>Boolean indicating whether the palette should be reversed</p></td>
     </tr>
     <tr>
+      <th>a</th>
+      <td><p>Alpha transparency value between 1 and 0, where 1 = no transparency
+and 0 = transparent</p></td>
+    </tr>
+    <tr>
       <th>...</th>
-      <td><p>Additional arguments to pass to colorRampPalette()</p></td>
+      <td><p>Additional arguments to pass to <code><a href='https://rdrr.io/r/grDevices/colorRamp.html'>colorRampPalette()</a></code></p></td>
     </tr>
     </table>
 
