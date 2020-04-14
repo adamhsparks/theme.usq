@@ -4,7 +4,14 @@
 \alias{scale_colour_usq}
 \title{ggplot2 colour scale constructor for USQ colours}
 \usage{
-scale_colour_usq(palette = "primary", discrete = TRUE, reverse = FALSE, ...)
+scale_colour_usq(
+  palette = "primary",
+  discrete = TRUE,
+  alpha = 1,
+  reverse = FALSE,
+  interpolate = FALSE,
+  ...
+)
 }
 \arguments{
 \item{palette}{Character name of palette in \code{usq_palettes()}}
@@ -12,7 +19,15 @@ scale_colour_usq(palette = "primary", discrete = TRUE, reverse = FALSE, ...)
 \item{discrete}{Boolean indicating whether colour aesthetic is discrete or
 not}
 
+\item{alpha}{Transparency value from 1 - no transparency to 0 - fully
+transparent}
+
 \item{reverse}{Boolean indicating whether the palette should be reversed}
+
+\item{interpolate}{Boolean indicating whether to interpolate colours or not.
+This can be used when you wish to use a colour palette that does not have
+sufficient individual colours for a given aesthetic for discrete variables.
+Defaults to \code{FALSE}.}
 
 \item{...}{Additional arguments passed to \code{discrete_scale()} or
 \code{scale_colour_gradientn()}, used respectively when discrete is

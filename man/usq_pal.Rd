@@ -4,14 +4,17 @@
 \alias{usq_pal}
 \title{Return function to interpolate a USQ colour palette}
 \usage{
-usq_pal(palette = "primary", reverse = FALSE, ...)
+usq_pal(p = "primary", r = FALSE, a = 1, ...)
 }
 \arguments{
-\item{palette}{Character name of palette in usq_palettes}
+\item{p}{Character name of palette in \code{usq_palettes()}}
 
-\item{reverse}{Boolean indicating whether the palette should be reversed}
+\item{r}{Boolean indicating whether the palette should be reversed}
 
-\item{...}{Additional arguments to pass to colorRampPalette()}
+\item{a}{Alpha transparency value between 1 and 0, where 1 = no transparency
+and 0 = transparent}
+
+\item{...}{Additional arguments to pass to \code{colorRampPalette()}}
 }
 \description{
 Return function to interpolate a USQ colour palette

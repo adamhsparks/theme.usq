@@ -44,18 +44,30 @@ usq_cols <- function(...) {
 
 #' Return function to interpolate a USQ colour palette
 #'
-#' @param palette Character name of palette in usq_palettes
-#' @param reverse Boolean indicating whether the palette should be reversed
-#' @param ... Additional arguments to pass to colorRampPalette()
-#'
+#' @param p Character name of palette in `usq_palettes()`
+#' @param r Boolean indicating whether the palette should be reversed
+#' @param a Alpha transparency value between 1 and 0, where 1 = no transparency
+#' and 0 = transparent
+#' @param ... Additional arguments to pass to `colorRampPalette()`
 #' @export
-usq_pal <- function(palette = "primary",
-                    reverse = FALSE,
+usq_pal <- function(p = "primary",
+                    r = FALSE,
+                    a = 1,
                     ...) {
-  pal <- usq_palettes[[palette]]
+  pal <- usq_palettes[[p]]
 
-  if (reverse)
+  if (r)
     pal <- rev(pal)
 
   grDevices::colorRampPalette(pal, ...)
+}
+
+#' Return function to provide USQ colours in given order
+#'
+#' @param usq_palettes List of USQ themed colour palettes
+#' @param palette Name of desired palette to use, _e.g._ "primary", "warm", ...
+#' @keywords internal
+#' @noRd
+usq_pal_ordered <- function(usq_palettes = usq_palettes, palette) {
+  return(unname(usq_palettes[[palette]]))
 }

@@ -31,9 +31,13 @@ Useful links:
 
 Other contributors:
 \itemize{
-  \item Simon Jackson (Contributed many ideas for palettes and functions through blog
-    post,
-    https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2) [contributor]
+  \item Simon Jackson [contributor]
+  \item Alicia Allan [contributor]
+  \item Di Cook [contributor]
+  \item Ross Gayler [contributor]
+  \item Holly Kirk [contributor]
+  \item Roger Peng [contributor]
+  \item Elle Saber [contributor]
 }
 
 

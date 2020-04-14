@@ -1,14 +1,33 @@
 Package: theme.usq
 Title: USQ Themed Plots for Base Graphics and 'ggplot2'
 Version: 1.0.1.9000
-Authors@R: c(person(given = "Adam H.", family = "Sparks",
-    role = c("aut", "cre"), email = "adamhsparks@gmail.com",
+Authors@R: c(person(
+    given = "Adam H.",
+    family = "Sparks",
+    role = c("aut", "cre"),
+    email = "adamhsparks@gmail.com",
     comment = c(ORCID = "0000-0002-0061-8359")),
-    person("Simon", "Jackson",
-    role = "ctb",
-    comment = "Contributed many ideas for palettes and functions through blog
-    post,
-    https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2"))
+    person(given = "Simon",
+           family = "Jackson",
+           role = "ctb"),
+    person(given = "Alicia",
+           family = "Allan",
+           role = "ctb"),
+    person(given = "Di",
+           family = "Cook",
+           role = "ctb"),
+    person(given = "Ross",
+           family = "Gayler",
+           role = "ctb"),
+    person(given = "Holly",
+           family = "Kirk",
+           role = "ctb"),
+    person(given = "Roger",
+           family = "Peng",
+           role = "ctb"),
+    person(given = "Elle",
+           family = "Saber",
+           role = "ctb"))
 Description: Provides University of Southern Queensland (USQ) style,
     typography and colours for plots generated using R base graphics and
     'ggplot2'.
@@ -21,7 +40,7 @@ Encoding: UTF-8
 LazyData: true
 Imports:
     extrafont,
-    ggplot2 (>= 2.2.1),
+    ggplot2 (>= 3.0.0),
     graphics,
     grDevices,
     scales,

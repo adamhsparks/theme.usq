@@ -126,7 +126,7 @@
       "@type": "SoftwareApplication",
       "identifier": "ggplot2",
       "name": "ggplot2",
-      "version": ">= 2.2.1",
+      "version": ">= 3.0.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -165,7 +165,7 @@
   ],
   "releaseNotes": "https://github.com/adamhsparks/theme.usq/blob/master/NEWS.md",
   "readme": "https://github.com/adamhsparks/theme.usq/blob/master/README.md",
-  "fileSize": "1135.637KB",
+  "fileSize": "1137.333KB",
   "contIntegration": "https://travis-ci.org/adamhsparks/theme",
   "citation": [
     {
@@ -189,6 +189,36 @@
       "@type": "Person",
       "givenName": "Simon",
       "familyName": "Jackson"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Alicia",
+      "familyName": "Allan"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Di",
+      "familyName": "Cook"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Ross",
+      "familyName": "Gayler"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Holly",
+      "familyName": "Kirk"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Roger",
+      "familyName": "Peng"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Elle",
+      "familyName": "Saber"
     }
   ],
   "keywords": [

@@ -8,7 +8,7 @@
 #' @export
 
 usq_palettes <- list(
-  `primary` = usq_cols(
+  primary = usq_cols(
     "secondary yellow",
     "support magenta",
     "support turquiose",
@@ -32,12 +32,12 @@ usq_palettes <- list(
     "secondary orange"
   ),
 
-  `cool` = usq_cols(
+  cool = usq_cols(
     "support navy",
     "support blue",
     "support turquiose"),
 
-  `warm` = usq_cols(
+  warm = usq_cols(
     "support red",
     "support orange",
     "secondary orange",
@@ -45,7 +45,7 @@ usq_palettes <- list(
     "usq yellow"
   ),
 
-  `bright` = usq_cols(
+  bright = usq_cols(
     "support navy",
     "support blue",
     "support turquiose",
@@ -59,7 +59,8 @@ usq_palettes <- list(
     "support purple"
   ),
 
-  `digital` = usq_cols(
+
+  igital = usq_cols(
     "light grey",
     "medium grey",
     "dark grey")
