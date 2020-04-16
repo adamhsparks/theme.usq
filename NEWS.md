@@ -1,5 +1,21 @@
-# theme.usq (development version)
 
+# theme.usq 1.0.2
+
+## Major changes
+
+* `primary` palette (the default) follows USQ PowerPoint graph colour schemes
+
+* Colour palettes can be interpolated for discrete scales extending beyond 11
+
+* Improve facet fonts and colours for legibility
+
+# theme.usq 1.0.1
+
+* Use yellow for strip colour in facets to follow USQ presentation style for tables
+
+* Update vignette example rotate axis in last two examples
+
+* Add repostatus badge
 
 # theme.usq 1.0.0
 
