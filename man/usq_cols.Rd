@@ -13,6 +13,6 @@ usq_cols(...)
 Function to extract USQ colours as hex codes
 }
 \examples{
-# list the USQ colours names and hex codes
-usq_cols()
+# get the hex code for usq yellow
+usq_cols("usq yellow")
 }

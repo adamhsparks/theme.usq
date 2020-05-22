@@ -32,8 +32,8 @@ usq_colours <-
 #'
 #' @param ... Character names of \pkg{theme.usq} colours
 #' @examples
-#' # list the USQ colours names and hex codes
-#' usq_cols()
+#' # get the hex code for usq yellow
+#' usq_cols("usq yellow")
 #' @export
 usq_cols <- function(...) {
   cols <- tolower(c(...))
