@@ -26,22 +26,17 @@
 
 ## Major changes
 
-* Add new palettes to the package for `primary`, `cool`, `warm`, `bright` and
-`digital`
+* Add new palettes to the package for `primary`, `cool`, `warm`, `bright` and `digital`
 
-* Revamp package functionality to make it easier to use by specifying colour
-names rather than using numbers to index the values
+* Revamp package functionality to make it easier to use by specifying colour names rather than using numbers to index the values
 
-* Add new functions `scale_fill_usq()` and `scale_colour_usq()` for use with
-_ggplot2_ graphics for easier USQ colours
+* Add new functions `scale_fill_usq()` and `scale_colour_usq()` for use with _ggplot2_ graphics for easier USQ colours
 
 * Add support for USQ "digital colours" palette
 
-* Change arguments in the base plotting functions for colours. Colours now
-simply specified by `col = "usq charcoal"` in the function call
+* Change arguments in the base plotting functions for colours. Colours now simply specified by `col = "usq charcoal"` in the function call
 
-* Ribbon colours for facets are Dark Gray Warm, not USQ Yellow, with bold, white
-font face
+* Ribbon colours for facets are Dark Gray Warm, not USQ Yellow, with bold, white font face
 
 ## Bug fixes
 
@@ -49,10 +44,7 @@ font face
 
 ## Deprecated
 
-* ` usq_fill_gradient_warm()` and ` usq_fill_gradient_cool`; superceded by,
-`scale_fill_usq("warm")` or `scale_fill_usq("cool")`
-
---------------------------------------------------------------------------------
+* ` usq_fill_gradient_warm()` and ` usq_fill_gradient_cool`; superceded by, `scale_fill_usq("warm")` or `scale_fill_usq("cool")`
 
 # theme.usq 0.1.1
 
@@ -64,8 +56,7 @@ font face
 
 ## Minor changes
 
-* Check for OS, then check if Verdana has been imported. If not import. Check
-again, if not, import recursively
+* Check for OS, then check if Verdana has been imported. If not import. Check again, if not, import recursively
 
 # theme.usq 0.1.0
 
@@ -91,19 +82,13 @@ again, if not, import recursively
 
 ## Minor changes
 
-* _ggplot2_ is moved to "imports" since base graphing capabilities are now
-included, the package does not strictly rely on _ggplot2_ alone now
-
---------------------------------------------------------------------------------
+* _ggplot2_ is moved to "imports" since base graphing capabilities are now included, the package does not strictly rely on _ggplot2_ alone now
 
 # theme.usq 0.0.4
 
-* Now works with most recent version of `ggplot2` on CRAN, 2.2.1 as of
-30/09/2017
+* Now works with most recent version of `ggplot2` on CRAN, 2.2.1 as of 30/09/2017
 
 * Enhanced documentation
-
---------------------------------------------------------------------------------
 
 # theme.usq 0.0.3
 
@@ -113,8 +98,6 @@ included, the package does not strictly rely on _ggplot2_ alone now
 
 * Add minimum version of ggplot2  (>= 2.2.1.9000)
 
---------------------------------------------------------------------------------
-
 # theme.usq 0.0.2
 
 * Add `scale_fill_gradient()` to compliment `scale_colour_gradient()`
@@ -122,8 +105,6 @@ included, the package does not strictly rely on _ggplot2_ alone now
 * Add new cool gradient colour option
 
 * Make warm gradient colours more distinct
-
---------------------------------------------------------------------------------
 
 # theme.usq 0.0.1
 
