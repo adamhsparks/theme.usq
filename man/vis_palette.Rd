@@ -25,7 +25,7 @@ vector of colours in the chosen palette.
 }
 \examples{
 vis_palette(usq_palettes$primary)
-vis_palette(usq_palettes$primary, "primary")
+vis_palette(usq_palettes$bright, "bright")
 vis_palette(usq_palettes$primary, "primary 4", num = 4)
 vis_palette(usq_palettes$primary, "primary interpolated to 25", num = 25)
 
