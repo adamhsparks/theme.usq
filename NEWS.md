@@ -1,5 +1,8 @@
-# theme.usq (development version)
+# theme.usq 1.0.3
 
+## Bug fixes
+
+* Fix name of `digital` palette
 
 # theme.usq 1.0.2
 
