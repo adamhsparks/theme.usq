@@ -12,9 +12,9 @@ theme_usq(base_size = 11, base_family = "Verdana")
 \item{base_family}{base font family}
 }
 \description{
-This theme applies a standard USQ style to \code{\link{ggplot2}} graphs,
+This theme applies a standard USQ style to \CRANpkg{ggplot2} graphs,
 which includes no y-axis lines, major x-axis grid lines and the Microsoft's
-typeface, Verdana, for all text labeling and the legend key at the bottom.
+typeface, Verdana, for all text labelling and the legend key at the bottom.
 }
 \details{
 The base size is set to 11 by default.  For presentations using the option,
@@ -37,7 +37,7 @@ p1 <- ggplot(mtcars) +
   theme_usq()
 p1
 
-# Continous values
+# Continuous values
 df <- reshape2::melt(outer(1:4, 1:4), varnames = c("X1", "X2"))
 
 p2 <- ggplot(df, aes(X1, X2)) + geom_tile(aes(fill = value)) +

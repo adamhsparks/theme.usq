@@ -5,8 +5,8 @@
 \alias{usq_palettes}
 \title{Palettes of USQ colours}
 \format{
-\code{Palettes} of USQ colours from the visual identity
-colour palette for use in plotting.
+\code{Palettes} of USQ colours from the visual identity colour palette for
+use in data visualisation.
 }
 \usage{
 usq_palettes
