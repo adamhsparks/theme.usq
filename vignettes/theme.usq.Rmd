@@ -61,6 +61,24 @@ type:
 usq_palettes
 ```
 
+Visualise the USQ primary palette to see the colours included.
+
+```{r vis_primary, eval=TRUE}
+vis_palette(usq_palettes$primary, "primary")
+```
+
+Create a vector of 16 colours based on USQ's primary colour palette.
+
+```{r interpolate, eval=TRUE}
+palette = usq_pal(p = "primary", r = FALSE, a = 1)(16)
+```
+
+Visualise the 16 interpolated colours from above,
+
+```{r vis_palette, eval=TRUE}
+vis_palette(usq_palettes$primary, "primary interpolated to 25", num = 16)
+```
+
 ## Examples
 
 Following are a few examples of _**`theme.usq's`**_ capabilities.
