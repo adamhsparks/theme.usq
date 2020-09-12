@@ -4,6 +4,10 @@
 
 * Fix name of `digital` palette
 
+* Clean up extra files in package
+
+* Polish documentation, include examples for functions in vignette, spelling, links, etc.
+
 # theme.usq 1.0.2
 
 ## Major changes
