@@ -2,7 +2,7 @@ theme.usq
 ================
 
 <!-- badges: start -->
-[![tic](https://github.com/adamhsparks/theme.usq/workflows/tic/badge.svg?branch=master)](https://github.com/adamhsparks/theme.usq/actions)
+[![tic](https://github.com/adamhsparks/theme.usq/workflows/tic/badge.svg?branch=main)](https://github.com/adamhsparks/theme.usq/actions)
 [![DOI](https://zenodo.org/badge/103536536.svg)](https://zenodo.org/badge/latestdoi/103536536)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
