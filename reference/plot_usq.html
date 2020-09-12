@@ -73,7 +73,7 @@ guidelines that uses (hopefully) sensible defaults." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">theme.usq</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.3</span>
       </span>
     </div>
 
@@ -135,16 +135,16 @@ guidelines that uses (hopefully) sensible defaults.</p>
     </div>
 
     <pre class="usage"><span class='fu'>plot_usq</span>(
-  <span class='no'>x</span>,
-  <span class='kw'>y</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>""</span>,
-  <span class='kw'>sub</span> <span class='kw'>=</span> <span class='st'>""</span>,
-  <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>""</span>,
-  <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>""</span>,
-  <span class='kw'>xlim</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ylim</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>col</span> <span class='kw'>=</span> <span class='st'>"usq charcoal"</span>,
-  <span class='no'>...</span>
+  <span class='kw'>x</span>,
+  y = <span class='kw'>NULL</span>,
+  main = <span class='st'>""</span>,
+  sub = <span class='st'>""</span>,
+  xlab = <span class='st'>""</span>,
+  ylab = <span class='st'>""</span>,
+  xlim = <span class='kw'>NULL</span>,
+  ylim = <span class='kw'>NULL</span>,
+  col = <span class='st'>"usq charcoal"</span>,
+  <span class='kw'>...</span>
 )</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -218,12 +218,13 @@ available from <code>link{usq_cols}</code>.</p>
 capabilities.</p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>datasets</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'>datasets</span>)
 
-<span class='fu'>plot_usq</span>(<span class='no'>airquality</span>$<span class='no'>Ozone</span>,
-         <span class='kw'>col</span> <span class='kw'>=</span> <span class='st'>"usq charcoal"</span>,
-         <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Air Quality"</span>,
-         <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"Ozone"</span>)</div><div class='img'><img src='plot_usq-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'>plot_usq</span>(<span class='kw'>airquality</span><span class='op'>$</span><span class='kw'>Ozone</span>,
+         col = <span class='st'>"usq charcoal"</span>,
+         main = <span class='st'>"Air Quality"</span>,
+         xlab = <span class='st'>"Ozone"</span>)
+</div><div class='img'><img src='plot_usq-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -240,7 +241,7 @@ capabilities.</p></div>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.9000.</p>
 </div>
 
       </footer>
