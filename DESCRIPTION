@@ -1,6 +1,6 @@
 Package: theme.usq
 Title: USQ Themed Plots for Base Graphics and 'ggplot2'
-Version: 1.0.2.9000
+Version: 1.0.3
 Authors@R: c(person(
     given = "Adam H.",
     family = "Sparks",
@@ -45,7 +45,7 @@ Imports:
     grDevices,
     scales,
     stats
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Roxygen: list(markdown = TRUE)
 Suggests:
     datasets,

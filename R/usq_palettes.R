@@ -59,8 +59,7 @@ usq_palettes <- list(
     "support purple"
   ),
 
-
-  igital = usq_cols(
+  digital = usq_cols(
     "light grey",
     "medium grey",
     "dark grey")

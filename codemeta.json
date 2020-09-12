@@ -10,14 +10,13 @@
   "codeRepository": "https://github.com/adamhsparks/theme.usq",
   "issueTracker": "https://github.com/adamhsparks/theme.usq/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.6.3",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.6.3 (2020-02-29)",
+  "runtimePlatform": "R version 4.0.2 (2020-06-22)",
   "author": [
     {
       "@type": "Person",
@@ -152,9 +151,8 @@
     }
   ],
   "releaseNotes": "https://github.com/adamhsparks/theme.usq/blob/master/NEWS.md",
-  "readme": "https://github.com/adamhsparks/theme.usq/blob/master/README.md",
-  "fileSize": "1135.237KB",
-  "contIntegration": "https://travis-ci.org/adamhsparks/theme",
+  "readme": "https://github.com/adamhsparks/theme.usq/blob/main/README.md",
+  "fileSize": "1444.339KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
