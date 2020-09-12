@@ -70,7 +70,7 @@ vis_palette(usq_palettes$primary, "primary")
 Create a vector of 16 colours based on USQ's primary colour palette.
 
 ```{r interpolate, eval=TRUE}
-palette = usq_pal(p = "primary", r = FALSE, a = 1)(16)
+usq_pal(p = "primary", r = FALSE, a = 1)(16)
 ```
 
 Visualise the 16 interpolated colours from above,
