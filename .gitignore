@@ -16,3 +16,4 @@ vignettes/*.pdf
 .httr-oauth
 .Rproj.user
 *.code-workspace
+docs/
