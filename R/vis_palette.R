@@ -1,5 +1,5 @@
 
-#' Show a single palette
+#' Visualise a single palette using R's graphics capabilities
 #'
 #' Display a single palette to see whether it meets your needs.
 #' If no \code{num} parameter is given, all the colours in the palette will be

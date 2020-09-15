@@ -2,7 +2,7 @@
 % Please edit documentation in R/vis_palette.R
 \name{vis_palette}
 \alias{vis_palette}
-\title{Show a single palette}
+\title{Visualise a single palette using R's graphics capabilities}
 \usage{
 vis_palette(pal, ttl = deparse(substitute(pal)), num = length(pal))
 }

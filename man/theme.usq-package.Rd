@@ -8,7 +8,8 @@
 \description{
 Provides University of Southern Queensland (USQ) style,
     typography and colours for plots generated using R base graphics and
-    'ggplot2'.
+    'ggplot2'. The colours follow USQ PowerPoint template graph colour choices
+    by default, but offer all USQ corporate palettes as well.
 }
 \seealso{
 Useful links:
