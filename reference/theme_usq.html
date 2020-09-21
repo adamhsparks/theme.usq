@@ -42,7 +42,7 @@
 <meta property="og:title" content="A ggplot2 theme based on USQ visual identity and typography guidelines — theme_usq" />
 <meta property="og:description" content="This theme applies a standard USQ style to ggplot2 graphs,
 which includes no y-axis lines, major x-axis grid lines and the Microsoft's
-typeface, Verdana, for all text labeling and the legend key at the bottom." />
+typeface, Verdana, for all text labelling and the legend key at the bottom." />
 
 
 
@@ -131,9 +131,9 @@ typeface, Verdana, for all text labeling and the legend key at the bottom." />
     </div>
 
     <div class="ref-description">
-    <p>This theme applies a standard USQ style to <code><a href='https://ggplot2.tidyverse.org/reference/ggplot2-package.html'>ggplot2</a></code> graphs,
+    <p>This theme applies a standard USQ style to <a href='https://CRAN.R-project.org/package=ggplot2'><span class="pkg">ggplot2</span></a> graphs,
 which includes no y-axis lines, major x-axis grid lines and the Microsoft's
-typeface, Verdana, for all text labeling and the legend key at the bottom.</p>
+typeface, Verdana, for all text labelling and the legend key at the bottom.</p>
     </div>
 
     <pre class="usage"><span class='fu'>theme_usq</span>(base_size = <span class='fl'>11</span>, base_family = <span class='st'>"Verdana"</span>)</pre>
@@ -173,7 +173,7 @@ presentation slides, <em>e.g.</em>, <code>theme_usq(base_size = 24)</code>.</p>
   <span class='fu'>theme_usq</span>()
 <span class='kw'>p1</span>
 </div><div class='img'><img src='theme_usq-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='co'># Continous values</span>
+<span class='co'># Continuous values</span>
 <span class='kw'>df</span> <span class='op'>&lt;-</span> <span class='kw'>reshape2</span>::<span class='fu'><a href='https://rdrr.io/pkg/reshape2/man/melt.html'>melt</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/outer.html'>outer</a></span>(<span class='fl'>1</span><span class='op'>:</span><span class='fl'>4</span>, <span class='fl'>1</span><span class='op'>:</span><span class='fl'>4</span>), varnames = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"X1"</span>, <span class='st'>"X2"</span>))
 
 <span class='kw'>p2</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>df</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>X1</span>, <span class='kw'>X2</span>)) <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_tile.html'>geom_tile</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(fill = <span class='kw'>value</span>)) <span class='op'>+</span>
@@ -204,7 +204,7 @@ presentation slides, <em>e.g.</em>, <code>theme_usq(base_size = 24)</code>.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
