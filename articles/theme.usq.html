@@ -85,7 +85,7 @@
       <h1 data-toc-skip>theme.usq</h1>
                         <h4 class="author">Adam H Sparks</h4>
             
-            <h4 class="date">2020-09-25</h4>
+            <h4 class="date">2020-09-26</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/adamhsparks/theme.usq/blob/master/vignettes/theme.usq.Rmd"><code>vignettes/theme.usq.Rmd</code></a></small>
       <div class="hidden name"><code>theme.usq.Rmd</code></div>
@@ -107,14 +107,13 @@
 </h1>
 <p>Load the library using the following command in R.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://github.com/adamhsparks/theme.usq">theme.usq</a></span>)
-</pre></div>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/adamhsparks/theme.usq">theme.usq</a></span><span class="op">)</span></pre></div>
 <div id="colours" class="section level2">
 <h2 class="hasAnchor">
 <a href="#colours" class="anchor"></a>Colours</h2>
 <p>To view a list of named colours in this package, simply type:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="kw">usq_colours</span>
+<span class="va">usq_colours</span>
 <span class="co">#&gt;              usq yellow            usq charcoal        secondary yellow </span>
 <span class="co">#&gt;               "#ffd100"               "#1e1e1e"               "#fdba12" </span>
 <span class="co">#&gt;        secondary orange               cool gray          dark warm gray </span>
@@ -128,8 +127,7 @@
 <span class="co">#&gt;              light grey             medium grey               dark grey </span>
 <span class="co">#&gt;               "#f6f6f6"               "#e5e5e5"               "#333333" </span>
 <span class="co">#&gt;       unspecified brown unknown deep blue green </span>
-<span class="co">#&gt;               "#a17401"               "#005670"</span>
-</pre></div>
+<span class="co">#&gt;               "#a17401"               "#005670"</span></pre></div>
 <p>The resulting list shows the hexadecimal colour, e.g. “#ffd100”, and it’s name, “usq yellow”. The names may be used to specify the colours at any time when plotting.</p>
 </div>
 <div id="palettes" class="section level2">
@@ -137,7 +135,7 @@
 <a href="#palettes" class="anchor"></a>Palettes</h2>
 <p>Colours are grouped into convenient palettes as well. The palettes may be used when plotting. To see the palettes and colours included in each of them, simply type:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit">
-<span class="kw">usq_palettes</span>
+<span class="va">usq_palettes</span>
 <span class="co">#&gt; $primary</span>
 <span class="co">#&gt;        secondary yellow         support magenta       support turquiose </span>
 <span class="co">#&gt;               "#fdba12"               "#b63393"               "#46c1be" </span>
@@ -174,24 +172,20 @@
 <span class="co">#&gt; </span>
 <span class="co">#&gt; $digital</span>
 <span class="co">#&gt;  light grey medium grey   dark grey </span>
-<span class="co">#&gt;   "#f6f6f6"   "#e5e5e5"   "#333333"</span>
-</pre></div>
+<span class="co">#&gt;   "#f6f6f6"   "#e5e5e5"   "#333333"</span></pre></div>
 <p>Visualise the USQ primary palette to see the colours included.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit">
-<span class="fu"><a href="../reference/vis_palette.html">vis_palette</a></span>(<span class="kw">usq_palettes</span><span class="op">$</span><span class="kw">primary</span>, <span class="st">"primary"</span>)
-</pre></div>
+<span class="fu"><a href="../reference/vis_palette.html">vis_palette</a></span><span class="op">(</span><span class="va">usq_palettes</span><span class="op">$</span><span class="va">primary</span>, <span class="st">"primary"</span><span class="op">)</span></pre></div>
 <p><img src="theme.usq_files/figure-html/vis_primary-1.png" width="672" style="display: block; margin: auto;"></p>
 <p>Create a vector of 16 colours based on USQ’s primary colour palette.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit">
-<span class="fu"><a href="../reference/usq_pal.html">usq_pal</a></span>(p = <span class="st">"primary"</span>, r = <span class="fl">FALSE</span>, a = <span class="fl">1</span>)(<span class="fl">16</span>)
+<span class="fu"><a href="../reference/usq_pal.html">usq_pal</a></span><span class="op">(</span>p <span class="op">=</span> <span class="st">"primary"</span>, r <span class="op">=</span> <span class="cn">FALSE</span>, a <span class="op">=</span> <span class="fl">1</span><span class="op">)</span><span class="op">(</span><span class="fl">16</span><span class="op">)</span>
 <span class="co">#&gt;  [1] "#FDBA12" "#D77256" "#AE3C95" "#7288AC" "#5BAFAB" "#B0695F" "#CB5334"</span>
 <span class="co">#&gt;  [8] "#858C3F" "#488C52" "#13526D" "#354F4F" "#8B6C10" "#8B5537" "#6D2D80"</span>
-<span class="co">#&gt; [15] "#383D7D" "#005670"</span>
-</pre></div>
+<span class="co">#&gt; [15] "#383D7D" "#005670"</span></pre></div>
 <p>Visualise the 16 interpolated colours from above,</p>
 <div class="sourceCode" id="cb6"><pre class="downlit">
-<span class="fu"><a href="../reference/vis_palette.html">vis_palette</a></span>(<span class="kw">usq_palettes</span><span class="op">$</span><span class="kw">primary</span>, <span class="st">"primary interpolated to 25"</span>, num = <span class="fl">16</span>)
-</pre></div>
+<span class="fu"><a href="../reference/vis_palette.html">vis_palette</a></span><span class="op">(</span><span class="va">usq_palettes</span><span class="op">$</span><span class="va">primary</span>, <span class="st">"primary interpolated to 25"</span>, num <span class="op">=</span> <span class="fl">16</span><span class="op">)</span></pre></div>
 <p><img src="theme.usq_files/figure-html/vis_palette-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="examples" class="section level2">
@@ -206,8 +200,7 @@
 <a href="#using-plot_usq" class="anchor"></a>Using plot_usq()</h4>
 <p>Plot plot car weights by miles per gallon.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit">
-<span class="fu"><a href="../reference/plot_usq.html">plot_usq</a></span>(x = <span class="kw">mtcars</span><span class="op">$</span><span class="kw">wt</span>, y = <span class="kw">mtcars</span><span class="op">$</span><span class="kw">mpg</span>)
-</pre></div>
+<span class="fu"><a href="../reference/plot_usq.html">plot_usq</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">mtcars</span><span class="op">$</span><span class="va">wt</span>, y <span class="op">=</span> <span class="va">mtcars</span><span class="op">$</span><span class="va">mpg</span><span class="op">)</span></pre></div>
 <p><img src="theme.usq_files/figure-html/basic-plot-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq" class="section level4">
@@ -215,23 +208,21 @@
 <a href="#using-ggplot2-and-theme_usq" class="anchor"></a>Using <em>ggplot2</em> and theme_usq()</h4>
 <p>Plot car weights by miles per gallon and facet by <code>Transmission</code> (0 = automatic, 1 = manual) using the <code><a href="../reference/scale_colour_usq.html">scale_colour_usq()</a></code> setting <code>discrete = TRUE</code> and using the <code>cool</code> palette to use blue USQ colours for the plot.</p>
 <div class="sourceCode" id="cb8"><pre class="downlit">
-<span class="kw">p1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(data = <span class="kw">mtcars</span>) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(
-    x = <span class="kw">wt</span>,
-    y = <span class="kw">mpg</span>,
-    colour = <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span>(<span class="kw">gear</span>)
-  )) <span class="op">+</span>
-  <span class="fu"><a href="../reference/scale_colour_usq.html">scale_colour_usq</a></span>(discrete = <span class="fl">TRUE</span>,
-                   palette = <span class="st">"cool"</span>) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html">facet_wrap</a></span>(<span class="op">~</span> <span class="kw">am</span>)
+<span class="va">p1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">mtcars</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>
+    x <span class="op">=</span> <span class="va">wt</span>,
+    y <span class="op">=</span> <span class="va">mpg</span>,
+    colour <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">gear</span><span class="op">)</span>
+  <span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/scale_colour_usq.html">scale_colour_usq</a></span><span class="op">(</span>discrete <span class="op">=</span> <span class="cn">TRUE</span>,
+                   palette <span class="op">=</span> <span class="st">"cool"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html">facet_wrap</a></span><span class="op">(</span><span class="op">~</span> <span class="va">am</span><span class="op">)</span>
 
-<span class="kw">p1</span>
-</pre></div>
+<span class="va">p1</span></pre></div>
 <p><img src="theme.usq_files/figure-html/basic-ggplot2-1.png" width="672" style="display: block; margin: auto;"></p>
 <p>Now add the <code><a href="../reference/theme_usq.html">theme_usq()</a></code> to the graph.</p>
 <div class="sourceCode" id="cb9"><pre class="downlit">
-<span class="kw">p1</span> <span class="op">+</span> <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>()
-</pre></div>
+<span class="va">p1</span> <span class="op">+</span> <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span><span class="op">(</span><span class="op">)</span></pre></div>
 <p><img src="theme.usq_files/figure-html/ggplot2-theme-usq-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -243,30 +234,28 @@
 <h4 class="hasAnchor">
 <a href="#warm-gradients" class="anchor"></a>Warm gradients</h4>
 <div class="sourceCode" id="cb10"><pre class="downlit">
-<span class="kw">p2a</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(data = <span class="kw">faithfuld</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(x = <span class="kw">waiting</span>, y = <span class="kw">eruptions</span>)) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html">geom_raster</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(fill = <span class="kw">density</span>),
-              interpolate = <span class="fl">TRUE</span>) <span class="op">+</span>
-  <span class="fu"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span>(<span class="st">"warm"</span>,
-                 discrete = <span class="fl">FALSE</span>) <span class="op">+</span>
-  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>()
+<span class="va">p2a</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">faithfuld</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">waiting</span>, y <span class="op">=</span> <span class="va">eruptions</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html">geom_raster</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">density</span><span class="op">)</span>,
+              interpolate <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span><span class="op">(</span><span class="st">"warm"</span>,
+                 discrete <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span><span class="op">(</span><span class="op">)</span>
 
-<span class="kw">p2a</span>
-</pre></div>
+<span class="va">p2a</span></pre></div>
 <p><img src="theme.usq_files/figure-html/warm-gradients-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="cool-gradients" class="section level4">
 <h4 class="hasAnchor">
 <a href="#cool-gradients" class="anchor"></a>Cool gradients</h4>
 <div class="sourceCode" id="cb11"><pre class="downlit">
-<span class="kw">p2b</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(data = <span class="kw">faithfuld</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(x = <span class="kw">waiting</span>, y = <span class="kw">eruptions</span>)) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html">geom_raster</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(fill = <span class="kw">density</span>),
-              interpolate = <span class="fl">TRUE</span>) <span class="op">+</span>
-  <span class="fu"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span>(<span class="st">"cool"</span>,
-                 discrete = <span class="fl">FALSE</span>) <span class="op">+</span>
-  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>()
+<span class="va">p2b</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">faithfuld</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">waiting</span>, y <span class="op">=</span> <span class="va">eruptions</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html">geom_raster</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">density</span><span class="op">)</span>,
+              interpolate <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span><span class="op">(</span><span class="st">"cool"</span>,
+                 discrete <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span><span class="op">(</span><span class="op">)</span>
   
-<span class="kw">p2b</span>
-</pre></div>
+<span class="va">p2b</span></pre></div>
 <p><img src="theme.usq_files/figure-html/cool-gradients-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -279,12 +268,11 @@
 <p><code><a href="../reference/theme_usq.html">theme_usq()</a></code> can be used with any colour palette that you wish to use, while still applying the graph styling and typography to the graph.</p>
 <p>Use the default <em><strong><code>ggplot2</code></strong></em> colour scheme to fill the density plot while using the <code><a href="../reference/theme_usq.html">theme_usq()</a></code> to theme the graph.</p>
 <div class="sourceCode" id="cb12"><pre class="downlit">
-<span class="kw">p3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(data = <span class="kw">faithfuld</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(x = <span class="kw">waiting</span>, y = <span class="kw">eruptions</span>)) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html">geom_raster</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(fill = <span class="kw">density</span>), interpolate = <span class="fl">TRUE</span>) <span class="op">+</span>
-  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>()
+<span class="va">p3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">faithfuld</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">waiting</span>, y <span class="op">=</span> <span class="va">eruptions</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html">geom_raster</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">density</span><span class="op">)</span>, interpolate <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span><span class="op">(</span><span class="op">)</span>
   
-<span class="kw">p3</span>
-</pre></div>
+<span class="va">p3</span></pre></div>
 <p><img src="theme.usq_files/figure-html/theme-usq-other-pals-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -295,21 +283,19 @@
 <h4 class="hasAnchor">
 <a href="#using-hist_usq" class="anchor"></a>Using hist_usq()</h4>
 <div class="sourceCode" id="cb13"><pre class="downlit">
-<span class="fu"><a href="../reference/hist_usq.html">hist_usq</a></span>(<span class="kw">diamonds</span><span class="op">$</span><span class="kw">carat</span>)
-</pre></div>
+<span class="fu"><a href="../reference/hist_usq.html">hist_usq</a></span><span class="op">(</span><span class="va">diamonds</span><span class="op">$</span><span class="va">carat</span><span class="op">)</span></pre></div>
 <p><img src="theme.usq_files/figure-html/base-hist-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq-2" class="section level4">
 <h4 class="hasAnchor">
 <a href="#using-ggplot2-and-theme_usq-2" class="anchor"></a>Using <em>ggplot2</em> and theme_usq()</h4>
 <div class="sourceCode" id="cb14"><pre class="downlit">
-<span class="kw">p4</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(data = <span class="kw">diamonds</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(x = <span class="kw">carat</span>)) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span>(fill = <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"usq charcoal"</span>)) <span class="op">+</span>
-  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>()
+<span class="va">p4</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">diamonds</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">carat</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span><span class="op">(</span><span class="st">"usq charcoal"</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span><span class="op">(</span><span class="op">)</span>
 
-<span class="kw">p4</span>
-<span class="co">#&gt; `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</span>
-</pre></div>
+<span class="va">p4</span>
+<span class="co">#&gt; `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</span></pre></div>
 <p><img src="theme.usq_files/figure-html/ggplot2_hist-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -321,33 +307,30 @@
 <a href="#using-boxplot_usq" class="anchor"></a>Using boxplot_usq()</h4>
 <p>Plot the highway miles per gallon (mpg) of 38 popular car models in the US by class of car.</p>
 <div class="sourceCode" id="cb15"><pre class="downlit">
-<span class="fu"><a href="../reference/boxplot_usq.html">boxplot_usq</a></span>(<span class="kw">mpg</span><span class="op">$</span><span class="kw">hwy</span> <span class="op">~</span> <span class="kw">mpg</span><span class="op">$</span><span class="kw">class</span>)
-</pre></div>
+<span class="fu"><a href="../reference/boxplot_usq.html">boxplot_usq</a></span><span class="op">(</span><span class="va">mpg</span><span class="op">$</span><span class="va">hwy</span> <span class="op">~</span> <span class="va">mpg</span><span class="op">$</span><span class="va">class</span><span class="op">)</span></pre></div>
 <p><img src="theme.usq_files/figure-html/base-boxplot-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq-3" class="section level4">
 <h4 class="hasAnchor">
 <a href="#using-ggplot2-and-theme_usq-3" class="anchor"></a>Using <em>ggplot2</em> and theme_usq()</h4>
 <div class="sourceCode" id="cb16"><pre class="downlit">
-<span class="kw">p5</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(data = <span class="kw">mpg</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(x = <span class="kw">class</span>, y = <span class="kw">hwy</span>)) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span>(alpha = <span class="fl">0.75</span>,
-               fill = <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"usq charcoal"</span>),
-               colour = <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"usq charcoal"</span>)) <span class="op">+</span>
-  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>()
+<span class="va">p5</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">mpg</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">class</span>, y <span class="op">=</span> <span class="va">hwy</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.75</span>,
+               fill <span class="op">=</span> <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span><span class="op">(</span><span class="st">"usq charcoal"</span><span class="op">)</span>,
+               colour <span class="op">=</span> <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span><span class="op">(</span><span class="st">"usq charcoal"</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span><span class="op">(</span><span class="op">)</span>
   
-<span class="kw">p5</span>
-</pre></div>
+<span class="va">p5</span></pre></div>
 <p><img src="theme.usq_files/figure-html/ggplot2-boxplot-1.png" width="672" style="display: block; margin: auto;"></p>
 <p>Use the USQ colours to fill the box-plots while using <code>drv</code> (<em>e.g.</em>, 4-wheel drive, front-wheel drive or rear-wheel drive) for the box-plot colour.</p>
 <div class="sourceCode" id="cb17"><pre class="downlit">
-<span class="kw">p5.1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(data = <span class="kw">mpg</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(x = <span class="kw">class</span>, y = <span class="kw">hwy</span>)) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(fill = <span class="kw">drv</span>),
-               colour = <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"usq charcoal"</span>)) <span class="op">+</span>
-  <span class="fu"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span>(<span class="st">"primary"</span>) <span class="op">+</span>
-  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>()
+<span class="va">p5.1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">mpg</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">class</span>, y <span class="op">=</span> <span class="va">hwy</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">drv</span><span class="op">)</span>,
+               colour <span class="op">=</span> <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span><span class="op">(</span><span class="st">"usq charcoal"</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/scale_fill_usq.html">scale_fill_usq</a></span><span class="op">(</span><span class="st">"primary"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span><span class="op">(</span><span class="op">)</span>
   
-<span class="kw">p5.1</span>
-</pre></div>
+<span class="va">p5.1</span></pre></div>
 <p><img src="theme.usq_files/figure-html/ggplot2-boxplot-fill-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -359,14 +342,13 @@
 <a href="#using-ggplot2-and-theme_usq-to-plot-timeseries-lines-using" class="anchor"></a>Using <em>ggplot2</em> and theme_usq() to plot timeseries lines using</h4>
 <p>discrete colours for each variable of interest. While possible to do with base R graphics, <em><strong><code>ggplot2</code></strong></em> simplifies the process greatly, so it is the only example provided and suggested for use.</p>
 <div class="sourceCode" id="cb18"><pre class="downlit">
-<span class="kw">p6</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(data = <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span>(<span class="kw">economics_long</span>),
-             <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(x = <span class="kw">date</span>, y = <span class="kw">value01</span>, colour = <span class="kw">variable</span>)) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>() <span class="op">+</span>
-  <span class="fu"><a href="../reference/scale_colour_usq.html">scale_colour_usq</a></span>(<span class="st">"bright"</span>) <span class="op">+</span>
-  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>()
+<span class="va">p6</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span><span class="op">(</span><span class="va">economics_long</span><span class="op">)</span>,
+             <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">date</span>, y <span class="op">=</span> <span class="va">value01</span>, colour <span class="op">=</span> <span class="va">variable</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/scale_colour_usq.html">scale_colour_usq</a></span><span class="op">(</span><span class="st">"bright"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span><span class="op">(</span><span class="op">)</span>
   
-<span class="kw">p6</span>
-</pre></div>
+<span class="va">p6</span></pre></div>
 <p><img src="theme.usq_files/figure-html/timeseries-lines-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -378,8 +360,7 @@
 <a href="#using-barplot_usq" class="anchor"></a>Using barplot_usq()</h4>
 <p>Plot the areas in thousands of square miles of landmasses which exceed 10,000 sqm.</p>
 <div class="sourceCode" id="cb19"><pre class="downlit">
-<span class="fu"><a href="../reference/barplot_usq.html">barplot_usq</a></span>(<span class="kw">islands</span>, col = <span class="st">"cool gray"</span>)
-</pre></div>
+<span class="fu"><a href="../reference/barplot_usq.html">barplot_usq</a></span><span class="op">(</span><span class="va">islands</span>, col <span class="op">=</span> <span class="st">"cool gray"</span><span class="op">)</span></pre></div>
 <p><img src="theme.usq_files/figure-html/base-barplots-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 <div id="using-ggplot2-and-theme_usq-4" class="section level4">
@@ -387,17 +368,16 @@
 <a href="#using-ggplot2-and-theme_usq-4" class="anchor"></a>Using <em>ggplot2</em> and theme_usq()</h4>
 <p>Plot the areas in thousands of square miles of landmasses which exceed 10,000 sqm. Note the use of <code><a href="https://ggplot2.tidyverse.org/reference/coord_flip.html">coord_flip()</a></code> to rotate the axis so that the x-axis labels do not need to be rotated.</p>
 <div class="sourceCode" id="cb20"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://tibble.tidyverse.org">tibble</a></span>)
-<span class="kw">islands_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span>(<span class="kw">islands</span>)
-<span class="kw">islands_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/rownames.html">rownames_to_column</a></span>(<span class="kw">islands_df</span>, <span class="st">"name"</span>)
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/">tibble</a></span><span class="op">)</span>
+<span class="va">islands_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html">as.data.frame</a></span><span class="op">(</span><span class="va">islands</span><span class="op">)</span>
+<span class="va">islands_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/rownames.html">rownames_to_column</a></span><span class="op">(</span><span class="va">islands_df</span>, <span class="st">"name"</span><span class="op">)</span>
 
-<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(data = <span class="kw">islands_df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(x = <span class="kw">name</span>, y = <span class="kw">islands</span>)) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span>(stat = <span class="st">"identity"</span>, 
-           colour = <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"cool gray"</span>),
-           fill = <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"cool gray"</span>)) <span class="op">+</span>
-  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>() <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_flip.html">coord_flip</a></span>()
-</pre></div>
+<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">islands_df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">name</span>, y <span class="op">=</span> <span class="va">islands</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span><span class="op">(</span>stat <span class="op">=</span> <span class="st">"identity"</span>, 
+           colour <span class="op">=</span> <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span><span class="op">(</span><span class="st">"cool gray"</span><span class="op">)</span>,
+           fill <span class="op">=</span> <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span><span class="op">(</span><span class="st">"cool gray"</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_flip.html">coord_flip</a></span><span class="op">(</span><span class="op">)</span></pre></div>
 <p><img src="theme.usq_files/figure-html/ggplot2-barplot-1.png" width="672" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -411,16 +391,15 @@
 <a href="#example-8-using-ggplot2s-base_size-with-theme_usq" class="anchor"></a>Example 8: Using <em>ggplot2</em>’s base_size() with theme_usq()</h3>
 <p>As an example, using <code>base_size = 24</code> helps ensure that the graphs are legible on a standard sized PowerPoint slide when exported at a size of 33.87mm x 19.05mm, using <code><a href="https://ggplot2.tidyverse.org/reference/ggsave.html">ggsave()</a></code>, for a 16x9 presentation slide that fills the whole slide.</p>
 <div class="sourceCode" id="cb21"><pre class="downlit">
-<span class="kw">p8</span> <span class="op">&lt;-</span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(data = <span class="kw">mpg</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(x = <span class="kw">class</span>, y = <span class="kw">hwy</span>)) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span>(fill = <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span>(<span class="st">"usq charcoal"</span>),
-               colour = <span class="fu">usq_palette</span>(<span class="st">"usq charcoal"</span>),
-               alpha = <span class="fl">0.75</span>) <span class="op">+</span>
-  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span>(base_size = <span class="fl">24</span>) <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span>(axis.text.x = <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_text</a></span>(angle = <span class="fl">45</span>, hjust = <span class="fl">1</span>))
+<span class="va">p8</span> <span class="op">&lt;-</span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">mpg</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">class</span>, y <span class="op">=</span> <span class="va">hwy</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="fu"><a href="../reference/usq_cols.html">usq_cols</a></span><span class="op">(</span><span class="st">"usq charcoal"</span><span class="op">)</span>,
+               colour <span class="op">=</span> <span class="fu">usq_palette</span><span class="op">(</span><span class="st">"usq charcoal"</span><span class="op">)</span>,
+               alpha <span class="op">=</span> <span class="fl">0.75</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="../reference/theme_usq.html">theme_usq</a></span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">24</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span>axis.text.x <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_text</a></span><span class="op">(</span>angle <span class="op">=</span> <span class="fl">45</span>, hjust <span class="op">=</span> <span class="fl">1</span><span class="op">)</span><span class="op">)</span>
 
-<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsave.html">ggsave</a></span>(<span class="st">"slide_p7.png"</span>, width = <span class="fl">33.87</span>, height = <span class="fl">19.05</span>, units = <span class="st">"cm"</span>,
-       dpi = <span class="fl">150</span>)
-</pre></div>
+<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsave.html">ggsave</a></span><span class="op">(</span><span class="st">"slide_p7.png"</span>, width <span class="op">=</span> <span class="fl">33.87</span>, height <span class="op">=</span> <span class="fl">19.05</span>, units <span class="op">=</span> <span class="st">"cm"</span>,
+       dpi <span class="op">=</span> <span class="fl">150</span><span class="op">)</span></pre></div>
 </div>
 </div>
 </div>

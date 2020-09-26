@@ -105,25 +105,23 @@
 <p>The installation may take some time as some system fonts need to be catalogued to use the Microsoft Verdana font that USQ suggests. Once the installation is complete, it should not be necessary to re-catalogue the fonts, so loading <strong><em><code>theme.usq</code></em></strong> will not take any longer than expected.</p>
 <p>To install <strong><em><code>theme.usq</code></em></strong> copy and paste the code in the following code block in your R session console.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="co">if</span>(<span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="kw"><a href="https://remotes.r-lib.org">remotes</a></span>)){
-    <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)
-    <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://remotes.r-lib.org">remotes</a></span>)
-}
+<span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op">(</span><span class="va"><a href="https://remotes.r-lib.org">remotes</a></span><span class="op">)</span><span class="op">)</span><span class="op">{</span>
+    <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span>
+    <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://remotes.r-lib.org">remotes</a></span><span class="op">)</span>
+<span class="op">}</span>
 
-<span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"adamhsparks/theme.usq"</span>,
-               dependencies = <span class="fl">TRUE</span>,
-               build_vignettes = <span class="fl">TRUE</span>)
+<span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"adamhsparks/theme.usq"</span>,
+               dependencies <span class="op">=</span> <span class="cn">TRUE</span>,
+               build_vignettes <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
 
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="st"><a href="http://ggplot2.tidyverse.org">"ggplot2"</a></span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="st"><a href="https://github.com/adamhsparks/theme.usq">"theme.usq"</a></span>)
-</pre></div>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="http://ggplot2.tidyverse.org">"ggplot2"</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/adamhsparks/theme.usq">"theme.usq"</a></span><span class="op">)</span></pre></div>
 <div id="keeping-themeusq-up-to-date" class="section level3">
 <h3 class="hasAnchor">
 <a href="#keeping-themeusq-up-to-date" class="anchor"></a>Keeping <em>theme.usq</em> up-to-date</h3>
 <p>Since <strong><em><code>theme.usq</code></em></strong> is still under development with bug fixes and new features being added and it is not available from CRAN; <code><a href="https://rdrr.io/r/utils/update.packages.html">update.packages()</a></code> will not update it. To keep <strong><em><code>theme.usq</code></em></strong> updated, use:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="kw">remotes</span>::<span class="fu"><a href="https://remotes.r-lib.org/reference/update_packages.html">update_packages</a></span>(<span class="st">"theme.usq"</span>)
-</pre></div>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/update_packages.html">update_packages</a></span><span class="op">(</span><span class="st">"theme.usq"</span><span class="op">)</span></pre></div>
 <p>Examples of how to use <code>theme.usq</code> can be found in the vignette, <em>e.g.</em>, <code><a href="articles/theme.usq.html">vignette("theme.usq")</a></code> and online, <a href="https://adamhsparks.github.io/theme.usq/articles/theme.usq.html">https://adamhsparks.github.io/theme.usq/articles/theme.usq.html</a>.</p>
 </div>
 </div>
