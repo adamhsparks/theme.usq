@@ -3,7 +3,7 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   theme.usq: theme.usq.html
-last_built: 2020-11-05T04:21Z
+last_built: 2020-11-06T04:31Z
 urls:
   reference: https://adamhsparks.github.io/theme.usq//reference
   article: https://adamhsparks.github.io/theme.usq//articles
