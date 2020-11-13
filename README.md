@@ -4,10 +4,14 @@ theme.usq
 <!-- badges: start -->
 [![tic](https://github.com/adamhsparks/theme.usq/workflows/tic/badge.svg?branch=main)](https://github.com/adamhsparks/theme.usq/actions)
 [![DOI](https://zenodo.org/badge/103536536.svg)](https://zenodo.org/badge/latestdoi/103536536)
-[![Project Status: Active – The project has reached a stable, usable
-state and is being actively
-developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Project Status: Unsupported – The project has reached a stable, usable state but I have ceased all work on it. If you wish to take over maintenance, please contact me.](https://www.repostatus.org/badges/latest/unsupported.svg)](https://www.repostatus.org/#unsupported)
 <!-- badges: end -->
+
+## *theme.usq* is Unsupported
+
+I have ceased all development and support for this R package.
+If you work at USQ and wish to take over the maintenance and development of this package, feel free to contact me and let me know.
+You can open an issue here to do this and ask me to transfer the repository to you.
 
 ## Introduction to *theme.usq*
 
@@ -15,7 +19,7 @@ The goal of ***`theme.usq`*** is to provide [University of Southern Queensland](
 using the base ***`graphics`*** package or ***`ggplot2`*** while providing clear graphs for reports and presentations.
 All of the colours provided are defined in USQ’s Visual Identity Colour Palette and follow the order in the PowerPoint Corporate templates.
 
-This package has been tested on macOS, Ubuntu Linux and USQ computers using Windows 7.
+This package has been tested on macOS, Ubuntu Linux and USQ computers using Windows 10.
 For Linux users, if you have not installed the MS Core Fonts, you will need to do that for this package to function properly and generate the graphs with the proper typography.
 Windows and macOS users should be ready to go with just the installation of this package.
 
